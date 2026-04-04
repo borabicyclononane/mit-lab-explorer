@@ -138,24 +138,42 @@ def main():
     labs = [transform_author(a) for a in faculty]
 
     # Filter to MIT-affiliated researchers
-    MIT_KEYWORDS = [
-        "mit", "massachusetts institute of technology", "csail", "eecs",
-        "lincoln lab", "broad institute", "koch institute", "mcgovern",
-        "media lab", "haystack", "kavli", "plasma science", "fusion",
-        "lids", "idss", "rle", "ll mit",
-    ]
-    MIT_DEPT_NAMES = [
+    # Exact matches and prefixes that are definitively MIT
+    MIT_EXACT = {
+        "MIT", "MIT Lincoln Laboratory", "MIT Sea Grant",
         "CSAIL", "EECS", "Biology", "Chemistry", "Physics", "EAPS",
         "Koch Institute", "Math", "BioE", "ChemE", "McGovern",
         "Media Lab", "NSE",
+    }
+    MIT_SUBSTRINGS = [
+        "massachusetts institute of technology",
+        "csail", "lincoln lab",
+        "broad institute", "koch institute", "mcgovern institute",
+        "media lab", "haystack", "kavli institute",
+        "plasma science and fusion", "lids", "idss",
+        "harvard-mit", "harvard–mit", "mit-harvard",
+        "iit@mit", "singapore-mit", "mit sea grant",
+        "mit center for", "mit world peace",
+    ]
+    # False positives: departments with "mit" substring that are NOT MIT
+    MIT_EXCLUDE = [
+        "rmit", "amity", "mitre", "sumitomo", "smith", "mitra",
+        "glaxosmith", "committee", "limited", "ptc", "moscow",
+        "mrc mitochondrial",
     ]
 
     def is_mit_affiliated(lab):
         for dept in lab.get("departments", []):
-            dept_lower = dept.lower()
-            if any(kw in dept_lower for kw in MIT_KEYWORDS):
+            if dept in MIT_EXACT:
                 return True
-            if dept in MIT_DEPT_NAMES:
+            dept_lower = dept.lower()
+            # Check exclusions first
+            if any(excl in dept_lower for excl in MIT_EXCLUDE):
+                continue
+            if any(kw in dept_lower for kw in MIT_SUBSTRINGS):
+                return True
+            # Match "MIT" as a word boundary (not substring of other words)
+            if re.search(r'\bMIT\b', dept):
                 return True
         return False
 
