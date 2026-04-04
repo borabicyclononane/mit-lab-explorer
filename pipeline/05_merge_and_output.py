@@ -1,8 +1,8 @@
 """
 Step 5: Merge manual overrides and output final labs.json.
 
-Transforms pipeline data into the final schema and merges with
-user-provided manual overrides. Manual entries always win.
+Filters to VERIFIED MIT faculty only (from department directories),
+transforms to final schema, merges manual overrides.
 """
 
 import json
@@ -10,6 +10,7 @@ import re
 from datetime import date
 
 from config import INTERMEDIATE_DIR, OUTPUT_DIR
+from verified_faculty import VERIFIED_FACULTY, get_departments_for_name
 
 INPUT_FILE = f"{INTERMEDIATE_DIR}/04_links.json"
 OVERRIDES_FILE = f"{OUTPUT_DIR}/manual_overrides.json"
@@ -26,40 +27,37 @@ def slugify(text):
 
 
 def infer_lab_name(pi_name):
-    """Infer a lab name from PI name (e.g., 'Caroline Uhler' -> 'Uhler Lab')."""
+    """Infer a lab name from PI name."""
     parts = pi_name.strip().split()
     if parts:
         return f"{parts[-1]} Lab"
     return "Unknown Lab"
 
 
-def determine_departments(author):
-    """Determine department list for display."""
-    depts = []
+def match_to_verified(display_name):
+    """Try to match an OpenAlex author name to verified faculty.
+    Returns (canonical_name, departments) or (None, None)."""
+    depts = get_departments_for_name(display_name)
+    if depts is not None:
+        return display_name, depts
 
-    # From validated departments (scraped)
-    for d in author.get("validated_departments", []):
-        if d not in depts:
-            depts.append(d)
+    # Try without middle names/initials
+    parts = display_name.split()
+    if len(parts) > 2:
+        short_name = f"{parts[0]} {parts[-1]}"
+        depts = get_departments_for_name(short_name)
+        if depts is not None:
+            return display_name, depts
 
-    # From OpenAlex institutions
-    for inst in author.get("institutions", []):
-        name = inst.get("display_name", "")
-        # Skip generic "MIT" — we want specific units
-        if name in ("Massachusetts Institute of Technology", "MIT"):
-            continue
-        # Shorten common names
-        short = name.replace("Massachusetts Institute of Technology", "MIT")
-        if short not in depts:
-            depts.append(short)
-
-    return depts if depts else ["MIT"]
+    return None, None
 
 
-def transform_author(author):
+def transform_author(author, verified_depts):
     """Transform a pipeline author entry into the final lab card schema."""
     pi_name = author.get("display_name", "Unknown")
-    departments = determine_departments(author)
+
+    # Use verified departments as the primary source
+    departments = list(verified_depts) if verified_depts else ["MIT"]
 
     # Build a stable ID
     dept_slug = slugify(departments[0]) if departments else "mit"
@@ -77,7 +75,7 @@ def transform_author(author):
         "pi_name": pi_name,
         "lab_name": infer_lab_name(pi_name),
         "departments": departments,
-        "research_summary": "",  # Filled in Iteration 2
+        "research_summary": "",
         "tags": author.get("tags", []),
         "links": author.get("links", {}),
         "openalex_id": oa_id_short,
@@ -92,104 +90,59 @@ def merge_overrides(labs, overrides):
     """Merge manual overrides into the labs list."""
     labs_by_id = {lab["id"]: lab for lab in labs}
 
-    # Apply overrides
     for lab_id, override in overrides.get("override", {}).items():
         if lab_id in labs_by_id:
             lab = labs_by_id[lab_id]
-
-            # Override specific fields
             for key in ("pi_name", "lab_name", "departments", "research_summary", "links"):
                 if key in override:
                     lab[key] = override[key]
-
-            # Handle tags
             if override.get("replace_tags"):
                 lab["tags"] = override.get("tags", [])
             elif "extra_tags" in override:
                 lab["tags"].extend(override["extra_tags"])
-
             lab["last_updated"] = str(date.today())
 
-    # Add manual entries
     for entry in overrides.get("add", []):
         entry.setdefault("manually_added", True)
         entry.setdefault("last_updated", str(date.today()))
         entry.setdefault("research_summary", "")
         entry.setdefault("tags", [])
         entry.setdefault("links", {})
-
-        # Override existing or add new
-        if entry.get("id") in labs_by_id:
-            labs_by_id[entry["id"]] = entry
-        else:
-            labs_by_id[entry["id"]] = entry
+        labs_by_id[entry["id"]] = entry
 
     return list(labs_by_id.values())
 
 
 def main():
-    # Load pipeline data
     with open(INPUT_FILE) as f:
         faculty = json.load(f)
 
-    print(f"Loaded {len(faculty)} faculty from pipeline")
+    print(f"Loaded {len(faculty)} authors from pipeline")
+    print(f"Verified faculty whitelist: {len(VERIFIED_FACULTY)} names")
 
-    # Transform to final schema
-    labs = [transform_author(a) for a in faculty]
+    # Match OpenAlex authors against verified faculty whitelist
+    matched = []
+    unmatched_names = []
+    for author in faculty:
+        name = author.get("display_name", "")
+        canonical, depts = match_to_verified(name)
+        if canonical is not None:
+            matched.append((author, depts))
+        else:
+            unmatched_names.append(name)
 
-    # Filter to MIT-affiliated researchers
-    # Exact matches and prefixes that are definitively MIT
-    MIT_EXACT = {
-        "MIT", "MIT Lincoln Laboratory", "MIT Sea Grant",
-        "CSAIL", "EECS", "Biology", "Chemistry", "Physics", "EAPS",
-        "Koch Institute", "Math", "BioE", "ChemE", "McGovern",
-        "Media Lab", "NSE",
-    }
-    MIT_SUBSTRINGS = [
-        "massachusetts institute of technology",
-        "csail", "lincoln lab",
-        "broad institute", "koch institute", "mcgovern institute",
-        "media lab", "haystack", "kavli institute",
-        "plasma science and fusion", "lids", "idss",
-        "harvard-mit", "harvard–mit", "mit-harvard",
-        "iit@mit", "singapore-mit", "mit sea grant",
-        "mit center for", "mit world peace",
-    ]
-    # False positives: departments with "mit" substring that are NOT MIT
-    MIT_EXCLUDE = [
-        "rmit", "amity", "mitre", "sumitomo", "smith", "mitra",
-        "glaxosmith", "committee", "limited", "ptc", "moscow",
-        "mrc mitochondrial",
-    ]
+    print(f"Matched to verified faculty: {len(matched)}")
+    print(f"Unmatched (excluded): {len(unmatched_names)}")
 
-    def is_mit_affiliated(lab):
-        for dept in lab.get("departments", []):
-            if dept in MIT_EXACT:
-                return True
-            dept_lower = dept.lower()
-            # Check exclusions first
-            if any(excl in dept_lower for excl in MIT_EXCLUDE):
-                continue
-            if any(kw in dept_lower for kw in MIT_SUBSTRINGS):
-                return True
-            # Match "MIT" as a word boundary (not substring of other words)
-            if re.search(r'\bMIT\b', dept):
-                return True
-        return False
+    # Transform matched authors
+    labs = [transform_author(author, depts) for author, depts in matched]
 
-    mit_labs = [lab for lab in labs if is_mit_affiliated(lab)]
-    non_mit = len(labs) - len(mit_labs)
-    print(f"MIT-affiliated: {len(mit_labs)}, filtered out: {non_mit}")
-    labs = mit_labs
-
-    # Remove entries with no tags (not useful for the tool)
+    # Remove entries with no tags
     labs_with_tags = [lab for lab in labs if lab["tags"]]
-    labs_without_tags = len(labs) - len(labs_with_tags)
-    print(f"Labs with tags: {len(labs_with_tags)}, without tags (excluded): {labs_without_tags}")
-
+    print(f"With tags: {len(labs_with_tags)}, without tags (excluded): {len(labs) - len(labs_with_tags)}")
     labs = labs_with_tags
 
-    # Load and merge manual overrides
+    # Merge manual overrides
     try:
         with open(OVERRIDES_FILE) as f:
             overrides = json.load(f)
@@ -203,11 +156,12 @@ def main():
     # Sort by PI last name
     labs.sort(key=lambda x: x.get("pi_name", "").split()[-1].lower() if x.get("pi_name") else "")
 
-    # Deduplicate by PI name (keep first occurrence which has more data)
+    # Deduplicate by normalized name
     seen_names = set()
     deduped = []
     for lab in labs:
-        name_key = lab["pi_name"].lower().strip()
+        name_key = re.sub(r"\s+[A-Z]\.?\s+", " ", lab["pi_name"])  # strip middle initials
+        name_key = name_key.lower().strip()
         if name_key not in seen_names:
             seen_names.add(name_key)
             deduped.append(lab)
@@ -218,9 +172,7 @@ def main():
     # Category stats
     cat_counts = {}
     for lab in labs:
-        cats = set()
-        for tag in lab.get("tags", []):
-            cats.add(tag.get("category", ""))
+        cats = set(tag.get("category", "") for tag in lab.get("tags", []))
         for cat in cats:
             cat_counts[cat] = cat_counts.get(cat, 0) + 1
 
@@ -228,11 +180,39 @@ def main():
     for cat, count in sorted(cat_counts.items(), key=lambda x: -x[1]):
         print(f"  {cat}: {count}")
 
-    # Write output
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(labs, f, indent=2)
+    # Write compact JSON for frontend
+    compact = []
+    for lab in labs:
+        entry = {"id": lab["id"], "n": lab["pi_name"], "d": lab["departments"]}
+        if lab.get("research_summary"):
+            entry["s"] = lab["research_summary"]
+        default_lab = lab["pi_name"].split()[-1] + " Lab"
+        if lab.get("lab_name") and lab["lab_name"] != default_lab:
+            entry["l"] = lab["lab_name"]
+        entry["t"] = []
+        for tag in lab.get("tags", []):
+            t = [tag["category"], tag["subcategory"]]
+            if tag.get("focus"):
+                t.append(tag["focus"])
+            entry["t"].append(t)
+        links = {}
+        short_keys = {"lab_website": "w", "publications_page": "p", "mit_profile": "m",
+                      "google_scholar": "g", "semantic_scholar": "ss", "openalex": "o"}
+        for key, val in lab.get("links", {}).items():
+            if val:
+                links[short_keys.get(key, key)] = val
+        if links:
+            entry["k"] = links
+        if lab.get("openalex_id"):
+            entry["oa"] = lab["openalex_id"]
+        compact.append(entry)
 
-    print(f"\nFinal output: {len(labs)} labs -> {OUTPUT_FILE}")
+    with open(OUTPUT_FILE, "w") as f:
+        json.dump(compact, f, separators=(",", ":"))
+
+    import os
+    size_kb = os.path.getsize(OUTPUT_FILE) / 1024
+    print(f"\nFinal output: {len(compact)} labs -> {OUTPUT_FILE} ({size_kb:.0f}KB)")
 
 
 if __name__ == "__main__":
