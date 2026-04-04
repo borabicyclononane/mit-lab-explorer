@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIT Lab Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --mit-red: #A31F34;
+      --mit-red-light: #d4485c;
+      --bg: #f8f8f8;
+      --card-bg: #ffffff;
+      --text: #1a1a1a;
+      --text-muted: #666;
+      --text-light: #999;
+      --border: #e0e0e0;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-hover: 0 4px 12px rgba(0,0,0,0.12);
+      --radius: 8px;
+
+      /* Tag category colors */
+      --tag-bio-bg: #e8f5e9;
+      --tag-bio-border: #4caf50;
+      --tag-chem-bg: #e3f2fd;
+      --tag-chem-border: #2196f3;
+      --tag-phys-bg: #fff3e0;
+      --tag-phys-border: #ff9800;
+      --tag-earth-bg: #e0f2f1;
+      --tag-earth-border: #009688;
+      --tag-cs-bg: #f3e5f5;
+      --tag-cs-border: #9c27b0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Source Sans 3', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    /* ── Header ── */
+    .header {
+      background: var(--mit-red);
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+    .header p {
+      font-size: 1rem;
+      opacity: 0.85;
+      margin-top: 0.25rem;
+      font-weight: 300;
+    }
+
+    /* ── Search ── */
+    .search-container {
+      max-width: 1200px;
+      margin: 1.5rem auto 0;
+      padding: 0 1.5rem;
+    }
+    .search-box {
+      position: relative;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 0.85rem 1rem 0.85rem 2.8rem;
+      font-size: 1.05rem;
+      font-family: inherit;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card-bg);
+      color: var(--text);
+      transition: border-color 0.2s;
+    }
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--mit-red);
+    }
+    .search-box input::placeholder {
+      color: var(--text-light);
+    }
+    .search-icon {
+      position: absolute;
+      left: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-light);
+      pointer-events: none;
+      font-size: 1.1rem;
+    }
+    .search-hint {
+      position: absolute;
+      right: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-light);
+      font-size: 0.8rem;
+      pointer-events: none;
+      background: var(--bg);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    /* ── Category Tabs ── */
+    .tabs-container {
+      max-width: 1200px;
+      margin: 1rem auto 0;
+      padding: 0 1.5rem;
+      overflow-x: auto;
+    }
+    .tabs {
+      display: flex;
+      gap: 0.35rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0;
+    }
+    .tab {
+      padding: 0.55rem 1rem;
+      font-size: 0.9rem;
+      font-family: inherit;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: none;
+      border: none;
+      border-bottom: 3px solid transparent;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color 0.2s, border-color 0.2s;
+      margin-bottom: -2px;
+    }
+    .tab:hover {
+      color: var(--text);
+    }
+    .tab.active {
+      color: var(--mit-red);
+      border-bottom-color: var(--mit-red);
+    }
+    .tab .count {
+      font-weight: 400;
+      color: var(--text-light);
+      font-size: 0.8rem;
+      margin-left: 0.3rem;
+    }
+    .tab.active .count {
+      color: var(--mit-red-light);
+    }
+
+    /* ── Results Info ── */
+    .results-info {
+      max-width: 1200px;
+      margin: 1rem auto 0;
+      padding: 0 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* ── Card Grid ── */
+    .grid-container {
+      max-width: 1200px;
+      margin: 1rem auto 2rem;
+      padding: 0 1.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 1024px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .grid { grid-template-columns: 1fr; }
+      .header { padding: 1rem; }
+      .header h1 { font-size: 1.4rem; }
+      .search-hint { display: none; }
+    }
+
+    /* ── Lab Card ── */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.1rem;
+      box-shadow: var(--shadow);
+      transition: box-shadow 0.2s, transform 0.15s;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-1px);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.4rem;
+    }
+    .card-pi {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .card-links {
+      display: flex;
+      gap: 0.3rem;
+      flex-shrink: 0;
+    }
+    .card-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 4px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: background 0.15s, color 0.15s;
+    }
+    .card-links a:hover {
+      background: var(--bg);
+      color: var(--mit-red);
+    }
+    .card-links a[title]:hover::after {
+      content: attr(title);
+    }
+    .card-meta {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .card-summary {
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.5;
+      margin-bottom: 0.6rem;
+      flex-grow: 1;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      font-size: 0.73rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      border-left: 3px solid;
+      line-height: 1.4;
+      max-width: 100%;
+    }
+    .tag-cat {
+      font-weight: 400;
+      opacity: 0.7;
+      margin-right: 0.2rem;
+    }
+    .tag-sub {
+      font-weight: 700;
+    }
+    .tag-focus {
+      font-weight: 300;
+      opacity: 0.8;
+    }
+
+    /* Tag category colors */
+    .tag-biology { background: var(--tag-bio-bg); border-color: var(--tag-bio-border); }
+    .tag-chemistry { background: var(--tag-chem-bg); border-color: var(--tag-chem-border); }
+    .tag-physics { background: var(--tag-phys-bg); border-color: var(--tag-phys-border); }
+    .tag-earth { background: var(--tag-earth-bg); border-color: var(--tag-earth-border); }
+    .tag-cs { background: var(--tag-cs-bg); border-color: var(--tag-cs-border); }
+
+    .tags-expander {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      font-family: inherit;
+    }
+    .tags-expander:hover {
+      color: var(--mit-red);
+      border-color: var(--mit-red);
+    }
+
+    /* ── Load More ── */
+    .load-more-container {
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .load-more {
+      padding: 0.7rem 2rem;
+      font-size: 0.95rem;
+      font-family: inherit;
+      font-weight: 600;
+      color: var(--mit-red);
+      background: var(--card-bg);
+      border: 2px solid var(--mit-red);
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .load-more:hover {
+      background: var(--mit-red);
+      color: white;
+    }
+
+    /* ── Empty State ── */
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-muted);
+    }
+    .empty-state h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .empty-state p {
+      font-size: 0.95rem;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    /* ── Loading ── */
+    .loading {
+      text-align: center;
+      padding: 3rem;
+      color: var(--text-muted);
+    }
+    .loading-spinner {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      border: 3px solid var(--border);
+      border-top-color: var(--mit-red);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Footer ── */
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: var(--text-light);
+      font-size: 0.8rem;
+      border-top: 1px solid var(--border);
+      margin-top: 2rem;
+    }
+    .footer a { color: var(--mit-red); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <h1>MIT Lab Explorer</h1>
+  <p>Find MIT research labs for Science Bowl Energy questions</p>
+</header>
+
+<div class="search-container">
+  <div class="search-box">
+    <span class="search-icon">&#128269;</span>
+    <input type="text" id="searchInput" placeholder="Search labs, topics, researchers..." autocomplete="off">
+    <span class="search-hint">/ to focus &middot; Esc to clear</span>
+  </div>
+</div>
+
+<div class="tabs-container">
+  <div class="tabs" id="categoryTabs">
+    <button class="tab active" data-category="all">All <span class="count" id="count-all"></span></button>
+    <button class="tab" data-category="Biology">Biology <span class="count" id="count-Biology"></span></button>
+    <button class="tab" data-category="Chemistry">Chemistry <span class="count" id="count-Chemistry"></span></button>
+    <button class="tab" data-category="Physics">Physics <span class="count" id="count-Physics"></span></button>
+    <button class="tab" data-category="Earth & Space">Earth &amp; Space <span class="count" id="count-Earth & Space"></span></button>
+    <button class="tab" data-category="CS/AI/Stats">CS/AI/Stats <span class="count" id="count-CS/AI/Stats"></span></button>
+  </div>
+</div>
+
+<div class="results-info" id="resultsInfo"></div>
+
+<div class="grid-container">
+  <div class="grid" id="labGrid">
+    <div class="loading">
+      <div class="loading-spinner"></div>
+      <p style="margin-top: 0.75rem;">Loading labs...</p>
+    </div>
+  </div>
+  <div class="load-more-container" id="loadMoreContainer" style="display:none;">
+    <button class="load-more" id="loadMoreBtn">Load more</button>
+  </div>
+</div>
+
+<footer class="footer">
+  Built for MIT Science Bowl &middot; Data from <a href="https://openalex.org" target="_blank">OpenAlex</a> &middot;
+  <a href="https://github.com/borabicyclononane/mit-lab-explorer" target="_blank">View on GitHub</a>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  // ── State ──
+  let allLabs = [];
+  let filteredLabs = [];
+  let currentCategory = 'all';
+  let currentQuery = '';
+  let displayedCount = 0;
+  const PAGE_SIZE = 36;
+
+  // ── DOM refs ──
+  const searchInput = document.getElementById('searchInput');
+  const categoryTabs = document.getElementById('categoryTabs');
+  const labGrid = document.getElementById('labGrid');
+  const resultsInfo = document.getElementById('resultsInfo');
+  const loadMoreContainer = document.getElementById('loadMoreContainer');
+  const loadMoreBtn = document.getElementById('loadMoreBtn');
+
+  // ── Category abbreviations ──
+  const CAT_ABBREV = {
+    'Biology': 'Bio',
+    'Chemistry': 'Chem',
+    'Physics': 'Phys',
+    'Earth & Space': 'E&S',
+    'CS/AI/Stats': 'CS/AI',
+  };
+
+  // ── Tag CSS class map ──
+  const CAT_CLASS = {
+    'Biology': 'tag-biology',
+    'Chemistry': 'tag-chemistry',
+    'Physics': 'tag-physics',
+    'Earth & Space': 'tag-earth',
+    'CS/AI/Stats': 'tag-cs',
+  };
+
+  // ── Link icons (simple Unicode/text) ──
+  const LINK_ICONS = {
+    lab_website:      { icon: '&#127760;', title: 'Lab Website' },
+    publications_page:{ icon: '&#128196;', title: 'Publications' },
+    mit_profile:      { icon: '&#127963;', title: 'MIT Profile' },
+    google_scholar:   { icon: '&#127891;', title: 'Google Scholar' },
+    semantic_scholar: { icon: '&#128279;', title: 'Semantic Scholar' },
+    openalex:         { icon: '&#128218;', title: 'OpenAlex' },
+  };
+
+  // ── Load data ──
+  async function loadData() {
+    try {
+      const resp = await fetch('data/labs.json');
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+      allLabs = await resp.json();
+      init();
+    } catch(e) {
+      labGrid.innerHTML = `
+        <div class="empty-state">
+          <h3>Could not load lab data</h3>
+          <p>Make sure <code>data/labs.json</code> exists. Run the pipeline first: <code>cd pipeline && python run_all.py</code></p>
+        </div>`;
+      console.error('Failed to load labs.json:', e);
+    }
+  }
+
+  // ── Initialize ──
+  function init() {
+    updateCounts();
+    readHash();
+    applyFilters();
+    render();
+
+    // Auto-focus search
+    searchInput.focus();
+  }
+
+  // ── Update tab counts ──
+  function updateCounts() {
+    const countAll = document.getElementById('count-all');
+    countAll.textContent = `(${allLabs.length})`;
+
+    for (const cat of ['Biology', 'Chemistry', 'Physics', 'Earth & Space', 'CS/AI/Stats']) {
+      const el = document.getElementById(`count-${cat}`);
+      if (el) {
+        const n = allLabs.filter(lab => lab.tags.some(t => t.category === cat)).length;
+        el.textContent = `(${n})`;
+      }
+    }
+  }
+
+  // ── Search scoring ──
+  function searchScore(lab, terms) {
+    if (terms.length === 0) return 1;
+    let score = 0;
+
+    // Build searchable text fields
+    const fields = {
+      pi_name: (lab.pi_name || '').toLowerCase(),
+      lab_name: (lab.lab_name || '').toLowerCase(),
+      departments: (lab.departments || []).join(' ').toLowerCase(),
+      summary: (lab.research_summary || '').toLowerCase(),
+      tags: (lab.tags || []).map(t =>
+        `${t.category} ${t.subcategory} ${t.focus}`
+      ).join(' ').toLowerCase(),
+    };
+
+    const weights = { pi_name: 3, lab_name: 3, tags: 2, departments: 1, summary: 1 };
+
+    for (const term of terms) {
+      let termScore = 0;
+      for (const [field, text] of Object.entries(fields)) {
+        if (text.includes(term)) {
+          termScore += weights[field] || 1;
+        }
+      }
+      if (termScore === 0) return 0; // all terms must match
+      score += termScore;
+    }
+    return score;
+  }
+
+  // ── Apply filters ──
+  function applyFilters() {
+    const terms = currentQuery.toLowerCase().trim().split(/\s+/).filter(Boolean);
+
+    filteredLabs = allLabs
+      .map(lab => ({ lab, score: searchScore(lab, terms) }))
+      .filter(({ score }) => score > 0)
+      .filter(({ lab }) => {
+        if (currentCategory === 'all') return true;
+        return lab.tags.some(t => t.category === currentCategory);
+      })
+      .sort((a, b) => {
+        // If searching, sort by relevance; otherwise alphabetical by last name
+        if (terms.length > 0) return b.score - a.score;
+        const aName = (a.lab.pi_name || '').split(' ').pop().toLowerCase();
+        const bName = (b.lab.pi_name || '').split(' ').pop().toLowerCase();
+        return aName.localeCompare(bName);
+      })
+      .map(({ lab }) => lab);
+
+    displayedCount = 0;
+  }
+
+  // ── Render ──
+  function render() {
+    // Results info
+    if (currentQuery) {
+      resultsInfo.textContent = `${filteredLabs.length} result${filteredLabs.length !== 1 ? 's' : ''} for "${currentQuery}"`;
+    } else if (currentCategory !== 'all') {
+      resultsInfo.textContent = `Showing ${filteredLabs.length} ${currentCategory} labs`;
+    } else {
+      resultsInfo.textContent = `Showing ${filteredLabs.length} labs`;
+    }
+
+    // Grid
+    if (filteredLabs.length === 0) {
+      labGrid.innerHTML = `
+        <div class="empty-state" style="grid-column: 1/-1;">
+          <h3>No labs found</h3>
+          <p>Try a different search term or browse a different category. Example searches: "CRISPR", "quantum", "machine learning", "climate".</p>
+        </div>`;
+      loadMoreContainer.style.display = 'none';
+      return;
+    }
+
+    labGrid.innerHTML = '';
+    showMore();
+  }
+
+  function showMore() {
+    const end = Math.min(displayedCount + PAGE_SIZE, filteredLabs.length);
+    const fragment = document.createDocumentFragment();
+
+    for (let i = displayedCount; i < end; i++) {
+      fragment.appendChild(createCard(filteredLabs[i]));
+    }
+
+    labGrid.appendChild(fragment);
+    displayedCount = end;
+
+    // Load more button
+    if (displayedCount < filteredLabs.length) {
+      loadMoreContainer.style.display = 'block';
+      loadMoreBtn.textContent = `Load more (${filteredLabs.length - displayedCount} remaining)`;
+    } else {
+      loadMoreContainer.style.display = 'none';
+    }
+  }
+
+  // ── Create a lab card ──
+  function createCard(lab) {
+    const card = document.createElement('div');
+    card.className = 'card';
+
+    // Header: PI name + links
+    const header = document.createElement('div');
+    header.className = 'card-header';
+
+    const piName = document.createElement('div');
+    piName.className = 'card-pi';
+    piName.textContent = lab.pi_name;
+    header.appendChild(piName);
+
+    const linksDiv = document.createElement('div');
+    linksDiv.className = 'card-links';
+    const linkOrder = ['lab_website', 'publications_page', 'mit_profile', 'google_scholar', 'semantic_scholar', 'openalex'];
+    for (const key of linkOrder) {
+      const url = (lab.links || {})[key];
+      if (url) {
+        const a = document.createElement('a');
+        a.href = url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.title = LINK_ICONS[key].title;
+        a.innerHTML = LINK_ICONS[key].icon;
+        linksDiv.appendChild(a);
+      }
+    }
+    header.appendChild(linksDiv);
+    card.appendChild(header);
+
+    // Meta: lab name + departments
+    const meta = document.createElement('div');
+    meta.className = 'card-meta';
+    const deptStr = (lab.departments || []).join(' / ');
+    meta.textContent = `${lab.lab_name}${deptStr ? ' · ' + deptStr : ''}`;
+    card.appendChild(meta);
+
+    // Summary
+    if (lab.research_summary) {
+      const summary = document.createElement('div');
+      summary.className = 'card-summary';
+      summary.textContent = lab.research_summary;
+      card.appendChild(summary);
+    }
+
+    // Tags
+    const tagsContainer = document.createElement('div');
+    tagsContainer.className = 'card-tags';
+    const tags = lab.tags || [];
+    const maxVisible = 8;
+
+    tags.slice(0, maxVisible).forEach(tag => {
+      tagsContainer.appendChild(createTagPill(tag));
+    });
+
+    if (tags.length > maxVisible) {
+      const expander = document.createElement('button');
+      expander.className = 'tags-expander';
+      expander.textContent = `+${tags.length - maxVisible} more`;
+      let expanded = false;
+      expander.addEventListener('click', () => {
+        if (!expanded) {
+          tags.slice(maxVisible).forEach(tag => {
+            tagsContainer.insertBefore(createTagPill(tag), expander);
+          });
+          expander.textContent = 'Show less';
+          expanded = true;
+        } else {
+          // Remove extra tags
+          while (tagsContainer.children.length > maxVisible + 1) {
+            tagsContainer.removeChild(tagsContainer.children[maxVisible]);
+          }
+          expander.textContent = `+${tags.length - maxVisible} more`;
+          expanded = false;
+        }
+      });
+      tagsContainer.appendChild(expander);
+    }
+
+    card.appendChild(tagsContainer);
+    return card;
+  }
+
+  function createTagPill(tag) {
+    const pill = document.createElement('span');
+    const catClass = CAT_CLASS[tag.category] || 'tag-cs';
+    pill.className = `tag ${catClass}`;
+
+    const abbrev = CAT_ABBREV[tag.category] || tag.category;
+    let html = `<span class="tag-cat">${escHtml(abbrev)}:</span> `;
+    html += `<span class="tag-sub">${escHtml(tag.subcategory)}</span>`;
+    if (tag.focus) {
+      html += `<span class="tag-focus"> &mdash; ${escHtml(tag.focus)}</span>`;
+    }
+    pill.innerHTML = html;
+    return pill;
+  }
+
+  function escHtml(str) {
+    const d = document.createElement('div');
+    d.textContent = str || '';
+    return d.innerHTML;
+  }
+
+  // ── Event handlers ──
+
+  // Search input (debounced)
+  let searchTimeout;
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(() => {
+      currentQuery = searchInput.value;
+      applyFilters();
+      render();
+      updateHash();
+    }, 200);
+  });
+
+  // Category tabs
+  categoryTabs.addEventListener('click', (e) => {
+    const tab = e.target.closest('.tab');
+    if (!tab) return;
+
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+
+    currentCategory = tab.dataset.category;
+    applyFilters();
+    render();
+    updateHash();
+
+    // Smooth scroll to top of results
+    resultsInfo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+
+  // Load more
+  loadMoreBtn.addEventListener('click', showMore);
+
+  // Keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    // "/" focuses search (when not already in an input)
+    if (e.key === '/' && document.activeElement !== searchInput) {
+      e.preventDefault();
+      searchInput.focus();
+    }
+    // Escape clears search
+    if (e.key === 'Escape') {
+      searchInput.value = '';
+      currentQuery = '';
+      searchInput.blur();
+      applyFilters();
+      render();
+      updateHash();
+    }
+  });
+
+  // ── URL hash state ──
+  function updateHash() {
+    const params = new URLSearchParams();
+    if (currentCategory !== 'all') params.set('category', currentCategory);
+    if (currentQuery) params.set('q', currentQuery);
+    const hash = params.toString();
+    history.replaceState(null, '', hash ? '#' + hash : window.location.pathname);
+  }
+
+  function readHash() {
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    const params = new URLSearchParams(hash);
+
+    if (params.has('category')) {
+      currentCategory = params.get('category');
+      document.querySelectorAll('.tab').forEach(t => {
+        t.classList.toggle('active', t.dataset.category === currentCategory);
+      });
+    }
+    if (params.has('q')) {
+      currentQuery = params.get('q');
+      searchInput.value = currentQuery;
+    }
+  }
+
+  window.addEventListener('hashchange', () => {
+    readHash();
+    applyFilters();
+    render();
+  });
+
+  // ── Boot ──
+  loadData();
+
+})();
+</script>
+</body>
+</html>
