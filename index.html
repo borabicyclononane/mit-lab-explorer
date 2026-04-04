@@ -462,12 +462,37 @@
     openalex:         { icon: '&#128218;', title: 'OpenAlex' },
   };
 
+  // ── Link short keys to full keys ──
+  const LINK_KEY_MAP = { w:'lab_website', p:'publications_page', m:'mit_profile', g:'google_scholar', ss:'semantic_scholar', o:'openalex' };
+
+  // ── Expand compact JSON into full lab objects ──
+  function expandLab(c) {
+    const links = {};
+    if (c.k) {
+      for (const [k, v] of Object.entries(c.k)) {
+        links[LINK_KEY_MAP[k] || k] = v;
+      }
+    }
+    const name = c.n || '';
+    return {
+      id: c.id,
+      pi_name: name,
+      lab_name: c.l || (name.split(' ').pop() + ' Lab'),
+      departments: c.d || [],
+      research_summary: c.s || '',
+      tags: (c.t || []).map(t => ({ category: t[0], subcategory: t[1], focus: t[2] || '' })),
+      links,
+      openalex_id: c.oa || '',
+    };
+  }
+
   // ── Load data ──
   async function loadData() {
     try {
       const resp = await fetch('data/labs.json');
       if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      allLabs = await resp.json();
+      const raw = await resp.json();
+      allLabs = raw.map(expandLab);
       init();
     } catch(e) {
       labGrid.innerHTML = `
