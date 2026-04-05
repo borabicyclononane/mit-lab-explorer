@@ -456,7 +456,7 @@
   let allLabs = [];
   let filteredLabs = [];
   let currentCategory = 'all';
-  let currentCoarse = null; // active coarse subcategory filter
+  let currentCoarse = new Set(); // active coarse subcategory filters (union)
   let currentQuery = '';
   let displayedCount = 0;
   const PAGE_SIZE = 36;
@@ -491,22 +491,19 @@
   }
 
   function tagColor(category, coarse) {
-    const baseHues = { 'Bio': 140, 'Chem': 220, 'Phys': 30, 'CS/AI': 270 };
+    // Bio = warm yellow-green, Chem = blue, Phys = orange, CS/AI = purple
+    const baseHues = { 'Bio': 55, 'Chem': 220, 'Phys': 30, 'CS/AI': 270 };
 
     if (category === 'ESS') {
-      const hash = simpleHash(coarse);
       if (SPACE_COARSE.includes(coarse)) {
-        const hue = 250 + (hash % 20) - 10;
-        return { bg: `hsl(${hue}, 40%, 90%)`, border: `hsl(${hue}, 50%, 45%)` };
+        // Space: deep indigo/violet
+        return { bg: 'hsl(255, 45%, 91%)', border: 'hsl(255, 55%, 42%)' };
       }
-      // Earth (default for ESS)
-      const hue = 175 + (hash % 20) - 10;
-      return { bg: `hsl(${hue}, 40%, 90%)`, border: `hsl(${hue}, 50%, 40%)` };
+      // Earth: rich green-teal
+      return { bg: 'hsl(150, 45%, 89%)', border: 'hsl(150, 55%, 35%)' };
     }
 
-    const baseHue = baseHues[category] || 270;
-    const hash = simpleHash(coarse);
-    const hue = baseHue + (hash % 30) - 15;
+    const hue = baseHues[category] || 270;
     return { bg: `hsl(${hue}, 42%, 90%)`, border: `hsl(${hue}, 52%, 45%)` };
   }
 
@@ -591,20 +588,19 @@
   // ── Subcategory chips ──
   function updateSubcats() {
     subcatsChips.innerHTML = '';
-    if (currentCategory === 'all') {
-      subcatsBar.classList.remove('visible');
-      return;
-    }
 
-    // Count labs per coarse subcategory for current category
-    const counts = {};
+    // Count labs per coarse subcategory (with category prefix for "all" tab)
+    const counts = {}; // key: coarse name, value: { count, category }
+    const coarseCat = {}; // coarse -> category (for coloring in "all" mode)
     for (const lab of allLabs) {
-      const coarses = new Set();
+      const seen = new Set();
       for (const t of lab.tags) {
-        if (t.category === currentCategory) coarses.add(t.coarse);
-      }
-      for (const c of coarses) {
-        counts[c] = (counts[c] || 0) + 1;
+        if (currentCategory !== 'all' && t.category !== currentCategory) continue;
+        const key = t.coarse;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        counts[key] = (counts[key] || 0) + 1;
+        if (!coarseCat[key]) coarseCat[key] = t.category;
       }
     }
 
@@ -616,22 +612,24 @@
     }
 
     for (const [coarse, count] of sorted) {
+      const isActive = currentCoarse.has(coarse);
       const chip = document.createElement('button');
-      chip.className = 'subcat-chip' + (currentCoarse === coarse ? ' active' : '');
+      chip.className = 'subcat-chip' + (isActive ? ' active' : '');
       chip.innerHTML = `${escHtml(coarse)}<span class="chip-count">${count}</span>`;
 
       // Color the chip border to match its tag color
-      const colors = tagColor(currentCategory, coarse);
-      if (currentCoarse !== coarse) {
+      const cat = currentCategory !== 'all' ? currentCategory : coarseCat[coarse];
+      const colors = tagColor(cat, coarse);
+      if (!isActive) {
         chip.style.borderColor = colors.border;
         chip.style.color = colors.border;
       }
 
       chip.addEventListener('click', () => {
-        if (currentCoarse === coarse) {
-          currentCoarse = null;
+        if (currentCoarse.has(coarse)) {
+          currentCoarse.delete(coarse);
         } else {
-          currentCoarse = coarse;
+          currentCoarse.add(coarse);
         }
         updateSubcats();
         applyFilters();
@@ -682,10 +680,14 @@
       .map(lab => ({ lab, score: searchScore(lab, terms) }))
       .filter(({ score }) => score > 0)
       .filter(({ lab }) => {
-        if (currentCategory === 'all') return true;
-        if (currentCoarse) {
-          return lab.tags.some(t => t.category === currentCategory && t.coarse === currentCoarse);
+        if (currentCoarse.size > 0) {
+          // Union: show lab if any of its tags match any selected coarse
+          if (currentCategory === 'all') {
+            return lab.tags.some(t => currentCoarse.has(t.coarse));
+          }
+          return lab.tags.some(t => t.category === currentCategory && currentCoarse.has(t.coarse));
         }
+        if (currentCategory === 'all') return true;
         return lab.tags.some(t => t.category === currentCategory);
       })
       .sort((a, b) => {
@@ -705,8 +707,9 @@
     // Results info
     if (currentQuery) {
       resultsInfo.textContent = `${filteredLabs.length} result${filteredLabs.length !== 1 ? 's' : ''} for "${currentQuery}"`;
-    } else if (currentCoarse) {
-      resultsInfo.textContent = `Showing ${filteredLabs.length} ${currentCoarse} labs`;
+    } else if (currentCoarse.size > 0) {
+      const names = Array.from(currentCoarse).join(', ');
+      resultsInfo.textContent = `Showing ${filteredLabs.length} labs in ${names}`;
     } else if (currentCategory !== 'all') {
       resultsInfo.textContent = `Showing ${filteredLabs.length} ${currentCategory} labs`;
     } else {
@@ -842,11 +845,11 @@
     pill.style.borderColor = colors.border;
 
     const abbrev = CAT_DISPLAY[tag.category] || tag.category;
-    let html = `<span class="tag-cat">${escHtml(abbrev)},</span> `;
-    html += `<span class="tag-coarse">${escHtml(tag.coarse)} &mdash; </span>`;
+    let html = `<span class="tag-cat">${escHtml(abbrev)}</span> `;
+    html += `<span class="tag-coarse">${escHtml(tag.coarse)}</span> `;
     html += `<span class="tag-fine">${escHtml(tag.fine)}</span>`;
     if (tag.focus) {
-      html += `<span class="tag-focus">, ${escHtml(tag.focus)}</span>`;
+      html += `<span class="tag-focus"> ${escHtml(tag.focus)}</span>`;
     }
     pill.innerHTML = html;
     return pill;
@@ -881,14 +884,14 @@
     tab.classList.add('active');
 
     currentCategory = tab.dataset.category;
-    currentCoarse = null;
+    currentCoarse = new Set();
     updateSubcats();
     applyFilters();
     render();
     updateHash();
 
-    // Smooth scroll to top of results
-    resultsInfo.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Scroll to tabs so chips are visible
+    categoryTabs.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 
   // Load more
@@ -916,7 +919,7 @@
   function updateHash() {
     const params = new URLSearchParams();
     if (currentCategory !== 'all') params.set('category', currentCategory);
-    if (currentCoarse) params.set('coarse', currentCoarse);
+    if (currentCoarse.size > 0) params.set('coarse', Array.from(currentCoarse).join('|'));
     if (currentQuery) params.set('q', currentQuery);
     const hash = params.toString();
     history.replaceState(null, '', hash ? '#' + hash : window.location.pathname);
@@ -934,7 +937,7 @@
       });
     }
     if (params.has('coarse')) {
-      currentCoarse = params.get('coarse');
+      currentCoarse = new Set(params.get('coarse').split('|').filter(Boolean));
     }
     if (params.has('q')) {
       currentQuery = params.get('q');
