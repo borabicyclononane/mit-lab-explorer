@@ -21,17 +21,7 @@
       --shadow-hover: 0 4px 12px rgba(0,0,0,0.12);
       --radius: 8px;
 
-      /* Tag category colors */
-      --tag-bio-bg: #e8f5e9;
-      --tag-bio-border: #4caf50;
-      --tag-chem-bg: #e3f2fd;
-      --tag-chem-border: #2196f3;
-      --tag-phys-bg: #fff3e0;
-      --tag-phys-border: #ff9800;
-      --tag-earth-bg: #e0f2f1;
-      --tag-earth-border: #009688;
-      --tag-cs-bg: #f3e5f5;
-      --tag-cs-border: #9c27b0;
+      /* Tag colors are now computed dynamically via JS */
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -156,6 +146,48 @@
       color: var(--mit-red-light);
     }
 
+    /* ── Coarse subcategory chips ── */
+    .subcats-bar {
+      max-width: 1200px;
+      margin: 0.5rem auto 0;
+      padding: 0 1.5rem;
+      display: none;
+    }
+    .subcats-bar.visible { display: block; }
+    .subcats-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+    .subcat-chip {
+      font-family: inherit;
+      font-size: 0.78rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+    }
+    .subcat-chip:hover {
+      border-color: var(--text-muted);
+      color: var(--text);
+    }
+    .subcat-chip.active {
+      border-color: var(--mit-red);
+      background: var(--mit-red);
+      color: white;
+    }
+    .subcat-chip .chip-count {
+      font-weight: 400;
+      opacity: 0.7;
+      font-size: 0.72rem;
+      margin-left: 0.2rem;
+    }
+    .subcat-chip.active .chip-count { opacity: 0.85; }
+
     /* ── Results Info ── */
     .results-info {
       max-width: 1200px;
@@ -267,23 +299,21 @@
     }
     .tag-cat {
       font-weight: 400;
-      opacity: 0.7;
-      margin-right: 0.2rem;
+      opacity: 0.65;
+      margin-right: 0.15rem;
+      font-size: 0.68rem;
     }
-    .tag-sub {
+    .tag-coarse {
+      font-weight: 400;
+      margin-right: 0.1rem;
+    }
+    .tag-fine {
       font-weight: 700;
     }
     .tag-focus {
       font-weight: 300;
-      opacity: 0.8;
+      opacity: 0.75;
     }
-
-    /* Tag category colors */
-    .tag-biology { background: var(--tag-bio-bg); border-color: var(--tag-bio-border); }
-    .tag-chemistry { background: var(--tag-chem-bg); border-color: var(--tag-chem-border); }
-    .tag-physics { background: var(--tag-phys-bg); border-color: var(--tag-phys-border); }
-    .tag-earth { background: var(--tag-earth-bg); border-color: var(--tag-earth-border); }
-    .tag-cs { background: var(--tag-cs-bg); border-color: var(--tag-cs-border); }
 
     .tags-expander {
       font-size: 0.75rem;
@@ -387,12 +417,16 @@
 <div class="tabs-container">
   <div class="tabs" id="categoryTabs">
     <button class="tab active" data-category="all">All <span class="count" id="count-all"></span></button>
-    <button class="tab" data-category="Biology">Biology <span class="count" id="count-Biology"></span></button>
-    <button class="tab" data-category="Chemistry">Chemistry <span class="count" id="count-Chemistry"></span></button>
-    <button class="tab" data-category="Physics">Physics <span class="count" id="count-Physics"></span></button>
-    <button class="tab" data-category="Earth & Space">Earth &amp; Space <span class="count" id="count-Earth & Space"></span></button>
-    <button class="tab" data-category="CS/AI/Stats">CS/AI/Stats <span class="count" id="count-CS/AI/Stats"></span></button>
+    <button class="tab" data-category="Bio">Biology <span class="count" id="count-Bio"></span></button>
+    <button class="tab" data-category="Chem">Chemistry <span class="count" id="count-Chem"></span></button>
+    <button class="tab" data-category="Phys">Physics <span class="count" id="count-Phys"></span></button>
+    <button class="tab" data-category="ESS">Earth &amp; Space <span class="count" id="count-ESS"></span></button>
+    <button class="tab" data-category="CS/AI">CS/AI <span class="count" id="count-CS/AI"></span></button>
   </div>
+</div>
+
+<div class="subcats-bar" id="subcatsBar">
+  <div class="subcats-chips" id="subcatsChips"></div>
 </div>
 
 <div class="results-info" id="resultsInfo"></div>
@@ -422,6 +456,7 @@
   let allLabs = [];
   let filteredLabs = [];
   let currentCategory = 'all';
+  let currentCoarse = null; // active coarse subcategory filter
   let currentQuery = '';
   let displayedCount = 0;
   const PAGE_SIZE = 36;
@@ -429,28 +464,51 @@
   // ── DOM refs ──
   const searchInput = document.getElementById('searchInput');
   const categoryTabs = document.getElementById('categoryTabs');
+  const subcatsBar = document.getElementById('subcatsBar');
+  const subcatsChips = document.getElementById('subcatsChips');
   const labGrid = document.getElementById('labGrid');
   const resultsInfo = document.getElementById('resultsInfo');
   const loadMoreContainer = document.getElementById('loadMoreContainer');
   const loadMoreBtn = document.getElementById('loadMoreBtn');
 
-  // ── Category abbreviations ──
-  const CAT_ABBREV = {
-    'Biology': 'Bio',
-    'Chemistry': 'Chem',
-    'Physics': 'Phys',
-    'Earth & Space': 'E&S',
-    'CS/AI/Stats': 'CS/AI',
+  // ── Category display names ──
+  const CAT_DISPLAY = {
+    'Bio': 'Bio', 'Chem': 'Chem', 'Phys': 'Phys', 'ESS': 'E&S', 'CS/AI': 'CS/AI',
   };
+  const CATEGORIES = ['Bio', 'Chem', 'Phys', 'ESS', 'CS/AI'];
 
-  // ── Tag CSS class map ──
-  const CAT_CLASS = {
-    'Biology': 'tag-biology',
-    'Chemistry': 'tag-chemistry',
-    'Physics': 'tag-physics',
-    'Earth & Space': 'tag-earth',
-    'CS/AI/Stats': 'tag-cs',
-  };
+  // ── Tag color system ──
+  const EARTH_COARSE = ['Geology', 'Oceanography', 'Meteorology', 'Hydrology'];
+  const SPACE_COARSE = ['Stellar Astrophysics', 'Planetary Science', 'Cosmology', 'Observational Astronomy'];
+
+  function simpleHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      hash = ((hash << 5) - hash) + str.charCodeAt(i);
+      hash |= 0;
+    }
+    return Math.abs(hash);
+  }
+
+  function tagColor(category, coarse) {
+    const baseHues = { 'Bio': 140, 'Chem': 220, 'Phys': 30, 'CS/AI': 270 };
+
+    if (category === 'ESS') {
+      const hash = simpleHash(coarse);
+      if (SPACE_COARSE.includes(coarse)) {
+        const hue = 250 + (hash % 20) - 10;
+        return { bg: `hsl(${hue}, 40%, 90%)`, border: `hsl(${hue}, 50%, 45%)` };
+      }
+      // Earth (default for ESS)
+      const hue = 175 + (hash % 20) - 10;
+      return { bg: `hsl(${hue}, 40%, 90%)`, border: `hsl(${hue}, 50%, 40%)` };
+    }
+
+    const baseHue = baseHues[category] || 270;
+    const hash = simpleHash(coarse);
+    const hue = baseHue + (hash % 30) - 15;
+    return { bg: `hsl(${hue}, 42%, 90%)`, border: `hsl(${hue}, 52%, 45%)` };
+  }
 
   // ── Link icons (simple Unicode/text) ──
   const LINK_ICONS = {
@@ -480,7 +538,7 @@
       lab_name: c.l || (name.split(' ').pop() + ' Lab'),
       departments: c.d || [],
       research_summary: c.s || '',
-      tags: (c.t || []).map(t => ({ category: t[0], subcategory: t[1], focus: t[2] || '' })),
+      tags: (c.t || []).map(t => ({ category: t[0], coarse: t[1], fine: t[2] || '', focus: t[3] || '' })),
       links,
       openalex_id: c.oa || '',
     };
@@ -508,6 +566,7 @@
   function init() {
     updateCounts();
     readHash();
+    updateSubcats();
     applyFilters();
     render();
 
@@ -520,13 +579,68 @@
     const countAll = document.getElementById('count-all');
     countAll.textContent = `(${allLabs.length})`;
 
-    for (const cat of ['Biology', 'Chemistry', 'Physics', 'Earth & Space', 'CS/AI/Stats']) {
+    for (const cat of CATEGORIES) {
       const el = document.getElementById(`count-${cat}`);
       if (el) {
         const n = allLabs.filter(lab => lab.tags.some(t => t.category === cat)).length;
         el.textContent = `(${n})`;
       }
     }
+  }
+
+  // ── Subcategory chips ──
+  function updateSubcats() {
+    subcatsChips.innerHTML = '';
+    if (currentCategory === 'all') {
+      subcatsBar.classList.remove('visible');
+      return;
+    }
+
+    // Count labs per coarse subcategory for current category
+    const counts = {};
+    for (const lab of allLabs) {
+      const coarses = new Set();
+      for (const t of lab.tags) {
+        if (t.category === currentCategory) coarses.add(t.coarse);
+      }
+      for (const c of coarses) {
+        counts[c] = (counts[c] || 0) + 1;
+      }
+    }
+
+    // Sort by count descending
+    const sorted = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+    if (sorted.length === 0) {
+      subcatsBar.classList.remove('visible');
+      return;
+    }
+
+    for (const [coarse, count] of sorted) {
+      const chip = document.createElement('button');
+      chip.className = 'subcat-chip' + (currentCoarse === coarse ? ' active' : '');
+      chip.innerHTML = `${escHtml(coarse)}<span class="chip-count">${count}</span>`;
+
+      // Color the chip border to match its tag color
+      const colors = tagColor(currentCategory, coarse);
+      if (currentCoarse !== coarse) {
+        chip.style.borderColor = colors.border;
+        chip.style.color = colors.border;
+      }
+
+      chip.addEventListener('click', () => {
+        if (currentCoarse === coarse) {
+          currentCoarse = null;
+        } else {
+          currentCoarse = coarse;
+        }
+        updateSubcats();
+        applyFilters();
+        render();
+        updateHash();
+      });
+      subcatsChips.appendChild(chip);
+    }
+    subcatsBar.classList.add('visible');
   }
 
   // ── Search scoring ──
@@ -541,7 +655,7 @@
       departments: (lab.departments || []).join(' ').toLowerCase(),
       summary: (lab.research_summary || '').toLowerCase(),
       tags: (lab.tags || []).map(t =>
-        `${t.category} ${t.subcategory} ${t.focus}`
+        `${t.category} ${t.coarse} ${t.fine} ${t.focus}`
       ).join(' ').toLowerCase(),
     };
 
@@ -569,6 +683,9 @@
       .filter(({ score }) => score > 0)
       .filter(({ lab }) => {
         if (currentCategory === 'all') return true;
+        if (currentCoarse) {
+          return lab.tags.some(t => t.category === currentCategory && t.coarse === currentCoarse);
+        }
         return lab.tags.some(t => t.category === currentCategory);
       })
       .sort((a, b) => {
@@ -588,6 +705,8 @@
     // Results info
     if (currentQuery) {
       resultsInfo.textContent = `${filteredLabs.length} result${filteredLabs.length !== 1 ? 's' : ''} for "${currentQuery}"`;
+    } else if (currentCoarse) {
+      resultsInfo.textContent = `Showing ${filteredLabs.length} ${currentCoarse} labs`;
     } else if (currentCategory !== 'all') {
       resultsInfo.textContent = `Showing ${filteredLabs.length} ${currentCategory} labs`;
     } else {
@@ -716,14 +835,18 @@
 
   function createTagPill(tag) {
     const pill = document.createElement('span');
-    const catClass = CAT_CLASS[tag.category] || 'tag-cs';
-    pill.className = `tag ${catClass}`;
+    pill.className = 'tag';
 
-    const abbrev = CAT_ABBREV[tag.category] || tag.category;
-    let html = `<span class="tag-cat">${escHtml(abbrev)}:</span> `;
-    html += `<span class="tag-sub">${escHtml(tag.subcategory)}</span>`;
+    const colors = tagColor(tag.category, tag.coarse);
+    pill.style.background = colors.bg;
+    pill.style.borderColor = colors.border;
+
+    const abbrev = CAT_DISPLAY[tag.category] || tag.category;
+    let html = `<span class="tag-cat">${escHtml(abbrev)},</span> `;
+    html += `<span class="tag-coarse">${escHtml(tag.coarse)} &mdash; </span>`;
+    html += `<span class="tag-fine">${escHtml(tag.fine)}</span>`;
     if (tag.focus) {
-      html += `<span class="tag-focus"> &mdash; ${escHtml(tag.focus)}</span>`;
+      html += `<span class="tag-focus">, ${escHtml(tag.focus)}</span>`;
     }
     pill.innerHTML = html;
     return pill;
@@ -758,6 +881,8 @@
     tab.classList.add('active');
 
     currentCategory = tab.dataset.category;
+    currentCoarse = null;
+    updateSubcats();
     applyFilters();
     render();
     updateHash();
@@ -791,6 +916,7 @@
   function updateHash() {
     const params = new URLSearchParams();
     if (currentCategory !== 'all') params.set('category', currentCategory);
+    if (currentCoarse) params.set('coarse', currentCoarse);
     if (currentQuery) params.set('q', currentQuery);
     const hash = params.toString();
     history.replaceState(null, '', hash ? '#' + hash : window.location.pathname);
@@ -807,6 +933,9 @@
         t.classList.toggle('active', t.dataset.category === currentCategory);
       });
     }
+    if (params.has('coarse')) {
+      currentCoarse = params.get('coarse');
+    }
     if (params.has('q')) {
       currentQuery = params.get('q');
       searchInput.value = currentQuery;
@@ -815,6 +944,7 @@
 
   window.addEventListener('hashchange', () => {
     readHash();
+    updateSubcats();
     applyFilters();
     render();
   });
