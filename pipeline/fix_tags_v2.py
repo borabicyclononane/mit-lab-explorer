@@ -654,6 +654,22 @@ def convert_tag(old_tag):
         coarse = old_sub
         default_fine = old_sub
 
+    # Recategorize: Astrophysics belongs under ESS (Space), not Physics
+    if new_cat == "Phys" and coarse in ("Astrophysics", "Observational Astronomy & Telescopes"):
+        new_cat = "ESS"
+        if coarse == "Astrophysics":
+            # Map to appropriate ESS space coarse subcategories based on fine
+            if default_fine in ("Stellar Evolution", "Star Formation", "High-Energy Astrophysics", "Solar Physics"):
+                coarse = "Stellar Astrophysics"
+            elif default_fine in ("Galactic Dynamics",):
+                coarse = "Cosmology"
+            elif default_fine in ("Exoplanet Detection", "Planetary Science"):
+                coarse = "Planetary Science"
+            else:
+                coarse = "Cosmology"
+        else:
+            coarse = "Observational Astronomy"
+
     fine = refine_fine(new_cat, coarse, default_fine, focus)
 
     return [new_cat, coarse, fine, focus]
