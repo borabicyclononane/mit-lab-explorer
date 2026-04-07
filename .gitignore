@@ -5,6 +5,7 @@ __pycache__/
 venv/
 pipeline/intermediate/
 pipeline/*.log
+pipeline/.chrome_profile/
 .DS_Store
 .vscode/
 .idea/

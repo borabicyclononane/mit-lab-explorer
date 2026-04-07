@@ -41,10 +41,11 @@ def save_cache(cache):
 
 
 def fetch_scholar_id(name):
-    """Fetch Google Scholar search page and extract first profile user ID."""
+    """Fetch Google Scholar author search and extract first profile user ID."""
     import requests
 
-    url = f"https://scholar.google.com/scholar?q=author:%22{quote(name)}%22+MIT"
+    # Use the profiles search endpoint — much more reliable than paper search
+    url = f"https://scholar.google.com/citations?view_op=search_authors&mauthors={quote(name)}+MIT"
     headers = {
         "User-Agent": random.choice(USER_AGENTS),
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
