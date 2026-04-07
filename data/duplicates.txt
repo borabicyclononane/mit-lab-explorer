@@ -3,6 +3,15 @@
 # usually to keep the more complete entry and delete the other.
 
 alex-slocum-meche  ==  alexander-h-slocum-meche      # Alexander H. Slocum (MechE / PERG)
+c-paus-physics  ==  christoph-paus-physics  ==  christoph-m-e-paus-physics  # Christoph M. E. Paus (Physics / CMS). Three entries for same person.
+d-m-anderson-koch-institute  ==  daniel-g-anderson-koch-institute  # Likely same person — Daniel G. Anderson (Koch / ChemE / lipid nanoparticles). No distinct "D. M. Anderson" faculty found at Koch.
+edward-miller-bcs  ==  earl-k-miller-bcs  # No "Edward Miller" found in MIT BCS. Almost certainly the same person as Earl K. Miller (Picower / BCS, working memory & PFC). Same enrichment applied to both.
+edward-s-boyden-bioe  ==  ed-boyden-bioe  # Same person — Ed Boyden (BioE / BCS / McGovern / Koch).
+fang-wang-bcs  ==  frank-wang-bcs  ==  fan-wang-bcs (no fan-wang-bcs id, but the person is Fan Wang) # Both "Fang Wang" and "Frank Wang" appear to be misnamings of Fan Wang (BCS/McGovern, pain & sensorimotor circuits). No distinct Fang/Frank Wang found at MIT BCS. Same enrichment applied; both have n: "Fan Wang".
+f-zhang-bioe  ==  feng-zhang-bioe  # Same person — Feng Zhang (BioE / McGovern / Broad / CRISPR).
+g-m-innocenti-physics  ==  gian-michele-innocenti-physics  # Same person — Gian Michele Innocenti (MIT Physics / heavy-ion / CMS / EIC).
+g-fournier-eaps  ==  gregory-p-fournier-eaps  # Same person — Gregory Fournier (EAPS / geobiology / phylogenomics).
 
 # Likely-junk entries (not actually MIT faculty or stale placeholders):
 b-k-berger-math   # Beverly K. Berger is a relativist at Oakland Univ / former NSF — no MIT Math affiliation found. Recommend delete.
+e-cary-brown-bcs  # E. Cary Brown was an MIT Economics professor (public finance), died 2007. Wrongly tagged BCS in source data. Not enriched. Recommend delete.

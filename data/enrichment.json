@@ -1451,5 +1451,4043 @@
       ]
     ],
     "scholar_status": "ok"
+  },
+  "barton-zwiebach-physics": {
+    "l": "",
+    "s": "Theoretical physicist working in string theory, with central contributions to string field theory — the early construction of the field theory of open strings and subsequent development of closed string field theory. Additional work covers D-branes with exceptional symmetry, tachyon condensation, and the AdS/CFT correspondence. Author of the undergraduate textbook A First Course in String Theory (Cambridge).",
+    "k": {
+      "w": "https://physics.mit.edu/faculty/barton-zwiebach/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Field Theory",
+        "Quantum Field Theory"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Gravity",
+        "Quantum Gravity"
+      ],
+      [
+        "Phys",
+        "Particle Physics",
+        "Standard Model",
+        "Standard Model"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "benedetto-marelli-cee": {
+    "l": "Marelli Lab (Laboratory for Advanced Biopolymers)",
+    "s": "Engineers structural biopolymers — primarily silk fibroin — into bio-inspired materials operating at biotic/abiotic interfaces, spanning agriculture, food preservation, and environmental mitigation. Work includes edible silk-based coatings that extend the shelf life of perishable foods (spun out as Mori), silk micro-needles for fish vaccination, and silk seed coatings for drought-resilient crops. Methods combine biofabrication, self-assembly, biomineralization, and materials characterization.",
+    "k": {
+      "w": "https://cee.mit.edu/people_individual/benedetto-marelli/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Polymer Chemistry",
+        "Polymer Chemistry"
+      ],
+      [
+        "Bio",
+        "Plant Biology",
+        "Plant Physiology",
+        "Plant Physiology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bengt-holmström-economics": {
+    "l": "",
+    "s": "Paul A. Samuelson Professor of Economics (Emeritus), jointly appointed at MIT Sloan and the Department of Economics, and co-recipient of the 2016 Nobel Memorial Prize in Economic Sciences for contributions to contract theory. Research shows how a principal should design an optimal contract for an agent whose actions are only partly observable, weighing risk against incentives (the informativeness principle and multitasking models). The theoretical framework underpins policy design from executive compensation to bankruptcy law and political institutions.",
+    "k": {
+      "w": "https://mitsloan.mit.edu/faculty/directory/bengt-holmstrom"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Probability & Statistics",
+        "Probability & Statistics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "benjamin-olken-economics": {
+    "l": "",
+    "s": "Development economist whose research targets the performance of the public sector in developing countries — corruption, taxation, social protection, and governance — primarily through large randomized controlled trials (RCTs). Landmark work on Indonesian village road audits showed top-down monitoring substantially reduces corruption. Serves as Faculty Director of the Abdul Latif Jameel Poverty Action Lab (J-PAL) and co-chair of its Social Protection Initiative.",
+    "k": {
+      "w": "https://economics.mit.edu/people/faculty/benjamin-olken"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Hypothesis Testing",
+        "Hypothesis Testing"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "benoit-forget-nse": {
+    "l": "Computational Reactor Physics Group (CRPG)",
+    "s": "Department Head of Nuclear Science and Engineering, leading the Computational Reactor Physics Group, which develops high-fidelity neutron transport simulations of fission reactors. The group originated and maintains OpenMC (continuous-energy Monte Carlo with constructive solid geometry) and OpenMOC (3D method-of-characteristics), both open-source and parallel-optimized. Research spans Monte Carlo and deterministic transport, multiphysics coupling, and uncertainty quantification for next-generation reactor design.",
+    "k": {
+      "w": "https://nse.mit.edu/people/benoit-forget/",
+      "p": "https://docs.openmc.org/en/latest/publications.html"
+    },
+    "t": [
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Nuclear Fusion",
+        "Nuclear Fusion"
+      ],
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Radiation Detection",
+        "Radiation Detection"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "betar-m-gallant-meche": {
+    "l": "Gallant Energy and Carbon Conversion Lab",
+    "s": "Develops advanced battery chemistries and materials for high-energy rechargeable and primary batteries, with emphasis on fluorinated cathode conversion reactions and lithium- and calcium-metal anodes and their interfaces. A second research thread integrates electrochemistry with CO2 capture, using carbon dioxide directly as a reactant in metal-gas primary batteries and conversion schemes. Methods include electrochemical characterization, solid-electrolyte interphase analysis, and in situ spectroscopy of battery interfaces.",
+    "k": {
+      "w": "https://gallant.mit.edu/",
+      "p": "https://gallant.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Electrochemistry",
+        "Electrochemistry"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Chemical Kinetics",
+        "Chemical Kinetics"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Nanomaterials",
+        "Nanomaterials"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bevin-p-engelward-bioe": {
+    "l": "Engelward Laboratory",
+    "s": "Studies the interplay between DNA damage, repair, and downstream consequences (cell toxicity, mutagenesis, genomic instability, and disease), with particular focus on homologous recombination between sister chromatids and homologous chromosomes. The lab has developed a suite of high-throughput microfabricated assays — CometChip, HepaCometChip, NanoCometChip, EpiCometChip, MicroColonyChip, SpheroidChip — for quantifying DNA damage, methylation, cell growth, and hepatocyte toxicology. Engelward directs the MIT Superfund Research Program on environmental mutagens.",
+    "k": {
+      "w": "https://engelward-lab.mit.edu/",
+      "p": "https://engelward-lab.mit.edu/publication-highlights/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "DNA Repair Mechanisms",
+        "DNA Repair Mechanisms"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Epigenetics",
+        "Epigenetics"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Epidemiology",
+        "Epidemiology"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bilge-yildiz-nse": {
+    "l": "Laboratory for Electrochemical Interfaces",
+    "s": "Investigates solid-state ionic-electronic materials and their surfaces/interfaces for next-generation energy conversion and information-processing devices, including solid oxide fuel cells, water and CO2 electrolysis, solid-state Li-ion batteries, memristive and brain-inspired analog computing, and corrosion-resistant films. Focuses on how perovskite-oxide cathodes and anodes evolve at the surface under electrochemical, thermal, and gas stimuli to elucidate degradation mechanisms. Methods include in situ X-ray spectroscopy, scanning probe microscopy, and first-principles (DFT) modeling.",
+    "k": {
+      "w": "https://yildizgroup.mit.edu/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Electrochemistry",
+        "Electrochemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Solid-State Chemistry",
+        "Solid-State Chemistry"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Surface Chemistry",
+        "Surface Chemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Corrosion",
+        "Corrosion"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bjorn-poonen-math": {
+    "l": "",
+    "s": "Distinguished Professor in Science working primarily in arithmetic geometry and number theory — developing methods to find rational points on algebraic varieties and to prove that others have none. Contributions include proofs that certain problems in number theory and algebraic geometry are undecidable, plus incidental work in probability and theoretical computer science. Four-time Putnam Competition winner and founding managing editor of Algebra & Number Theory.",
+    "k": {
+      "w": "https://math.mit.edu/~poonen/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Cryptography",
+        "Cryptography"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Probability & Statistics",
+        "Probability & Statistics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bonnie-berger-math": {
+    "l": "Berger Lab — Computation and Biology Group (CSAIL)",
+    "s": "Simons Professor of Mathematics and head of the Computation and Biology group at CSAIL, designing algorithms that extract biological insight from massive genomic and biomedical datasets. Research spans compressive genomics, network integration, structural bioinformatics, genomic privacy (secure multi-party computation on genomes), and medical genomics for disease mechanism discovery. Associate member of the Broad Institute and HST faculty.",
+    "k": {
+      "w": "https://people.csail.mit.edu/bab/",
+      "p": "https://people.csail.mit.edu/bab/pubs.html"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Transfer Learning",
+        "Transfer Learning"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Graph Algorithms",
+        "Graph Algorithms"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bradford-h-hager-eaps": {
+    "l": "",
+    "s": "Cecil and Ida Green Professor of Earth Sciences studying the relationship between space-geodetic observations of surface deformation and the dynamical processes of Earth's interior, including mantle convection, plate tectonics, and the earthquake cycle. Research covers tectonic earthquakes in regional fault systems as well as deformation and induced seismicity from reservoir production, hydrocarbon extraction, and carbon sequestration. Serves on NASA's NISAR Science Definition Team; former director of the MIT Earth Resources Laboratory (ERL).",
+    "k": {
+      "w": "https://eaps.mit.edu/people/faculty/bradford-hager/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Geology",
+        "Seismology",
+        "Seismology"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Remote Sensing",
+        "Remote Sensing"
+      ],
+      [
+        "ESS",
+        "Geology",
+        "Erosion & Weathering",
+        "Erosion & Weathering"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bradley-l-pentelute-chemistry": {
+    "l": "Pentelute Lab",
+    "s": "Combines peptide chemistry, molecular biology, and instrumentation to build peptide- and protein-based therapeutics and chemical biology tools. The lab built the world's fastest automated flow-based solid-phase peptide synthesizer — forming amide bonds in ~7 seconds and whole residues in ~40 seconds — enabling total chemical synthesis of proteins up to 164 amino acids over 327 consecutive reactions. Additional work develops selective cysteine/lysine bioconjugation (the pi-clamp) and engineered nontoxic anthrax protective-antigen pumps that deliver antibody mimics, mirror-image proteins, and antisense oligonucleotides into cells.",
+    "k": {
+      "w": "https://pentelutelabmit.com/",
+      "p": "https://pentelutelabmit.com/publications/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Organic Chemistry",
+        "Organic Chemistry"
+      ],
+      [
+        "Chem",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Protein Structure",
+        "Protein Structure"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "brandon-j-dekosky-koch-institute": {
+    "l": "Immune Engineering Lab",
+    "s": "Develops high-throughput single-cell platforms that pair antibody heavy- and light-chain sequencing with functional screens to map the genetic and functional diversity of adaptive immune responses. Applies these tools to discover biologic drugs and characterize disease immunity, with application focus on HIV-1 and malaria prevention, RSV vaccine design, and personalized cancer therapeutics. Joint appointment in Chemical Engineering and the Koch Institute, with core Ragon Institute affiliation.",
+    "k": {
+      "w": "https://www.dekoskylab.org/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Viral Replication",
+        "Viral Replication"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "brandon-weissbourd-biology": {
+    "l": "Weissbourd Lab",
+    "s": "Uses the transparent, genetically tractable jellyfish Clytia hemisphaerica as a model organism to study nervous system evolution, development, regeneration, and function at the interface of systems and evolutionary neuroscience. Stable F1 transgenic Clytia lines support cell-type-specific ablation and whole-organism GCaMP calcium imaging of neuronal activity. Research asks how a simple, decentralized nervous system remains robust to continuous neuron turnover and large-scale injury.",
+    "k": {
+      "w": "https://biology.mit.edu/profile/brandon-weissbourd/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Ecology",
+        "Animal Behavior",
+        "Animal Behavior"
+      ],
+      [
+        "Bio",
+        "Ecology",
+        "Evolution",
+        "Evolution"
+      ],
+      [
+        "Bio",
+        "Developmental Biology",
+        "Embryogenesis",
+        "Embryogenesis"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Stem Cells",
+        "Stem Cells"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "brent-minchew-eaps": {
+    "l": "MIT Glaciology",
+    "s": "Investigates the mechanics of flowing ice and the interactions between climate, the cryosphere, and the solid Earth, focusing on glacier-bed mechanics, ice-ocean interactions, ice rheology, and fracture mechanics in ice. Observations rely on interferometric synthetic aperture radar (InSAR) and other geodetic techniques, combined with physics-based models to forecast ice-sheet contribution to sea-level rise, especially from Greenland and Antarctica. The group also studies how microscopic defects in ice grains influence large-scale glacier flow.",
+    "k": {
+      "w": "https://glaciers.mit.edu/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Remote Sensing",
+        "Remote Sensing"
+      ],
+      [
+        "ESS",
+        "Hydrology",
+        "Groundwater Flow",
+        "Groundwater Flow"
+      ],
+      [
+        "ESS",
+        "Geology",
+        "Erosion & Weathering",
+        "Erosion & Weathering"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "brett-a-mcguire-chemistry": {
+    "l": "McGuire Research Group",
+    "s": "Combines physical chemistry, high-resolution rotational (microwave/millimeter-wave) spectroscopy, and radio astronomy (GBT, ALMA) to detect and identify new molecules in the interstellar medium, particularly in the cold, dense dust clouds where stars and planets form. The group pioneered unbiased signal-processing and statistical methods for line identification and delivered the first detections of propylene oxide (first chiral molecule in space, 2016) and benzonitrile (first aromatic molecule in space, 2018). Research addresses how prebiotic chemical complexity emerges during star and planet formation.",
+    "k": {
+      "w": "https://mcguirelab.mit.edu/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Quantum Chemistry",
+        "Quantum Chemistry"
+      ],
+      [
+        "Chem",
+        "Analytical Chemistry",
+        "NMR Spectroscopy",
+        "NMR Spectroscopy"
+      ],
+      [
+        "ESS",
+        "Cosmology",
+        "Astrophysics",
+        "Astrophysics"
+      ],
+      [
+        "ESS",
+        "Observational Astronomy",
+        "Survey Astronomy",
+        "Survey Astronomy"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "brian-anthony-meche": {
+    "l": "",
+    "s": "Principal Research Scientist designing computational instruments and techniques for monitoring, measuring, and controlling complex physical systems across manufacturing, medical imaging, and autonomous platforms. Research spans computer vision, acoustic and ultrasonic imaging, large-scale simulation, optimization, metrology, and robotics — including the Medical Electronic Device Realization Center's wearable ultrasound and diagnostic devices. Directs MIT's Master of Engineering in Manufacturing and serves as Associate Director of MIT.nano.",
+    "k": {
+      "w": "https://meche.mit.edu/people/faculty/banthony@mit.edu"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Computer Vision",
+        "3D Reconstruction",
+        "3D Reconstruction"
+      ],
+      [
+        "CS/AI",
+        "Computer Vision",
+        "Object Detection",
+        "Object Detection"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Interference & Diffraction",
+        "Interference & Diffraction"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "brian-l-wardle-meche": {
+    "l": "necstlab (Nano-Engineered Composite aerospace STructures)",
+    "s": "Develops nanoengineered advanced composites and bulk nanostructured materials for aerospace structures and multifunctional applications — including aligned carbon nanotube (A-CNT) reinforced laminates, carbon-based material synthesis, and additively manufactured structures. Recent work on 'nanostitching' uses CNT arrays to toughen weak interlaminar regions in composites, producing lighter, more damage-tolerant aircraft skins. The group also builds power-MEMS devices (micro fuel cells, energy harvesters) and damage-sensing structural composites.",
+    "k": {
+      "w": "https://necstlab.mit.edu/",
+      "p": "https://necstlab.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Nanomaterials",
+        "Nanomaterials"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Polymer Chemistry",
+        "Polymer Chemistry"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bruce-d-walker-biology": {
+    "l": "Walker Lab (Ragon Institute)",
+    "s": "Investigates cellular immune responses in chronic human viral infection, with particular focus on HIV-specific CD8+ and CD4+ T-cell responses and mechanisms by which rare 'elite controllers' suppress HIV without antiretroviral therapy. Discoveries include the first descriptions of HIV-specific CD8+ and CD4+ T cells and the role of immune checkpoints in T-cell exhaustion during chronic infection. Founding Director of the Ragon Institute of MGH, MIT, and Harvard; HHMI Investigator; co-founder of the Africa Health Research Institute in KwaZulu-Natal.",
+    "k": {
+      "w": "https://ragoninstitute.org/bruce-d-walker/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Viral Replication",
+        "Viral Replication"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Epidemiology",
+        "Epidemiology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bruce-tidor-bioe": {
+    "l": "Tidor Lab",
+    "s": "Joint Biological Engineering/EECS group applying theoretical and computational biophysics, applied mathematics, and machine learning to molecular and systems biology. Molecular work dissects the electrostatic and structural determinants of protein folding, stability, and binding specificity, then designs inhibitors using the 'substrate envelope' hypothesis — constraining drugs to the shared substrate volume to forestall resistance mutations (HIV protease, kinases). Systems-level work models intracellular signaling and metabolic networks to guide therapeutic intervention in cancer and infectious disease.",
+    "k": {
+      "w": "https://tidor.csail.mit.edu/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Biochemistry",
+        "Protein Structure",
+        "Protein Structure"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Pharmacology",
+        "Pharmacology"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "bryan-d-bryson-bioe": {
+    "l": "Bryson Lab",
+    "s": "Combines immunoengineering, molecular microbiology, and systems biology to study host-pathogen interactions in tuberculosis, viewed from both the macrophage and the Mycobacterium tuberculosis (Mtb) side. The group uses immunopeptidomics (MHC class I antigen presentation mapping), synthetic biology reporters, and single-cell transcriptomics to identify factors that determine infection outcome and vaccine targets. Core member of the Ragon Institute of MGH, MIT, and Harvard.",
+    "k": {
+      "w": "https://brysonlab.mit.edu/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "c-paus-physics": {
+    "n": "Christoph Paus",
+    "l": "",
+    "s": "Experimental particle physicist and a lead MIT investigator on the CMS experiment at CERN's Large Hadron Collider, where he co-led the Higgs boson search that reported the 2012 discovery. Current interests include precision measurements of Higgs boson properties, searches for physics beyond the Standard Model, and dark-matter searches at collider energies. Serves as Principal Investigator of the CMS Tier-2 computing center at MIT and was named LPC Senior Distinguished Researcher at Fermilab in 2026.",
+    "k": {
+      "w": "https://physics.mit.edu/faculty/christoph-paus/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Particle Physics",
+        "Standard Model",
+        "Standard Model"
+      ],
+      [
+        "Phys",
+        "Particle Physics",
+        "Neutrino Physics",
+        "Neutrino Physics"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Field Theory",
+        "Quantum Field Theory"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Hypothesis Testing",
+        "Hypothesis Testing"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "c-smith-nse": {
+    "n": "Curtis Smith",
+    "l": "",
+    "s": "KEPCO Professor of the Practice of Nuclear Science and Engineering focused on probabilistic risk assessment (PRA), reliability analysis, and human-reliability modeling for complex nuclear and aerospace systems. Helped develop the SAPHIRE risk-analysis software adopted by NASA after the Columbia accident and extended the SPAR-H human reliability method used by the Nuclear Regulatory Commission. Research emphasizes data-informed approaches for quantifying human actions in plant operation and accident sequences.",
+    "k": {
+      "w": "https://nse.mit.edu/people/curtis-smith/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Bayesian Inference",
+        "Bayesian Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ],
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Radiation Detection",
+        "Radiation Detection"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "camilla-cattania-eaps": {
+    "l": "Fault Mechanics @ MIT",
+    "s": "Seismologist studying earthquake physics and fault mechanics using numerical simulation, fracture mechanics, and statistical seismology. Research spans the behavior of small repeating earthquakes, aftershock triggering via static stress changes, magmatically driven swarms, dynamic triggering, and the interaction of seismic and aseismic slip on isolated fault asperities. Applied goal is operational earthquake forecasting that integrates physics-based understanding with real-time observations.",
+    "k": {
+      "w": "https://eqsci.mit.edu/camcat/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Geology",
+        "Seismology",
+        "Seismology"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "caroline-uhler-eecs": {
+    "l": "",
+    "s": "Works at the intersection of machine learning, statistics, and genomics — developing causal-inference algorithms for directed graphical models, representation learning, and scalable methods for learning gene regulatory networks from single-cell data. Characterizes fundamental statistical/computational limits of structure learning in Bayesian networks and builds provably correct algorithms used in disease and drug-response modeling. Core member of the Broad Institute and director of its Eric and Wendy Schmidt Center.",
+    "k": {
+      "w": "https://idss.mit.edu/staff/caroline-uhler/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Bayesian Inference",
+        "Bayesian Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "catherine-l-drennan-biology": {
+    "l": "Drennan Lab",
+    "s": "Howard Hughes Medical Institute investigator using X-ray crystallography and cryo-electron microscopy to determine atomic-resolution structures of metalloenzymes and understand how protein scaffolds harness metal-based radical chemistry. Systems studied include ribonucleotide reductase (deoxyribonucleotide biosynthesis), glycyl radical enzymes, mononuclear iron enzymes, B12-dependent enzymes, and radical SAM enzymes. Famous early contribution: the first crystal structure of vitamin B12 bound to a protein.",
+    "k": {
+      "w": "https://drennan.mit.edu/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Biochemistry",
+        "Enzyme Kinetics",
+        "Enzyme Kinetics"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Protein Structure",
+        "Protein Structure"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Metabolism",
+        "Metabolism"
+      ],
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Coordination Compounds",
+        "Coordination Compounds"
+      ],
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Transition Metal Catalysis",
+        "Transition Metal Catalysis"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "charles-f-harvey-cee": {
+    "l": "",
+    "s": "Hydrologist and biogeochemist studying chemical transport and reaction in flowing groundwater, groundwater-seawater interaction, and redox-driven contaminant mobilization. Best known for field and modeling work tracing arsenic contamination of drinking water in Bangladesh and Vietnam to microbial reduction of iron oxides fueled by organic carbon leaching from excavated ponds. Field studies quantify how arsenic uptake reduces rice yields and what remediation strategies are viable in South Asian aquifers.",
+    "k": {
+      "w": "https://cee.mit.edu/people_individual/charles-f-harvey/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Hydrology",
+        "Groundwater Flow",
+        "Groundwater Flow"
+      ],
+      [
+        "ESS",
+        "Hydrology",
+        "Water Quality",
+        "Water Quality"
+      ],
+      [
+        "Chem",
+        "Environmental Chemistry",
+        "Atmospheric Chemistry",
+        "Atmospheric Chemistry"
+      ],
+      [
+        "Bio",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "chris-a-kaiser-biology": {
+    "l": "Kaiser Lab",
+    "s": "Cell biologist (now emeritus/closed to new trainees) who used the budding yeast Saccharomyces cerevisiae to dissect the secretory pathway — protein folding and quality control in the endoplasmic reticulum, vesicle trafficking between the ER and Golgi, and membrane protein sorting. Classical genetic screens of sec mutants and biochemical reconstitution identified distinct gene sets governing COPII vesicle formation and consumption, and delineated a vacuolar disposal route for misfolded soluble proteins. Combined yeast genetics with cell biology and biochemistry to assemble a temporal map of early secretion.",
+    "k": {
+      "w": "https://biology.mit.edu/profile/chris-a-kaiser/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Membrane Transport",
+        "Membrane Transport"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Fungal Biology",
+        "Fungal Biology"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "christian-k-wolf-economics": {
+    "l": "",
+    "s": "Macroeconomist and time-series econometrician developing new identification strategies for the causes of business cycles and for the effects of monetary and fiscal policy shocks. Work covers the 'missing intercept' problem in cross-sectional-to-aggregate demand translation, heterogeneous-agent macro models, and the econometrics of impulse-response estimation (local projections vs. VARs). Faculty Research Fellow at the NBER and 2024 Kiel Institute Excellence Award recipient.",
+    "k": {
+      "w": "https://www.christiankwolf.com/",
+      "p": "https://www.christiankwolf.com/research"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "christina-delimitrou-eecs": {
+    "l": "",
+    "s": "Computer-systems researcher focused on the performance, predictability, and resource efficiency of large-scale cloud and datacenter infrastructures. Research applies machine learning to cloud resource management, scheduling, and distributed debugging, and investigates hardware acceleration and microarchitecture for datacenter servers. Work also characterizes microservices and tail-latency behavior (see the DeathStarBench benchmark suite).",
+    "k": {
+      "w": "https://people.csail.mit.edu/delimitrou/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Computer Systems",
+        "CPU/GPU Architecture",
+        "CPU/GPU Architecture"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Parallel Computing",
+        "Parallel Computing"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Database Systems",
+        "Database Systems"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Reinforcement Learning"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "christoph-kehle-math": {
+    "l": "",
+    "s": "Mathematical analyst working on the Einstein field equations of general relativity, black hole dynamics, and singularity formation. Contributions include the first rigorous construction of an extremal Reissner-Nordström black hole as a threshold of gravitational collapse, disproofs of the third law of black hole thermodynamics, and progress on the Strong Cosmic Censorship conjecture via Diophantine properties of black hole parameters. Methods combine nonlinear PDE, harmonic analysis, and dynamical-systems techniques.",
+    "k": {
+      "w": "https://math.mit.edu/~kehle/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Relativity",
+        "Gravitational Waves",
+        "Gravitational Waves"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Gravity",
+        "Quantum Gravity"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "christoph-m-e-paus-physics": {
+    "n": "Christoph Paus",
+    "l": "",
+    "s": "Experimental particle physicist and a lead MIT investigator on the CMS experiment at CERN's Large Hadron Collider, where he co-led the Higgs boson search that reported the 2012 discovery. Current interests include precision measurements of Higgs boson properties, searches for physics beyond the Standard Model, and dark-matter searches at collider energies. Serves as Principal Investigator of the CMS Tier-2 computing center at MIT and was named LPC Senior Distinguished Researcher at Fermilab in 2026.",
+    "k": {
+      "w": "https://physics.mit.edu/faculty/christoph-paus/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Particle Physics",
+        "Standard Model",
+        "Standard Model"
+      ],
+      [
+        "Phys",
+        "Particle Physics",
+        "Neutrino Physics",
+        "Neutrino Physics"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Field Theory",
+        "Quantum Field Theory"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Hypothesis Testing",
+        "Hypothesis Testing"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "duplicate of c-paus-physics and christoph-paus-physics"
+  },
+  "christoph-paus-physics": {
+    "n": "Christoph Paus",
+    "l": "",
+    "s": "Experimental particle physicist and a lead MIT investigator on the CMS experiment at CERN's Large Hadron Collider, where he co-led the Higgs boson search that reported the 2012 discovery. Current interests include precision measurements of Higgs boson properties, searches for physics beyond the Standard Model, and dark-matter searches at collider energies. Serves as Principal Investigator of the CMS Tier-2 computing center at MIT and was named LPC Senior Distinguished Researcher at Fermilab in 2026.",
+    "k": {
+      "w": "https://physics.mit.edu/faculty/christoph-paus/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Particle Physics",
+        "Standard Model",
+        "Standard Model"
+      ],
+      [
+        "Phys",
+        "Particle Physics",
+        "Neutrino Physics",
+        "Neutrino Physics"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Field Theory",
+        "Quantum Field Theory"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Hypothesis Testing",
+        "Hypothesis Testing"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "duplicate of c-paus-physics and christoph-m-e-paus-physics"
+  },
+  "christopher-a-voigt-bioe": {
+    "l": "Voigt Lab (MIT Synthetic Biology Center)",
+    "s": "Engineers genetic circuits in bacterial, yeast, and mammalian cells that implement computational logic and respond to touch, light, and chemical signals. Developed Cello, a Verilog-like electronic-design-automation tool that compiles Boolean circuits into DNA sequences with characterized genetic 'gates.' Applications span nitrogen-fixing soil bacteria for agriculture (Pivot Bio), cell-based therapeutics, and industrial strain engineering; Voigt co-directs the MIT Synthetic Biology Center and MIT-Broad Foundry and heads MIT Biological Engineering.",
+    "k": {
+      "w": "https://be.mit.edu/faculty/christopher-a-voigt/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Editing",
+        "Gene Editing"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Programming Languages",
+        "Programming Languages"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "christopher-b-burge-biology": {
+    "l": "Burge Lab",
+    "s": "Computational and experimental biologist decoding the regulatory logic of RNA processing — pre-mRNA splicing, alternative polyadenylation, and microRNA-mediated post-transcriptional control. Combines high-throughput RNA-seq, massively parallel splicing reporter assays, and machine-learning motif discovery to identify splicing enhancers/silencers and predict tissue-specific isoform choice. Lab also develops computational tools for ab initio gene finding and microRNA target prediction.",
+    "k": {
+      "w": "https://www.genes.mit.edu/",
+      "p": "https://www.genes.mit.edu/papers"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Transcription",
+        "Transcription"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "RNA Interference",
+        "RNA Interference"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "christopher-c-cummins-chemistry": {
+    "l": "The Cummins Group",
+    "s": "Inorganic and organometallic chemist working on small-molecule activation by early-transition-metal complexes (Mo, Nb, W) and main-group elements. Signature achievements include cleaving the N≡N triple bond of dinitrogen at room temperature and ambient pressure using three-coordinate Mo(III) amides — enabling synthetic nitrogen fixation — plus related chemistry for CO2 reduction, P4 (white phosphorus) functionalization, and new phosphorus-element bond constructions. Henry Dreyfus Professor of Chemistry and 2017 ACS Linus Pauling Medalist.",
+    "k": {
+      "w": "https://ccclab.mit.edu/",
+      "p": "http://web.mit.edu/ccclab/publications/index.html"
+    },
+    "t": [
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Coordination Compounds",
+        "Coordination Compounds"
+      ],
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Transition Metal Catalysis",
+        "Transition Metal Catalysis"
+      ],
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Organic Chemistry",
+        "Organic Chemistry"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Chemical Kinetics",
+        "Chemical Kinetics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "chuchu-fan-lids": {
+    "l": "Realm (Reliable Autonomous Systems Lab)",
+    "s": "Builds safe autonomous systems by fusing formal verification, control theory, and machine learning — producing learned neural Lyapunov, barrier, and contraction certificates that come with provable safety and stability guarantees. Applications span drones, satellites, self-driving cars, and medical devices, where the group develops reachability analysis tools and safe reinforcement-learning controllers. Targets safety- and mission-critical deployment where empirical testing alone is insufficient.",
+    "k": {
+      "w": "https://chuchu.mit.edu/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Formal Verification",
+        "Formal Verification"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Reinforcement Learning"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "connor-w-coley-eecs": {
+    "l": "Coley Research Group",
+    "s": "Develops machine-learning and data-driven methods for small-molecule drug discovery, retrosynthesis planning, reaction outcome prediction, and structure elucidation from spectra. Methods include graph neural networks for molecular representation learning, template-free synthesis models trained on reactions mined from the USPTO patent corpus, model-guided Bayesian optimization, and de novo generative models. Leads the industry-backed Machine Learning for Pharmaceutical Discovery & Synthesis Consortium.",
+    "k": {
+      "w": "https://coley.mit.edu/",
+      "p": "https://coley.mit.edu/publications"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Transfer Learning",
+        "Transfer Learning"
+      ],
+      [
+        "CS/AI",
+        "Deep Learning",
+        "Attention Mechanisms",
+        "Attention Mechanisms"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Graph Algorithms",
+        "Graph Algorithms"
+      ],
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Organic Chemistry",
+        "Organic Chemistry"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Pharmacology",
+        "Pharmacology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "constantinos-daskalakis-eecs": {
+    "l": "",
+    "s": "Theoretical computer scientist working at the interface of algorithms, game theory, probability, and machine learning. Proved that computing Nash equilibria is PPAD-complete (resolving a central complexity-theory question, Nevanlinna Prize 2018) and developed optimal mechanisms for revenue-maximizing multi-item auctions. Other contributions cover testing high-dimensional distributions, the expectation-maximization algorithm, and statistical inference under dependence.",
+    "k": {
+      "w": "https://people.csail.mit.edu/costis/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Graph Algorithms",
+        "Graph Algorithms"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Hypothesis Testing",
+        "Hypothesis Testing"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Probability & Statistics",
+        "Probability & Statistics"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Gradient Descent",
+        "Gradient Descent"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "cullen-buie-bioe": {
+    "l": "Laboratory for Energy and Microsystems Innovation (LEMI)",
+    "s": "Studies microscale flow physics — microfluidics, electrokinetics, and electrochemistry — applied to microbiology and materials science. The group built hourglass-constriction microfluidic chips that use dielectrophoresis to measure bacterial polarizability (a proxy for electrogenic activity), enabling rapid identification of electricity-producing microbes for microbial fuel cells and bioremediation. Co-founder of Kytopen, which commercialized a flow-through 'Flowfect' electroporation technology for high-throughput engineering of primary immune cells.",
+    "k": {
+      "w": "https://meche.mit.edu/people/faculty/crb@mit.edu"
+    },
+    "t": [
+      [
+        "Bio",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Electrochemistry",
+        "Electrochemistry"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "césar-terrer-cee": {
+    "l": "Terrer Lab",
+    "s": "Terrestrial ecosystem ecologist quantifying how elevated atmospheric CO2, warming, and nitrogen deposition modulate the carbon sink of global vegetation and soils. Uses synthesis of field FACE experiments, satellite remote sensing, and machine-learning meta-analysis to show that plant mycorrhizal type and soil nutrient availability control the magnitude of the CO2 fertilization effect. Recent fieldwork at a CO2-venting volcano in Costa Rica probes long-term CO2 fertilization under natural elevated-CO2 conditions.",
+    "k": {
+      "w": "https://www.terrerlab.com/",
+      "p": "https://www.terrerlab.com/pages/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Plant Biology",
+        "Photosynthesis",
+        "Photosynthesis"
+      ],
+      [
+        "Bio",
+        "Plant Biology",
+        "Plant Physiology",
+        "Plant Physiology"
+      ],
+      [
+        "Bio",
+        "Ecology",
+        "Biodiversity",
+        "Biodiversity"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Remote Sensing",
+        "Remote Sensing"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "d-m-anderson-koch-institute": {
+    "n": "Daniel G. Anderson",
+    "l": "Anderson Lab",
+    "s": "Chemical engineer developing nanomaterials and devices for drug, mRNA, and CRISPR gene-editor delivery, with a focus on ionizable lipid nanoparticles (LNPs) for vaccines and gene therapies. The lab combines high-throughput combinatorial chemistry with machine learning to discover next-generation ionizable lipids (e.g., lipid 119-23) and encapsulated cell therapies for diabetes and cancer. Work underpins multiple biotech companies including CRISPR Therapeutics, Sigilon, oRNA, and Orna Therapeutics.",
+    "k": {
+      "w": "https://ki.mit.edu/people/faculty/daniel-anderson"
+    },
+    "t": [
+      [
+        "Chem",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Nanomaterials",
+        "Nanomaterials"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Editing",
+        "Gene Editing"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Likely duplicate of daniel-g-anderson-koch-institute. No separate D. M. Anderson faculty found."
+  },
+  "daniel-frey-meche": {
+    "l": "",
+    "s": "Mechanical engineer working on 'robust design' — methods that make engineered systems perform reliably despite manufacturing variation, wear, and environmental disturbance. Research contributions include adaptive experimental design, exploiting problem structure in parameter optimization, and the interplay between simulations and physical experiments. Heads the Design and Manufacturing Area in MIT MechE and has twice received an R&D 100 Award.",
+    "k": {
+      "w": "https://meche.mit.edu/people/faculty/danfrey@mit.edu"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "daniel-g-anderson-koch-institute": {
+    "l": "Anderson Lab",
+    "s": "Chemical engineer developing nanomaterials and devices for drug, mRNA, and CRISPR gene-editor delivery, with a focus on ionizable lipid nanoparticles (LNPs) for vaccines and gene therapies. The lab combines high-throughput combinatorial chemistry with machine learning to discover next-generation ionizable lipids (e.g., lipid 119-23) and encapsulated cell therapies for diabetes and cancer. Work underpins multiple biotech companies including CRISPR Therapeutics, Sigilon, oRNA, and Orna Therapeutics.",
+    "k": {
+      "w": "https://ki.mit.edu/people/faculty/daniel-anderson"
+    },
+    "t": [
+      [
+        "Chem",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Nanomaterials",
+        "Nanomaterials"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Editing",
+        "Gene Editing"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "daniel-h-rothman-eaps": {
+    "l": "Rothman Group",
+    "s": "Mathematical geophysicist using statistical and nonlinear physics to model Earth's carbon cycle, the co-evolution of life and the environment, and the origin of natural geometric forms (river networks, sediment patterns). Built a simple dynamical model of the ocean carbon cycle showing that rapid CO2 injection past a critical threshold can trigger runaway acidification linked to mass extinctions. Co-founded and co-directs the Lorenz Center, MIT's interdisciplinary climate-dynamics research center.",
+    "k": {
+      "w": "https://rothmangroup.mit.edu/",
+      "p": "https://rothmangroup.mit.edu/publications"
+    },
+    "t": [
+      [
+        "ESS",
+        "Oceanography",
+        "Ocean Circulation",
+        "Ocean Circulation"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ],
+      [
+        "Chem",
+        "Environmental Chemistry",
+        "Atmospheric Chemistry",
+        "Atmospheric Chemistry"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "daniel-harlow-physics": {
+    "l": "",
+    "s": "Theoretical physicist working on quantum gravity and quantum information, especially how spacetime and gravity emerge from underlying quantum-mechanical degrees of freedom. Discovered a deep connection between the AdS/CFT holographic correspondence and quantum error-correcting codes, and (with Patrick Hayden) initiated the use of computational complexity in black-hole information theory. Current work addresses the black-hole information problem, entropy counting, and the quantum structure of cosmology.",
+    "k": {
+      "w": "https://www.mit.edu/~harlow/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Gravity",
+        "Quantum Gravity"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Field Theory",
+        "Quantum Field Theory"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Many-Body Physics",
+        "Many-Body Physics"
+      ],
+      [
+        "Phys",
+        "Relativity",
+        "Gravitational Waves",
+        "Gravitational Waves"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "daniel-j-lew-biology": {
+    "l": "Lew Lab",
+    "s": "Cell biologist using budding yeast (Saccharomyces cerevisiae) to dissect how cells establish and maintain spatial polarity during budding, mating, and directed growth. Classic work identified a positive-feedback mechanism that concentrates active Cdc42 GTPase at a single cortical site, enabling symmetry breaking; recent studies use live-cell imaging and particle-based simulations to explain polarity-site competition and relocation. Combines yeast genetics, fluorescence microscopy, and mathematical modeling.",
+    "k": {
+      "w": "https://sites.google.com/view/lewlab/home",
+      "p": "https://sites.google.com/view/lewlab/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Cycle Regulation",
+        "Cell Cycle Regulation"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Fungal Biology",
+        "Fungal Biology"
+      ],
+      [
+        "Bio",
+        "Cell Cycle & Division",
+        "Cell Cycle & Division",
+        "Cell Cycle & Division"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "daniel-j-varon-idss": {
+    "l": "Varon Lab",
+    "s": "Atmospheric scientist using satellite remote sensing to quantify greenhouse gas and air-pollutant emissions, with a major focus on methane from oil-and-gas infrastructure. Techniques include point-source plume inversion from high-resolution imagers (Sentinel-2, PRISMA), regional mass-balance inversions from TROPOMI, real-time geostationary tracking of extreme methane releases, and continuous basin-scale emission estimation. Also developing new satellite methods for nitrogen oxide air-pollution monitoring.",
+    "k": {
+      "w": "https://varon.mit.edu/",
+      "p": "https://varon.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Meteorology",
+        "Remote Sensing",
+        "Remote Sensing"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Atmospheric Circulation",
+        "Atmospheric Circulation"
+      ],
+      [
+        "Chem",
+        "Environmental Chemistry",
+        "Atmospheric Chemistry",
+        "Atmospheric Chemistry"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "daniel-l-m-suess-chemistry": {
+    "l": "Suess Research Group",
+    "s": "Inorganic/bioinorganic chemistry lab probing the electronic structure and reactivity of iron-sulfur clusters — the polynuclear metallocofactors that catalyze nitrogen fixation, photosynthesis, and many redox steps in biology. Combines de novo synthesis of model clusters with protein biochemistry and advanced spectroscopy (EPR, Mössbauer, magnetic circular dichroism) to correlate Fe-Fe and Fe-S interactions with cluster reactivity in biogenic and synthetic systems. 2024 ACS Inorganic Chemistry Lectureship recipient.",
+    "k": {
+      "w": "https://suessgroup.mit.edu/",
+      "p": "https://suessgroup.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Coordination Compounds",
+        "Coordination Compounds"
+      ],
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Transition Metal Catalysis",
+        "Transition Metal Catalysis"
+      ],
+      [
+        "Chem",
+        "Analytical Chemistry",
+        "NMR Spectroscopy",
+        "NMR Spectroscopy"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Enzyme Kinetics",
+        "Enzyme Kinetics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "danna-e-freedman-chemistry": {
+    "l": "Freedman Laboratory",
+    "s": "Synthetic inorganic chemist designing molecular systems for quantum information science — single-molecule qubits whose electronic and nuclear spin states can be coherently manipulated in solution at accessible temperatures. Uses bottom-up synthesis to impose atomic-scale control of qubit-qubit and qubit-environment coupling for quantum sensing (magnetic/electric fields, dark-matter searches) and as building blocks for quantum communication. Characterization employs pulsed EPR, SQUID magnetometry, and low-temperature optical spectroscopy. 2022 MacArthur Fellow.",
+    "k": {
+      "w": "https://freedmanlab-mit.com/",
+      "p": "https://freedmanlab-mit.com/MIT/freedman/publications/index.html"
+    },
+    "t": [
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Coordination Compounds",
+        "Coordination Compounds"
+      ],
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Transition Metal Catalysis",
+        "Transition Metal Catalysis"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Mechanics",
+        "Quantum Mechanics"
+      ],
+      [
+        "Phys",
+        "Condensed Matter",
+        "Semiconductor Physics",
+        "Semiconductor Physics"
+      ],
+      [
+        "Phys",
+        "Electricity & Magnetism",
+        "Superconductivity",
+        "Superconductivity"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "dara-entekhabi-cee": {
+    "l": "",
+    "s": "Hydrologist focused on land-atmosphere interactions, terrestrial water and energy cycles, and Earth remote sensing. Serves as science team leader for NASA's Soil Moisture Active Passive (SMAP) satellite, which uses combined L-band radar and radiometer measurements to map global surface soil moisture and its freeze/thaw state. SMAP data improve forecasts of droughts, floods, hurricanes, and agricultural water stress.",
+    "k": {
+      "w": "https://cee.mit.edu/people_individual/dara-entekhabi/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Hydrology",
+        "Groundwater Flow",
+        "Groundwater Flow"
+      ],
+      [
+        "ESS",
+        "Hydrology",
+        "Water Quality",
+        "Water Quality"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Remote Sensing",
+        "Remote Sensing"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Atmospheric Circulation",
+        "Atmospheric Circulation"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "darcy-l-mcrose-cee": {
+    "l": "McRose Lab",
+    "s": "Environmental microbiologist studying how microbial and plant secondary metabolites — especially iron-chelating siderophores — influence nutrient cycling, plant-microbe interactions, and soil fertility. Research combines molecular microbiology, analytical chemistry (LC-MS of metabolites), and geochemistry to ask why bacteria make multiple siderophores and how they are regulated by quorum sensing and iron availability (e.g., in Vibrio harveyi). 2025 Packard Fellow for Science and Engineering.",
+    "k": {
+      "w": "https://mcroselab.com/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Coordination Compounds",
+        "Coordination Compounds"
+      ],
+      [
+        "Bio",
+        "Plant Biology",
+        "Plant Physiology",
+        "Plant Physiology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "david-autor-economics": {
+    "l": "",
+    "s": "Labor economist studying how technological change, automation, and trade globalization reshape employment, wages, and inequality. With Dorn and Hanson, documented that U.S. exposure to Chinese import competition ('the China shock') lowered employment, labor-force participation, and wages in exposed local labor markets; earlier work with Katz and Krueger showed that computerization drove the growing wage premium for college-educated workers. Co-director of the NBER Labor Studies Program and the MIT Stone Center on Inequality and Shaping the Future of Work.",
+    "k": {
+      "w": "https://economics.mit.edu/people/faculty/david-h-autor"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "david-c-page-biology": {
+    "l": "Page Lab (Whitehead Institute)",
+    "s": "Studies the genetics and biology of sex differences — how the X and Y chromosomes contribute to fundamental differences between male and female cells, tissues, and organs in health and disease. Produced the first genetic and physical maps of the human Y chromosome and its reference sequence, reshaping understanding of sex-chromosome evolution. Current work examines how the inactive X in females and the small set of Y-linked ancestral genes in males drive sex-biased gene expression across the body.",
+    "k": {
+      "w": "https://wi.mit.edu/people/member/page"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Epigenetics",
+        "Epigenetics"
+      ],
+      [
+        "Bio",
+        "Ecology",
+        "Evolution",
+        "Evolution"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Reproductive System",
+        "Reproductive System"
+      ],
+      [
+        "Bio",
+        "Developmental Biology",
+        "Embryogenesis",
+        "Embryogenesis"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "david-e-housman-biology": {
+    "l": "Housman Laboratory",
+    "s": "Uses genetics to dissect the molecular basis of human disease, with historical impact on positional cloning of disease genes. The lab helped establish the method of using restriction-fragment-length-polymorphism (RFLP) markers to map disease loci, which (with Gusella and the Hereditary Disease Foundation collaboration) localized the Huntington's disease gene HTT in 1983. Current work investigates modifier genes that determine age of onset for trinucleotide-repeat disorders and cardiovascular and cancer genetics.",
+    "k": {
+      "w": "https://ki.mit.edu/people/faculty/david-housman"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Population Genetics",
+        "Population Genetics"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Cardiovascular System",
+        "Cardiovascular System"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "david-jerison-math": {
+    "l": "",
+    "s": "Works in harmonic (Fourier) analysis and partial differential equations, with particular interest in free boundary problems and the geometry of solutions. With Carlos Kenig, produced foundational results on harmonic measure and Harnack inequalities in nonsmooth and fractal domains; with John M. Lee, proved sharp extremal inequalities on the Heisenberg group and solved the CR Yamabe problem. MacVicar Faculty Fellow and 2012 Bergman Prize recipient.",
+    "k": {
+      "w": "https://math.mit.edu/~jerison/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Interference & Diffraction",
+        "Interference & Diffraction"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "david-k-gifford-eecs": {
+    "l": "Gifford Laboratory",
+    "s": "Develops machine-learning algorithms and experimental methods to model transcriptional regulatory networks and gene expression programs in living cells, with applications in regulatory genomics, epigenomics, and proteomics. Current focuses include motor neuron differentiation, single-cell perturbation screens, chromatin accessibility, antibody design, and MHC-peptide presentation. Methods range from deep sequence models to interpretable discrete combinatorial models of regulation.",
+    "k": {
+      "w": "https://cgs.csail.mit.edu/",
+      "p": "https://cgs.csail.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Transcription",
+        "Transcription"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Transfer Learning",
+        "Transfer Learning"
+      ],
+      [
+        "CS/AI",
+        "Deep Learning",
+        "Attention Mechanisms",
+        "Attention Mechanisms"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "david-mcgee-eaps": {
+    "l": "McGee Lab for Paleoclimate and Geochronology",
+    "s": "Reconstructs past rainfall, winds, and hydroclimate using precisely dated geological archives — cave stalagmites, lake sediments, and deep-sea cores — to ground-truth climate models and anticipate future change. Methods include uranium-thorium dating, trace-element and stable-isotope geochemistry (including triple oxygen isotopes) in speleothems, and synthesis against climate model output. Studies span the Sahara green periods, Great Basin lakes, tropical rainbelt shifts, and high-latitude permafrost during past warm intervals.",
+    "k": {
+      "w": "https://www.mcgeelab.mit.edu/",
+      "p": "https://www.mcgeelab.mit.edu/publications"
+    },
+    "t": [
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ],
+      [
+        "ESS",
+        "Geology",
+        "Radiometric Dating",
+        "Radiometric Dating"
+      ],
+      [
+        "ESS",
+        "Geology",
+        "Stratigraphy",
+        "Stratigraphy"
+      ],
+      [
+        "ESS",
+        "Hydrology",
+        "Groundwater Flow",
+        "Groundwater Flow"
+      ],
+      [
+        "ESS",
+        "Oceanography",
+        "Ocean Circulation",
+        "Ocean Circulation"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "david-p-bartel-biology": {
+    "l": "Bartel Lab (Whitehead Institute)",
+    "s": "Studies microRNAs and other small RNAs and how they regulate mRNA stability and translation in metazoans — work that helped establish microRNAs as pervasive post-transcriptional regulators of most human genes. The lab built TargetScan, the most widely used tool for microRNA target prediction, and continues to dissect the biogenesis, turnover (including two-factor decay signals), and functional targets of microRNAs. HHMI Investigator; Whitehead Member.",
+    "k": {
+      "w": "https://bartellab.wi.mit.edu/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "RNA Interference",
+        "RNA Interference"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Transcription",
+        "Transcription"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "dean-eckles-idss": {
+    "l": "",
+    "s": "Associate Professor of Marketing at MIT Sloan studying social networks, peer effects, and causal inference — particularly how interventions and information spread through networked populations and how to design field experiments that control for interference between units. Methods work includes instrumental variables for peer effects, experimental designs that reduce bias from network interference, and applications to computer-mediated communication and persuasion. Associate Director of IDSS.",
+    "k": {
+      "w": "https://www.deaneckles.com/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Graph Algorithms",
+        "Graph Algorithms"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Hypothesis Testing",
+        "Hypothesis Testing"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "deepto-chakrabarty-physics": {
+    "l": "",
+    "s": "X-ray astrophysicist and Head of the Department of Physics working on the physics of neutron stars — especially accretion-powered millisecond pulsars in binary systems. Co-discovered accretion-powered millisecond X-ray pulsars using NASA's Rossi X-ray Timing Explorer and uses X-ray timing to measure neutron-star spin evolution, masses, radii, and dense-matter equations of state. Current work relies on NASA's NICER instrument aboard the ISS.",
+    "k": {
+      "w": "https://physics.mit.edu/faculty/deepto-chakrabarty/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Cosmology",
+        "Astrophysics",
+        "Astrophysics"
+      ],
+      [
+        "ESS",
+        "Observational Astronomy",
+        "Survey Astronomy",
+        "Survey Astronomy"
+      ],
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Radiation Detection",
+        "Radiation Detection"
+      ],
+      [
+        "Phys",
+        "Relativity",
+        "Gravitational Waves",
+        "Gravitational Waves"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Many-Body Physics",
+        "Many-Body Physics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "desirée-l-plata-cee": {
+    "l": "Plata Lab",
+    "s": "Environmental chemist focused on quantifying and mitigating industrial impacts, especially emissions of methane and other greenhouse gases from oil and gas infrastructure, coal mines, and agriculture. Developed catalytic zeolite-based materials (including modified cat-litter clays) that oxidize ambient-concentration methane to CO2, a less-potent greenhouse gas. Directs the MIT Methane Network and works on oil-spill remediation, carbon-nanotube environmental fate, and sustainability-by-design metrics for new materials.",
+    "k": {
+      "w": "https://cee.mit.edu/people_individual/desiree-plata/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Environmental Chemistry",
+        "Atmospheric Chemistry",
+        "Atmospheric Chemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Solid-State Chemistry",
+        "Solid-State Chemistry"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Surface Chemistry",
+        "Surface Chemistry"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "devavrat-shah-eecs": {
+    "l": "",
+    "s": "Works at the intersection of statistical inference, machine learning, and networks — developing algorithms for inference on graphical models, ranking and recommender systems, crowdsourcing, causal inference from observational time series (synthetic controls), and resource allocation in communication networks. Teaches the flagship MIT courses 6.438 Algorithms for Inference and 6.401 Introduction to Statistical Data Analysis. Faculty Director of the Deshpande Center for Technological Innovation.",
+    "k": {
+      "w": "https://devavrat.mit.edu/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Bayesian Inference",
+        "Bayesian Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Graph Algorithms",
+        "Graph Algorithms"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Network Protocols",
+        "Network Protocols"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "dina-katabi-eecs": {
+    "l": "NETMIT / Katabi Lab",
+    "s": "Wireless and networks researcher who pioneered contactless, radio-frequency sensing of human physiology — devices (shaped like Wi-Fi routers) that use reflected RF signals and deep learning to monitor breathing, heart rate, sleep stages, gait, and even postures through walls (RF-Pose). These systems have been applied to detect and track progression of Parkinson's, ALS, Alzheimer's, lupus, and atopic dermatitis without wearables. Directs the MIT Center for Wireless Networks and Mobile Computing; National Academy of Medicine member.",
+    "k": {
+      "w": "https://people.csail.mit.edu/dina/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Network Protocols",
+        "Network Protocols"
+      ],
+      [
+        "CS/AI",
+        "Deep Learning",
+        "Attention Mechanisms",
+        "Attention Mechanisms"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Transfer Learning",
+        "Transfer Learning"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Interference & Diffraction",
+        "Interference & Diffraction"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "dirk-englund-eecs": {
+    "l": "Quantum Photonics Laboratory",
+    "s": "Builds quantum and optical technologies at the device level — controlling single photons and solid-state spin qubits in diamond nitrogen-vacancy (NV) centers, quantum dots, and III-V photonic crystals for communication, computation, and sensing. Builds integrated photonic circuits, cryogenic programmable photonic processors, solid-state quantum memories, and graphene-based photodetectors, plus optical accelerators for machine learning inference. Spinouts include Lightmatter (photonic computing), QuEra (neutral-atom quantum computers), and DUST Identity (diamond NV authentication).",
+    "k": {
+      "w": "https://www.rle.mit.edu/people/dirk-englund/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Mechanics",
+        "Quantum Mechanics"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Photonic Crystals",
+        "Photonic Crystals"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Nonlinear Optics",
+        "Nonlinear Optics"
+      ],
+      [
+        "Phys",
+        "Condensed Matter",
+        "Semiconductor Physics",
+        "Semiconductor Physics"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "CPU/GPU Architecture",
+        "CPU/GPU Architecture"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "domitilla-del-vecchio-bioe": {
+    "l": "Del Vecchio Lab",
+    "s": "Engineers synthetic biology circuits in mammalian cells and bacteria using control-theory principles, designing genetic feedback controllers, load drivers, and resource-allocation modules to make engineered gene networks robust and modular. Methods combine nonlinear ODE modeling, contraction analysis, and stochastic simulation with experimental implementation in E. coli and CHO/HEK cells via plasmid and lentiviral delivery, flow cytometry, and time-lapse fluorescence microscopy. Recent work targets cell-fate control, epigenetic memory dynamics, and cybergenetic feedback for biomanufacturing.",
+    "k": {
+      "w": "https://delvecchio.mit.edu/",
+      "p": "https://delvecchio.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Reinforcement Learning"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "dor-minzer-math": {
+    "l": "",
+    "s": "Theoretical computer scientist and discrete mathematician working on analysis of Boolean functions, probabilistically checkable proofs (PCPs), and hardness of approximation, including resolution of the 2-to-2 Games Conjecture with Khot, Khot, and Safra. Methods draw on Fourier analysis on the hypercube, expander and Grassmann graphs, hypercontractive inequalities, and Ramsey-type combinatorics. Also studies property testing, agreement testing, and direct-product testing relevant to PCP constructions.",
+    "k": {
+      "w": "https://math.mit.edu/~dminzer/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Graph Algorithms",
+        "Graph Algorithms"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Probability & Statistics",
+        "Probability & Statistics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "douglas-a-lauffenburger-biology": {
+    "l": "Lauffenburger Lab",
+    "s": "Pioneers cell and molecular bioengineering by combining quantitative experimentation with computational modeling of receptor-ligand signaling, cytokine networks, and cell-cell communication, with applications in cancer, inflammatory bowel disease, and immunology. Uses multiplexed mass spectrometry phosphoproteomics, Luminex cytokine panels, single-cell RNA-seq, partial-least-squares regression, and ODE/agent-based models to map signal-to-response relationships. Translational work includes systems pharmacology of TNF, EGFR, and TGF-β pathways and tissue-engineered intestinal organoid models.",
+    "k": {
+      "w": "https://lauffenburger.mit.edu/",
+      "p": "https://lauffenburger.mit.edu/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "dražen-prelec-economics": {
+    "l": "",
+    "s": "Behavioral economist and mathematical psychologist known for the Bayesian Truth Serum mechanism for eliciting honest opinions from crowds, work on hyperbolic time discounting, and the dual-self model of self-control. Combines axiomatic decision theory with laboratory experiments and fMRI studies of consumer choice and pain-of-paying in purchasing decisions. Also studies confidence calibration, prediction markets, and the neuroeconomics of credit cards versus cash.",
+    "k": {
+      "w": "https://mitsloan.mit.edu/faculty/directory/drazen-prelec"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Bayesian Inference",
+        "Bayesian Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "drew-fudenberg-economics": {
+    "l": "",
+    "s": "Game theorist developing the foundations of repeated games, learning in games, and the theory of reputation, including the Folk Theorem with imperfect monitoring (Fudenberg-Maskin) and self-confirming equilibrium. Uses dynamical-systems analysis of fictitious play, stochastic approximation, and evolutionary dynamics, plus laboratory experiments testing equilibrium refinements. Recent work bridges machine learning and economic theory, including algorithmic predictions of human behavior and active learning.",
+    "k": {
+      "w": "https://economics.mit.edu/people/faculty/drew-fudenberg"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Reinforcement Learning"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "e-smith-physics": {
+    "n": "Eluned Smith",
+    "l": "",
+    "s": "Experimental particle physicist working on the LHCb experiment at CERN, studying rare decays of beauty and charm hadrons as precision tests of the Standard Model and probes of lepton flavor universality. Methods include silicon-tracker and RICH-detector calibration, multivariate event selection (BDTs, neural nets), and angular analyses of B → K*μμ and similar decays. Also contributes to LHCb upgrade hardware and to searches for hidden-sector and dark photon signatures.",
+    "k": {
+      "w": "https://physics.mit.edu/faculty/eluned-smith/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Particle Physics",
+        "Standard Model",
+        "Standard Model"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Field Theory",
+        "Quantum Field Theory"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "earl-k-miller-bcs": {
+    "l": "The Miller Lab",
+    "s": "Studies the neural basis of high-level cognition — working memory, attention, decision-making, and executive control — by recording from prefrontal, parietal, and striatal cortex in behaving non-human primates. Uses chronic multi-electrode arrays, local field potential and spike-field coherence analysis, and population-decoding techniques to characterize 'mixed selectivity' neurons and oscillatory gamma/beta dynamics underlying cognitive control. Recent work develops the theory that conscious thought arises from synchronized cortical traveling waves and tests it with simultaneous multi-area recordings.",
+    "k": {
+      "w": "https://ekmillerlab.mit.edu/",
+      "p": "https://ekmillerlab.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Reinforcement Learning"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "edward-miller-bcs": {
+    "n": "Earl K. Miller",
+    "l": "The Miller Lab",
+    "s": "Studies the neural basis of high-level cognition — working memory, attention, decision-making, and executive control — by recording from prefrontal, parietal, and striatal cortex in behaving non-human primates. Uses chronic multi-electrode arrays, local field potential and spike-field coherence analysis, and population-decoding techniques to characterize 'mixed selectivity' neurons and oscillatory gamma/beta dynamics underlying cognitive control. Recent work develops the theory that conscious thought arises from synchronized cortical traveling waves and tests it with simultaneous multi-area recordings.",
+    "k": {
+      "w": "https://ekmillerlab.mit.edu/",
+      "p": "https://ekmillerlab.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Reinforcement Learning"
+      ]
+    ],
+    "scholar_status": "cleared",
+    "notes": "Duplicate of earl-k-miller-bcs. No distinct 'Edward Miller' in MIT BCS. Logged in duplicates.txt."
+  },
+  "ed-boyden-bioe": {
+    "l": "Synthetic Neurobiology Group",
+    "s": "Invents tools for analyzing and engineering brain circuits, including optogenetics (channelrhodopsin/halorhodopsin neural control), expansion microscopy for nanoscale fluorescence imaging of intact tissue, and genetically encoded voltage indicators for all-optical electrophysiology. Methods span protein engineering, two-photon and light-sheet microscopy, CRISPR delivery, and high-throughput in vivo screening in mouse and zebrafish models. Work supports mechanistic studies of memory, perception, and neuropsychiatric disease and underpins scalable connectomics.",
+    "k": {
+      "w": "https://syntheticneurobiology.org/",
+      "p": "https://syntheticneurobiology.org/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Editing",
+        "Gene Editing"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Nonlinear Optics",
+        "Nonlinear Optics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "edward-a-boyle-eaps": {
+    "l": "",
+    "s": "Marine geochemist and paleoceanographer reconstructing past ocean circulation, nutrient cycling, and atmospheric metal pollution from trace-metal and isotope records in foraminifera, corals, and seawater. Methods include high-precision isotope-dilution ICP-MS, trace-metal clean sampling protocols (he helped pioneer the GEOTRACES program), Cd/Ca and Ba/Ca paleoproxies, and lead isotope tracing of anthropogenic pollution. Studies span glacial-interglacial deepwater changes and modern dispersion of leaded-gasoline and coal-burning lead in the global ocean.",
+    "k": {
+      "w": "https://eapsweb.mit.edu/people/eaboyle"
+    },
+    "t": [
+      [
+        "ESS",
+        "Oceanography",
+        "Ocean Circulation",
+        "Ocean Circulation"
+      ],
+      [
+        "ESS",
+        "Oceanography",
+        "Marine Ecology",
+        "Marine Ecology"
+      ],
+      [
+        "Chem",
+        "Analytical Chemistry",
+        "NMR Spectroscopy",
+        "NMR Spectroscopy"
+      ],
+      [
+        "ESS",
+        "Geology",
+        "Radiometric Dating",
+        "Radiometric Dating"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "edward-gibson-bcs": {
+    "l": "TedLab",
+    "s": "Studies human language processing, comprehension, and the cognitive and communicative pressures shaping linguistic structure across the world's languages, with major contributions to dependency-locality theory and information-theoretic accounts of word order. Methods include self-paced reading and eye-tracking experiments, large-scale crowdsourced linguistic surveys, fieldwork with the Tsimané (Bolivia) and Pirahã (Amazon), and computational corpus analyses with information-theoretic measures. Recent work uses LLM behavioral comparisons to test theories of efficient communication.",
+    "k": {
+      "w": "https://tedlab.mit.edu/",
+      "p": "https://tedlab.mit.edu/publications.html"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "NLP & Language Models",
+        "Language Understanding",
+        "Language Understanding"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Bayesian Inference",
+        "Bayesian Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "edward-h-adelson-bcs": {
+    "l": "Adelson Lab (Perceptual Science Group)",
+    "s": "Studies human and machine vision, with foundational contributions to the steerable pyramid and motion-energy models of early vision, lightness and material perception, and computational models of mid-level vision. Has translated psychophysical insight into engineering: invented the GelSight tactile sensor, an elastomer-and-camera device that turns surface shape and slip into high-resolution images for robot manipulation. Methods include human psychophysics, computer-graphics simulation, deep-net image analysis, and elastomer/optics fabrication.",
+    "k": {
+      "w": "https://persci.mit.edu/",
+      "p": "https://persci.mit.edu/pub_pdfs"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Computer Vision",
+        "Object Detection",
+        "Object Detection"
+      ],
+      [
+        "CS/AI",
+        "Computer Vision",
+        "3D Reconstruction",
+        "3D Reconstruction"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Interference & Diffraction",
+        "Interference & Diffraction"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "edward-s-boyden-bioe": {
+    "n": "Ed Boyden",
+    "l": "Synthetic Neurobiology Group",
+    "s": "Invents tools for analyzing and engineering brain circuits, including optogenetics (channelrhodopsin/halorhodopsin neural control), expansion microscopy for nanoscale fluorescence imaging of intact tissue, and genetically encoded voltage indicators for all-optical electrophysiology. Methods span protein engineering, two-photon and light-sheet microscopy, CRISPR delivery, and high-throughput in vivo screening in mouse and zebrafish models. Work supports mechanistic studies of memory, perception, and neuropsychiatric disease and underpins scalable connectomics.",
+    "k": {
+      "w": "https://syntheticneurobiology.org/",
+      "p": "https://syntheticneurobiology.org/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Editing",
+        "Gene Editing"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Nonlinear Optics",
+        "Nonlinear Optics"
+      ]
+    ],
+    "scholar_status": "cleared",
+    "notes": "Duplicate of ed-boyden-bioe. Same enrichment applied."
+  },
+  "elchanan-mossel-math": {
+    "l": "",
+    "s": "Probabilist and theoretical computer scientist working at the interface of discrete probability, combinatorics, statistical inference, and theoretical CS, including the proof of 'Majority Is Stablest' and the implied UGC-optimality of the Goemans-Williamson MAX-CUT algorithm. Methods draw on Fourier analysis on the hypercube, hypercontractive inequalities, isoperimetry, and Markov random fields. Also studies phylogenetic reconstruction, social-choice theory, the stochastic block model, and the mathematical foundations of deep learning.",
+    "k": {
+      "w": "https://math.mit.edu/~elmos/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Probability & Statistics",
+        "Probability & Statistics"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Bayesian Inference",
+        "Bayesian Inference"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Graph Algorithms",
+        "Graph Algorithms"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "elfatih-a-b-eltahir-cee": {
+    "l": "Eltahir Research Group",
+    "s": "Hydroclimatologist studying interactions between regional climate, land use, water availability, extreme heat, and vector-borne disease. The group develops and runs the MIT Regional Climate Model (MRCM) for downscaling future climate projections and the Hydrology, Entomology and Malaria Transmission Simulator (HYDREMATS) for coupled water-mosquito-population modeling. Recent work projects extreme wet-bulb heat over the Persian Gulf and South Asia and assesses irrigation, dam operation, and reforestation impacts on regional climate.",
+    "k": {
+      "w": "https://eltahir.mit.edu/",
+      "p": "https://eltahir.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Hydrology",
+        "Groundwater Flow",
+        "Groundwater Flow"
+      ],
+      [
+        "ESS",
+        "Hydrology",
+        "Water Quality",
+        "Water Quality"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Atmospheric Circulation",
+        "Atmospheric Circulation"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "eliezer-calo-biology": {
+    "l": "Calo Lab",
+    "s": "Studies ribosome biogenesis, the nucleolus, and RNA metabolism, focusing on how dysfunction in these processes leads to tissue-specific developmental disorders (ribosomopathies such as Treacher Collins syndrome) and cancer. Combines CRISPR genetic screens, RNA-seq and proteomics, biochemical reconstitution of nucleolar condensates, and live-cell imaging in zebrafish and mammalian cell models, with a focus on the TCOF1 gene and pH-sensing dynamics of nucleolar phase separation. Maps how rDNA damage and ribosome assembly defects propagate to developmental phenotypes.",
+    "k": {
+      "w": "https://biology.mit.edu/profile/eliezer-calo/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Transcription",
+        "Transcription"
+      ],
+      [
+        "Bio",
+        "Developmental Biology",
+        "Embryogenesis",
+        "Embryogenesis"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "elizabeth-m-nolan-chemistry": {
+    "l": "Nolan Lab",
+    "s": "Bioinorganic chemist studying the metal-centered chemistry of host-pathogen interactions and innate immunity, particularly the 'tug-of-war' for iron, zinc, and manganese between bacteria and the human host. Characterizes siderophores from Salmonella, E. coli, and other pathogens and the host metal-sequestering proteins calprotectin and lactoferrin using X-ray crystallography, ITC, EPR, ICP-MS, and synthetic chemistry. Develops siderophore-antibiotic conjugates ('Trojan-horse' antibiotics) and siderophore-based vaccines targeting drug-resistant bacteria.",
+    "k": {
+      "w": "https://web.mit.edu/nolanlab/Nolan_Lab_Website/Home.html",
+      "p": "https://web.mit.edu/nolanlab/Nolan_Lab_Website/Publications.html"
+    },
+    "t": [
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Coordination Compounds",
+        "Coordination Compounds"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "Chem",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "ellen-t-roche-meche": {
+    "l": "Therapeutic Technology Design and Development Lab",
+    "s": "Designs implantable biomedical devices that combine soft robotics, biomaterials, and image-based biomimicry, with a focus on cardiac assist devices and therapy delivery. Notable inventions include a soft robotic ventricular assist sleeve that mechanically squeezes a failing heart, the Therepi reservoir for sustained drug/cell delivery to damaged myocardium, and a biorobotic hybrid heart that integrates explanted tissue with synthetic actuation. Methods include elastomer fabrication, finite-element simulation, ex vivo and in vivo large-animal testing, and 4D MRI imaging.",
+    "k": {
+      "w": "https://ttdd.mit.edu/",
+      "p": "https://ttdd.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Cardiovascular System",
+        "Cardiovascular System"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Polymer Chemistry",
+        "Polymer Chemistry"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "elly-nedivi-biology": {
+    "l": "Nedivi Lab",
+    "s": "Studies molecular and cellular mechanisms of structural plasticity in the developing and adult mammalian visual cortex, including identification of activity-regulated genes (CPG15/neuritin) and their roles in dendritic and synaptic remodeling. Pioneered multi-color two-photon in vivo imaging to track inhibitory and excitatory synapses on individual neurons over days in awake mice during monocular deprivation paradigms. Combines mouse genetics, viral vectors, electron microscopy reconstruction, and chronic cranial-window imaging.",
+    "k": {
+      "w": "https://picower.mit.edu/elly-nedivi"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "emery-n-brown-bcs": {
+    "l": "Neuroscience Statistics Research Lab",
+    "s": "Anesthesiologist-statistician studying how general anesthetics produce loss of consciousness by altering thalamocortical and arousal-circuit dynamics, and develops signal-processing algorithms to read out brain state from EEG. Methods include simultaneous EEG/fMRI in human subjects, intracranial recordings, point-process state-space models for spike trains, and pharmacokinetic-pharmacodynamic modeling of propofol, ketamine, and dexmedetomidine. Translates findings into closed-loop EEG-guided anesthesia delivery.",
+    "k": {
+      "w": "https://www.neurostat.mit.edu/",
+      "p": "https://www.neurostat.mit.edu/publications"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Bayesian Inference",
+        "Bayesian Inference"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Pharmacology",
+        "Pharmacology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "eric-j-alm-bioe": {
+    "l": "Alm Lab",
+    "s": "Combines computational and experimental approaches to engineer the human gut microbiome and translate microbiome science into clinical and environmental applications. Methods include shotgun metagenomic and 16S rRNA sequencing, isolation and culturing of gut bacteria, longitudinal stool sampling, fecal microbiota transplant trials for IBD and C. difficile, and wastewater epidemiology (Biobot) for community-level pathogen surveillance. Also studies microbial evolution and horizontal gene transfer across global populations through the Global Microbiome Conservancy.",
+    "k": {
+      "w": "https://almlab.mit.edu/",
+      "p": "https://web.mit.edu/almlab/publications.html"
+    },
+    "t": [
+      [
+        "Bio",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Epidemiology",
+        "Epidemiology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "eric-s-lander-biology": {
+    "l": "Lander Lab",
+    "s": "Genomicist who led the public Human Genome Project and founded the Broad Institute; lab studies the molecular basis of rare and common human disease, cancer genomics, gene-regulatory mechanisms, and human population history. Methods include whole-genome and exome sequencing, single-cell RNA-seq, CRISPR genome-wide screens, GWAS and statistical genetics, and genome-wide linkage and haplotype analysis. Has developed general approaches for cancer-subtype discovery from expression data and identified driver mutations across tumor types.",
+    "k": {
+      "w": "https://www.broadinstitute.org/lander-lab",
+      "p": "https://www.broadinstitute.org/lander-lab/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Population Genetics",
+        "Population Genetics"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Editing",
+        "Gene Editing"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "erik-d-demaine-eecs": {
+    "l": "Erik Demaine's Research Group",
+    "s": "Theoretical computer scientist working on algorithms, data structures, and computational geometry, with celebrated results in geometric folding and unfolding of linkages, paper, and polyhedra (computational origami). Studies cache-oblivious and dynamic data structures, fixed-parameter tractability, and the computational complexity of puzzles and games (proving PSPACE/NP-hardness for many recreational problems). Methods are pure CS theory: combinatorial proofs, algorithm analysis, and reduction-based hardness arguments.",
+    "k": {
+      "w": "https://erikdemaine.org/",
+      "p": "https://erikdemaine.org/papers/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Graph Algorithms",
+        "Graph Algorithms"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Programming Languages",
+        "Programming Languages"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "erin-kara-physics": {
+    "l": "",
+    "s": "Observational X-ray astrophysicist studying accreting supermassive and stellar-mass black holes, mapping the geometry of accretion disks and coronae through X-ray reverberation mapping — measuring time delays between direct and reflected X-ray photons to probe gas within a few gravitational radii of the event horizon. Uses NICER (on the ISS), XMM-Newton, NuSTAR, and the upcoming XRISM and AXIS missions; analyzes Fe Kα fluorescence lines, quasi-periodic eruptions, and tidal disruption events. Co-chairs the supermassive-black-hole working group of XRISM.",
+    "k": {
+      "w": "https://www.erinkara.space/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Cosmology",
+        "Astrophysics",
+        "Astrophysics"
+      ],
+      [
+        "Phys",
+        "Relativity",
+        "Gravitational Waves",
+        "Gravitational Waves"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Field Theory",
+        "Quantum Field Theory"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "ernest-fraenkel-bioe": {
+    "l": "Fraenkel Lab",
+    "s": "Computational systems biologist integrating multi-omic data — RNA-seq, proteomics, phosphoproteomics, ATAC-seq, metabolomics — to reconstruct disease-altered signaling and gene-regulatory networks in cancer, ALS, Huntington's disease, and diabetes. Develops network-optimization algorithms (Omics Integrator / Steiner-tree based methods) to find regulators connecting genetic variants to molecular and clinical phenotypes. Closely partners with Answer ALS to apply these methods to patient-derived iPSC-motor-neuron datasets.",
+    "k": {
+      "w": "https://fraenkel.mit.edu/",
+      "p": "https://fraenkel.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "esther-duflo-economics": {
+    "l": "Abdul Latif Jameel Poverty Action Lab (J-PAL)",
+    "s": "Development economist and 2019 Nobel laureate who pioneered the use of randomized controlled trials to evaluate anti-poverty interventions in education, health, microfinance, governance, and climate adaptation across low- and middle-income countries. Co-founded and co-directs J-PAL, a global network of 900+ affiliated researchers running field experiments. Methods are empirical microeconometrics: cluster-randomized trials, difference-in-differences, instrumental variables, and structural estimation.",
+    "k": {
+      "w": "https://economics.mit.edu/people/faculty/esther-duflo",
+      "p": "https://www.povertyactionlab.org/person/duflo"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Hypothesis Testing",
+        "Hypothesis Testing"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "ethan-peterson-nse": {
+    "l": "",
+    "s": "Nuclear engineer working on neutronics and radiation transport for fusion power plant design, leading the neutronics group at the MIT Plasma Science and Fusion Center. Develops and validates Monte Carlo neutron transport tools (especially OpenMC) for fusion applications, performing nuclear analysis for the SPARC tokamak, the LIBRA liquid-immersion blanket experiment, and tritium-breeding-blanket designs. Methods couple Monte Carlo transport with depletion/transmutation calculations and CAD-based geometry workflows.",
+    "k": {
+      "w": "https://web.mit.edu/nse/people/faculty/peterson.html"
+    },
+    "t": [
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Nuclear Fusion",
+        "Nuclear Fusion"
+      ],
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Radiation Detection",
+        "Radiation Detection"
+      ],
+      [
+        "Chem",
+        "Nuclear Chemistry",
+        "Radiochemistry",
+        "Radiochemistry"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "eugene-a-fitzgerald-dmse": {
+    "l": "Fitzgerald Group",
+    "s": "Studies lattice-mismatched semiconductor heteroepitaxy, defects, and dislocation dynamics, with a focus on integrating compound semiconductors (GaN, InGaP, GaAs) onto silicon for low-energy electronics, displays, and multi-junction photovoltaics. Pioneered relaxed SiGe-on-Si buffers that enabled commercial strained-silicon CMOS (commercialized via AmberWave). Methods include MOCVD and MBE growth, transmission electron microscopy of dislocations, X-ray diffraction, and device fabrication and characterization.",
+    "k": {
+      "w": "https://sauvignon.mit.edu/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Condensed Matter",
+        "Semiconductor Physics",
+        "Semiconductor Physics"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Solid-State Chemistry",
+        "Solid-State Chemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Nanomaterials",
+        "Nanomaterials"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "evelina-fedorenko-bcs": {
+    "l": "EvLab",
+    "s": "Studies the cognitive and neural architecture of human language, mapping the high-level language network and its functional dissociation from systems for music, math, theory of mind, and computer code, using individual-subject fMRI 'localizer' methods. Combines fMRI, MEG/EEG, intracranial ECoG and direct cortical stimulation in neurosurgical patients, behavioral psycholinguistics, large-scale crowdsourced studies, and computational modeling with LLMs to test theories of efficient communication. Recent work identifies neuronal populations with distinct temporal integration windows for linguistic input.",
+    "k": {
+      "w": "https://www.evlab.mit.edu/",
+      "p": "https://www.evlab.mit.edu/publications"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "NLP & Language Models",
+        "Language Understanding",
+        "Language Understanding"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "evelyn-n-wang-meche": {
+    "l": "Device Research Lab",
+    "s": "Studies micro/nanoscale heat and mass transfer for thermal management, water harvesting, desalination, and solar thermal energy conversion. Notable work includes a metal-organic-framework (MOF)-based atmospheric water harvester that pulls drinkable water from desert air, a passive multistage solar still for high-efficiency desalination, and nanostructured surfaces for boiling/condensation enhancement and electronics cooling. Methods combine micro/nanofabrication, in-situ ESEM imaging, and continuum heat-transfer modeling.",
+    "k": {
+      "w": "https://drl.mit.edu/",
+      "p": "https://drl.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Surface Chemistry",
+        "Surface Chemistry"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Phase Diagrams",
+        "Phase Diagrams"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Thermochemistry",
+        "Thermochemistry"
+      ],
+      [
+        "ESS",
+        "Hydrology",
+        "Water Quality",
+        "Water Quality"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "eytan-modiano-lids": {
+    "l": "Communications and Networking Research Group",
+    "s": "Studies the design and analysis of communication networks — wireless, satellite, and optical — drawing on network optimization, queueing theory, graph theory, and reinforcement learning. Develops cross-layer resource-allocation algorithms for cross-layer routing/scheduling, age-of-information minimization, and stability of dynamic networks. Methods are mathematical: Lyapunov drift-plus-penalty, stochastic network optimization, MDP/RL for control of partially-observable network state.",
+    "k": {
+      "w": "https://modiano.mit.edu/",
+      "p": "https://modiano.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Network Protocols",
+        "Network Protocols"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Reinforcement Learning"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "f-zhang-bioe": {
+    "n": "Feng Zhang",
+    "l": "Zhang Lab",
+    "s": "Develops and applies CRISPR-based tools for genome and transcriptome engineering, having engineered SpCas9 for mammalian genome editing and discovered/characterized Cas12, Cas13, and other class 2 CRISPR effectors via computational mining of microbial genomes. Built the SHERLOCK nucleic-acid diagnostic platform (Cas13-based) and REPAIR/RESCUE RNA base editors, plus AAV-deliverable compact CRISPR systems for in vivo therapy. Methods include structural biology of Cas effectors, directed evolution, deep mutational scanning, and large-scale CRISPR screens in primary cells and organoids.",
+    "k": {
+      "w": "https://www.zlab.bio/",
+      "p": "https://www.zlab.bio/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Gene Editing",
+        "Gene Editing"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ]
+    ],
+    "scholar_status": "cleared",
+    "notes": "Duplicate of feng-zhang-bioe."
+  },
+  "facundo-d-batista-biology": {
+    "l": "Batista Lab",
+    "s": "Studies B-lymphocyte biology — B-cell receptor signaling and dynamics, germinal-center selection, and antibody affinity maturation — and applies the findings to rational vaccine design against HIV, malaria, influenza, and SARS-CoV-2. Builds humanized and BCR-knock-in mouse models for preclinical immunogen testing and uses two-photon intravital imaging of lymph nodes, single-cell BCR sequencing, flow cytometry, and biochemistry of receptor-cytoskeleton interactions. Recent work probes B-cell metabolism (autophagy, mitochondrial flux) as a driver of humoral immunity.",
+    "k": {
+      "w": "https://ragoninstitute.org/lab/batista/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Viral Replication",
+        "Viral Replication"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "fadel-adib-eecs": {
+    "l": "Signal Kinetics",
+    "s": "Invents wireless and sensing technologies that perceive the physical world through walls, water, and skin, with applications in health monitoring, robotics, and ocean IoT. Builds RF-based systems that track human motion, breathing, heart rate, and emotion through walls using WiFi/mmWave reflections; battery-free underwater backscatter sensors using piezoelectric resonators for ocean exploration; and RFID-based localization and inventory tracking. Methods span wireless channel modeling, MIMO signal processing, and hardware/antenna prototyping.",
+    "k": {
+      "w": "https://signal-kinetics.media.mit.edu/",
+      "p": "https://signal-kinetics.media.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Network Protocols",
+        "Network Protocols"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Human-Computer Interaction",
+        "Human-Computer Interaction"
+      ],
+      [
+        "Phys",
+        "Electricity & Magnetism",
+        "Maxwell's Equations",
+        "Maxwell's Equations"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Interference & Diffraction",
+        "Interference & Diffraction"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "fang-wang-bcs": {
+    "n": "Fan Wang",
+    "l": "Wang Lab",
+    "s": "Studies neural circuits governing bidirectional brain-body interactions — the sensory and affective dimensions of pain and addiction, central pain-suppression by general anesthesia, and sensorimotor circuits for active touch, eating, drinking, and movement. Methods include monosynaptic rabies-virus circuit tracing, AAV-based intersectional genetic targeting, two-photon and miniscope calcium imaging in behaving mice, optogenetic and chemogenetic manipulation, and fiber photometry. Co-directs the K. Lisa Yang and Hock E. Tan Center for Molecular Therapeutics.",
+    "k": {
+      "w": "https://mcgovern.mit.edu/profile/fan-wang/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Musculoskeletal System",
+        "Musculoskeletal System"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ]
+    ],
+    "scholar_status": "cleared",
+    "notes": "Likely misnaming of Fan Wang (BCS/McGovern). No 'Fang Wang' found at MIT BCS."
+  },
+  "frank-wang-bcs": {
+    "n": "Fan Wang",
+    "l": "Wang Lab",
+    "s": "Studies neural circuits governing bidirectional brain-body interactions — the sensory and affective dimensions of pain and addiction, central pain-suppression by general anesthesia, and sensorimotor circuits for active touch, eating, drinking, and movement. Methods include monosynaptic rabies-virus circuit tracing, AAV-based intersectional genetic targeting, two-photon and miniscope calcium imaging in behaving mice, optogenetic and chemogenetic manipulation, and fiber photometry. Co-directs the K. Lisa Yang and Hock E. Tan Center for Molecular Therapeutics.",
+    "k": {
+      "w": "https://mcgovern.mit.edu/profile/fan-wang/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Musculoskeletal System",
+        "Musculoskeletal System"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ]
+    ],
+    "scholar_status": "cleared",
+    "notes": "Likely misnaming of Fan Wang (BCS/McGovern). No 'Frank Wang' found at MIT BCS."
+  },
+  "farnaz-niroui-eecs": {
+    "l": "Niroui Group",
+    "s": "Develops hybrid nanofabrication techniques to build sub-10-nm structures that exploit nanoscale physics for new electronic, optoelectronic, and quantum devices. Studies excitonic and plasmonic light-matter interactions in halide-perovskite nanocrystals for on-demand single-photon sources, neuromorphic metamaterials, and electromechanical NEMS. Methods combine electron-beam lithography, self-assembly, surface chemistry, and in-situ TEM/AFM characterization of charge transport and exciton dynamics.",
+    "k": {
+      "w": "https://niroui.mit.edu/",
+      "p": "https://niroui.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Nanomaterials",
+        "Nanomaterials"
+      ],
+      [
+        "Phys",
+        "Condensed Matter",
+        "Semiconductor Physics",
+        "Semiconductor Physics"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Transport",
+        "Quantum Transport"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Photonic Crystals",
+        "Photonic Crystals"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "feng-zhang-bioe": {
+    "l": "Zhang Lab",
+    "s": "Develops and applies CRISPR-based tools for genome and transcriptome engineering, having engineered SpCas9 for mammalian genome editing and discovered/characterized Cas12, Cas13, and other class 2 CRISPR effectors via computational mining of microbial genomes. Built the SHERLOCK nucleic-acid diagnostic platform (Cas13-based) and REPAIR/RESCUE RNA base editors, plus AAV-deliverable compact CRISPR systems for in vivo therapy. Methods include structural biology of Cas effectors, directed evolution, deep mutational scanning, and large-scale CRISPR screens in primary cells and organoids.",
+    "k": {
+      "w": "https://www.zlab.bio/",
+      "p": "https://www.zlab.bio/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Gene Editing",
+        "Gene Editing"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "frank-schilbach-economics": {
+    "l": "Behavioral Development Lab",
+    "s": "Behavioral development economist studying previously neglected correlates of poverty — substance abuse, physical pain, sleep deprivation, depression — and their effects on cognition, decision-making, and worker productivity in low-income populations. Runs randomized field experiments through the Behavioral Development Lab in India, with measurements of worker output, lab-in-the-field decision tasks, actigraphy for sleep, and structured psychiatric assessments. Co-affiliated with J-PAL and NBER.",
+    "k": {
+      "w": "https://economics.mit.edu/people/faculty/frank-schilbach"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Circadian Rhythms",
+        "Circadian Rhythms"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "g-fournier-eaps": {
+    "n": "Gregory Fournier",
+    "l": "",
+    "s": "Geobiologist using molecular phylogenetics to reconstruct the evolutionary histories of microbial genes and genomes across geological timescales, with a focus on horizontal gene transfer events and their use as molecular clocks for the early biosphere. Combines phylogenomic analysis of bacterial and archaeal lineages with the geochemical and isotopic record to date events such as the Great Oxidation Event and the origin of methanogens. Also explores biosignatures relevant to astrobiology.",
+    "k": {
+      "w": "https://eaps.mit.edu/people/faculty/gregory-fournier/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Ecology",
+        "Evolution",
+        "Evolution"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "ESS",
+        "Geology",
+        "Stratigraphy",
+        "Stratigraphy"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "g-lusztig-math": {
+    "n": "George Lusztig",
+    "l": "",
+    "s": "Foundational figure in modern representation theory, working on representations of finite reductive groups, p-adic groups, Hecke algebras, quantum groups, and Weyl groups. Introduced Kazhdan-Lusztig polynomials, character sheaves, Deligne-Lusztig varieties, canonical bases for quantum groups, and the theory of total positivity in algebraic groups. Methods are pure algebra and algebraic geometry: ℓ-adic cohomology of varieties over finite fields, perverse sheaves, and combinatorics of Coxeter groups.",
+    "k": {
+      "w": "https://math.mit.edu/~gyuri/",
+      "p": "https://math.mit.edu/lusztig-archive/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Graph Algorithms",
+        "Graph Algorithms"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "g-m-innocenti-physics": {
+    "n": "Gian Michele Innocenti",
+    "l": "MIT PixElφ Lab",
+    "s": "Experimental high-energy nuclear physicist studying the quark-gluon plasma in ultra-relativistic heavy-ion collisions at the CMS experiment at the LHC, with emphasis on heavy-flavor (charm and beauty) production and jet substructure as probes of the QGP. Also leads a program on photon-photon and photon-nucleus scattering in ultra-peripheral collisions to constrain low-x gluon distributions, and develops CMOS monolithic silicon trackers for the future ePIC experiment at the Electron-Ion Collider. Methods include multivariate jet-flavor tagging, BDT/ML event selection, and precision tracker hardware design.",
+    "k": {
+      "w": "https://physics.mit.edu/faculty/gian-michele-innocenti/",
+      "p": "https://pixelphilab.mit.edu/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Particle Physics",
+        "Standard Model",
+        "Standard Model"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Chromodynamics",
+        "Quantum Chromodynamics"
+      ],
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Radiation Detection",
+        "Radiation Detection"
+      ]
+    ],
+    "scholar_status": "cleared",
+    "notes": "Duplicate of gian-michele-innocenti-physics."
+  },
+  "gian-michele-innocenti-physics": {
+    "l": "MIT PixElφ Lab",
+    "s": "Experimental high-energy nuclear physicist studying the quark-gluon plasma in ultra-relativistic heavy-ion collisions at the CMS experiment at the LHC, with emphasis on heavy-flavor (charm and beauty) production and jet substructure as probes of the QGP. Also leads a program on photon-photon and photon-nucleus scattering in ultra-peripheral collisions to constrain low-x gluon distributions, and develops CMOS monolithic silicon trackers for the future ePIC experiment at the Electron-Ion Collider. Methods include multivariate jet-flavor tagging, BDT/ML event selection, and precision tracker hardware design.",
+    "k": {
+      "w": "https://physics.mit.edu/faculty/gian-michele-innocenti/",
+      "p": "https://pixelphilab.mit.edu/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Particle Physics",
+        "Standard Model",
+        "Standard Model"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Chromodynamics",
+        "Quantum Chromodynamics"
+      ],
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Radiation Detection",
+        "Radiation Detection"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "gabriele-farina-eecs": {
+    "l": "",
+    "s": "Theoretical computer scientist working on computational game theory, online learning, and equilibrium computation in large-scale imperfect-information games such as poker and security games. Develops scalable Nash and correlated-equilibrium solvers, no-regret learning dynamics in extensive-form games, and trembling-hand equilibrium refinements; recent work casts LLM decoding as an imperfect-information signaling game ('equilibrium ranking'). Methods combine convex optimization, regret minimization, and tensor-decomposition algorithms.",
+    "k": {
+      "w": "https://www.mit.edu/~gfarina/about/",
+      "p": "http://www.mit.edu/~gfarina/publications/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Reinforcement Learning"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "NLP & Language Models",
+        "Language Understanding",
+        "Language Understanding"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "gang-chen-meche": {
+    "l": "Nanoengineering Group",
+    "s": "Studies nanoscale energy transport — phonon, electron, and photon — and applications in thermoelectrics, solar thermal energy conversion, water purification, and thermal management. Notable contributions include solving the phonon Boltzmann transport equation in nanostructures, experimentally extracting phonon mean-free-path distributions in solids, and developing high-thermal-conductivity polyethylene nanofibers and high-ZT nanocomposite thermoelectrics. Methods combine first-principles DFT, ballistic-diffusive heat transport theory, ultrafast pump-probe thermoreflectance, and nanofabrication.",
+    "k": {
+      "w": "https://web.mit.edu/nanoengineering/",
+      "p": "https://web.mit.edu/nanoengineering/publications/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Condensed Matter",
+        "Semiconductor Physics",
+        "Semiconductor Physics"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Thermochemistry",
+        "Thermochemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Nanomaterials",
+        "Nanomaterials"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "gareth-h-mckinley-meche": {
+    "l": "Non-Newtonian Fluid Dynamics Group",
+    "s": "Studies the rheology and dynamics of complex fluids — polymers, gels, surfactants, suspensions, food and consumer products — under shear and especially extension. Develops extensional rheometry instruments (CaBER, FiSER), microrheology, and field-responsive (electro/magneto) rheology; also studies super-hydrophobic/omniphobic surfaces and droplet impact on nanostructured substrates. Methods couple high-speed imaging and microfluidics with constitutive-model continuum mechanics for non-Newtonian fluids.",
+    "k": {
+      "w": "https://nnf.mit.edu/",
+      "p": "https://nnf.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Polymer Chemistry",
+        "Polymer Chemistry"
+      ],
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Colloid Chemistry",
+        "Colloid Chemistry"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Surface Chemistry",
+        "Surface Chemistry"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "genewei-li-biology": {
+    "l": "Li Lab",
+    "s": "Studies the quantitative principles of bacterial gene expression — how cells precisely tune transcription, translation, and RNA processing to set protein synthesis rates. Pioneered ribosome profiling (Ribo-seq) refinements and developed Rend-seq to map mRNA boundaries genome-wide; uses single-molecule fluorescence to track ribosome initiation kinetics in living B. subtilis and E. coli. Recent work characterizes 'runaway transcription' — uncoupling of transcription from translation — across diverse bacterial species.",
+    "k": {
+      "w": "https://www.genesgroup.org/",
+      "p": "https://www.genesgroup.org/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Transcription",
+        "Transcription"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "george-b-benedek-physics": {
+    "l": "Benedek Group",
+    "s": "Biophysicist studying phase transitions, self-assembly, and aggregation of biological macromolecules and their connection to disease — most famously cataract (lens crystallin condensation), Alzheimer's amyloid fibril formation, and cholesterol gallstone nucleation. Pioneered quasi-elastic (dynamic) light scattering as a tool to measure protein diffusion, size, and critical phenomena in protein solutions. Methods combine static and dynamic light scattering, NMR, and statistical-mechanics theory of condensed phases.",
+    "k": {
+      "w": "http://web.mit.edu/physics/benedek/",
+      "p": "https://web.mit.edu/physics/benedek/Group%20Papers.html"
+    },
+    "t": [
+      [
+        "Phys",
+        "Condensed Matter",
+        "Semiconductor Physics",
+        "Semiconductor Physics"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Protein Structure",
+        "Protein Structure"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Phase Diagrams",
+        "Phase Diagrams"
+      ],
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Colloid Chemistry",
+        "Colloid Chemistry"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "george-barbastathis-meche": {
+    "l": "3D Optical Systems Group",
+    "s": "Studies computational imaging and 3D optics, combining the physics of light propagation (digital holography, volume holography, gradient-index media, transformation optics) with deep-learning methods for inverse problems. Develops phase-retrieval and tomographic reconstruction algorithms based on physics-informed neural networks for X-ray, electron, and visible-light microscopy. Also designs metasurface-based achromatic lenses and computational lensless cameras.",
+    "k": {
+      "w": "https://optics.mit.edu/",
+      "p": "https://optics.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Waves & Optics",
+        "Interference & Diffraction",
+        "Interference & Diffraction"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Photonic Crystals",
+        "Photonic Crystals"
+      ],
+      [
+        "CS/AI",
+        "Computer Vision",
+        "3D Reconstruction",
+        "3D Reconstruction"
+      ],
+      [
+        "CS/AI",
+        "Deep Learning",
+        "Diffusion Models",
+        "Diffusion Models"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "gigliola-staffilani-math": {
+    "l": "",
+    "s": "Mathematical analyst working on dispersive nonlinear partial differential equations, especially the nonlinear Schrödinger and Korteweg-de Vries equations. Co-developed (with Colliander, Keel, Takaoka, Tao) the 'I-method' of almost-conserved energies and proved global well-posedness for energy-subcritical and quintic defocusing NLS, frequency-cascade behavior on the 2-torus, and symplectic non-squeezing for periodic KdV. Methods combine harmonic analysis (Strichartz estimates, multilinear restriction) with analytic number theory and probabilistic PDE.",
+    "k": {
+      "w": "https://math.mit.edu/~gigliola/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Schrödinger Equation",
+        "Schrödinger Equation"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Nonlinear Optics",
+        "Nonlinear Optics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "gioele-zardini-cee": {
+    "l": "",
+    "s": "Engineering researcher working on the mathematical co-design of complex autonomous and mobility systems, formalizing the joint optimization of hardware, software, and infrastructure choices for self-driving vehicles, robots, and urban transportation networks. Uses applied category theory (compositionality of design problems), monotone optimization on partial orders, game theory, and reinforcement learning to make system-level trade-offs computationally tractable. Applications include AV fleet sizing, sensor selection, and policy design.",
+    "k": {
+      "w": "https://zardini.mit.edu/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Reinforcement Learning",
+        "Reinforcement Learning"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "giovanni-traverso-meche": {
+    "l": "Traverso Lab",
+    "s": "Physician-engineer developing ingestible electronics, robotic capsules, long-acting drug-delivery depots, and bioresorbable implants to improve medication adherence and enable closed-loop sensing/therapy in the GI tract. Notable inventions include a star-shaped gastric-retentive pill that resides in the stomach for days, a self-orienting millimeter-scale applicator (SOMA) that injects insulin and biologics through the gastric mucosa, ingestible vital-sign sensors, and triggerable tough hydrogels. Methods combine elastomer/polymer fabrication, mechanical testing, large-animal preclinical studies, and clinical translation.",
+    "k": {
+      "w": "https://www.traversolab.com/",
+      "p": "https://www.traversolab.com/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Digestive System",
+        "Digestive System"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Polymer Chemistry",
+        "Polymer Chemistry"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Pharmacology",
+        "Pharmacology"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Human-Computer Interaction",
+        "Human-Computer Interaction"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "gloria-b-choi-bcs": {
+    "l": "Choi Lab",
+    "s": "Studies the bidirectional interactions between the immune system and the brain, asking how cytokines (IL-17a, IL-1β, IFN-γ) act as neuromodulators that shape neural circuits underlying social behavior, mood, and sickness behavior. Recent work mapped how IL-17a from gut Th17 cells reshapes mouse cortical S1DZ activity to alter sociability in maternal immune-activation autism models, and how IL-1β acting on the dorsal raphe drives self-imposed social isolation during sickness. Methods include mouse genetics, optogenetics, in vivo two-photon imaging, EEG, and behavioral assays.",
+    "k": {
+      "w": "https://picower.mit.edu/gloria-choi"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Sensory Systems",
+        "Sensory Systems"
+      ],
+      [
+        "Bio",
+        "Ecology",
+        "Animal Behavior",
+        "Animal Behavior"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "gregory-p-fournier-eaps": {
+    "l": "",
+    "s": "Geobiologist using molecular phylogenetics to reconstruct the evolutionary histories of microbial genes and genomes across geological timescales, with a focus on horizontal gene transfer events and their use as molecular clocks for the early biosphere. Combines phylogenomic analysis of bacterial and archaeal lineages with the geochemical and isotopic record to date events such as the Great Oxidation Event and the origin of methanogens. Also explores biosignatures relevant to astrobiology.",
+    "k": {
+      "w": "https://eaps.mit.edu/people/faculty/gregory-fournier/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Ecology",
+        "Evolution",
+        "Evolution"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "ESS",
+        "Geology",
+        "Stratigraphy",
+        "Stratigraphy"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Duplicate of g-fournier-eaps."
   }
 }

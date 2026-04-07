@@ -175,10 +175,13 @@ If you need to fix the PI name, add `"n": "Real Name"`. If scholar is wrong, omi
 ## Last checkpoint
 
 - **Date**: 2026-04-07
-- **Done**: 44 / 515 labs
-- **Resume from**: next alphabetical after "Barbara Liskov" — likely starts with "Beatriz", "Ben", "Benedetto", etc. Run the listing snippet in step 3 above to confirm.
-- **Last merge**: `merge_enrichment.py` was run after batch 4; labs.json contains all 44 enrichments.
-- **Anomalies surfaced**: 1 dup (Slocum), 1 junk (B.K. Berger), 1 name fix (B. Russell → Brooke Russell). All in duplicates.txt.
-- **Pending decisions for user**: whether to delete `b-k-berger-math` and one of the two Slocum entries — neither has been touched in labs.json.
+- **Done**: 163 / 515 enrichment.json entries (≈155 distinct labs after dupes)
+- **Resume from**: next alphabetical after "Gregory Fournier" — likely "Guoping", "Hadley", "Hari", "Heather", etc. Run the listing snippet in step 3.
+- **Last merge**: `merge_enrichment.py` was run after batch 13; labs.json contains all current enrichments.
+- **Anomalies surfaced** (all in duplicates.txt):
+  - Dups: alex-slocum / alexander-h-slocum; three c-paus / christoph-paus / christoph-m-e-paus entries; d-m-anderson / daniel-g-anderson; ed-boyden-bioe / edward-s-boyden-bioe; edward-miller-bcs / earl-k-miller-bcs.
+  - Junk: b-k-berger-math, e-cary-brown-bcs (Economics, deceased 2007, mistagged BCS).
+  - Name fixes (`n` set): brooke-russell, christoph-paus (×3), curtis-smith, daniel-g-anderson (×2), eluned-smith, earl-k-miller (on edward-miller-bcs), ed-boyden (on edward-s-boyden-bioe).
+- **Pending decisions for user**: whether to delete junk entries and dedupe pairs — none have been removed from labs.json.
 
 When you finish all 515, delete this file.
