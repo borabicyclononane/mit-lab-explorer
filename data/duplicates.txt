@@ -1,0 +1,8 @@
+# PIs that appear under multiple lab ids in labs.json.
+# Discovered during the lab-enrichment pass. The recommended action is
+# usually to keep the more complete entry and delete the other.
+
+alex-slocum-meche  ==  alexander-h-slocum-meche      # Alexander H. Slocum (MechE / PERG)
+
+# Likely-junk entries (not actually MIT faculty or stale placeholders):
+b-k-berger-math   # Beverly K. Berger is a relativist at Oakland Univ / former NSF — no MIT Math affiliation found. Recommend delete.

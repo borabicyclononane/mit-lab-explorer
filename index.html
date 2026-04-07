@@ -750,9 +750,13 @@
   // ── Link short keys to full keys ──
   const LINK_KEY_MAP = { w:'lab_website', p:'publications_page', m:'mit_profile', g:'google_scholar', ss:'semantic_scholar', o:'openalex' };
 
-  // ── Build the URL the card links to (real Scholar profile or search fallback) ──
+  // ── Build the URL the card links to ──
+  // Priority: publications page > lab website > real Scholar profile > Scholar search fallback
   function cardUrl(lab) {
-    const g = (lab.links || {}).google_scholar;
+    const links = lab.links || {};
+    if (links.publications_page) return links.publications_page;
+    if (links.lab_website) return links.lab_website;
+    const g = links.google_scholar;
     if (g && g.includes('user=')) return g;
     const q = encodeURIComponent((lab.pi_name || '') + ' MIT');
     return `https://scholar.google.com/citations?view_op=search_authors&mauthors=${q}`;

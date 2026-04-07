@@ -1,0 +1,1455 @@
+{
+  "abhijit-banerjee-economics": {
+    "l": "Abdul Latif Jameel Poverty Action Lab (J-PAL)",
+    "s": "J-PAL is a global development-economics research center that uses randomized controlled trials to evaluate which anti-poverty programs actually work. Banerjee's group designs and runs field experiments across health, education, credit, and governance in dozens of countries. Methodologically the lab is built around RCTs, regression-based program evaluation, and causal inference from large field datasets.",
+    "k": {
+      "w": "https://www.povertyactionlab.org/",
+      "p": "https://www.povertyactionlab.org/evaluations"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Economics/development — only loose fit to SciBowl taxonomy; tagged under stats/causal inference. Verified scholar id HLpqZooAAAAJ via search."
+  },
+  "adam-c-martin-biology": {
+    "l": "Martin Lab (Lab of Morphogenesis)",
+    "s": "The Martin Lab studies tissue morphogenesis — how groups of cells generate the mechanical forces that fold and shape embryonic tissue. Their main system is gastrulation in the fruit fly Drosophila, where they track how actomyosin contraction, cell adhesion, and cell signaling drive epithelial folding. The group relies heavily on live confocal microscopy, quantitative image analysis, and genetic perturbations to connect molecular activity to tissue-scale shape change.",
+    "k": {
+      "w": "https://martin-lab.mit.edu/",
+      "p": "https://martin-lab.mit.edu/publications/",
+      "g": "https://scholar.google.com/citations?user=sILsSIsAAAAJ"
+    },
+    "t": [
+      [
+        "Bio",
+        "Developmental Biology",
+        "Embryogenesis",
+        "Embryogenesis"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Adhesion",
+        "Cell Adhesion"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Upgraded scholar from search-query URL to canonical user=sILsSIsAAAAJ profile (verified via search)."
+  },
+  "adam-chlipala-eecs": {
+    "l": "Programming Languages and Verification Group",
+    "s": "Chlipala's group at CSAIL builds machine-checked correctness proofs for software and hardware systems, specializing in formal verification with the Coq proof assistant. Notable projects include Fiat Cryptography (verified cryptographic primitives shipped in Chrome and BoringSSL) and FSCQ (a formally verified file system). Methodologically the group develops new programming-language abstractions, type systems, and proof-engineering techniques to make full-system verification tractable.",
+    "k": {
+      "w": "http://adam.chlipala.net/",
+      "p": "http://adam.chlipala.net/papers/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Formal Verification",
+        "Formal Verification"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Programming Languages",
+        "Programming Languages"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Cryptography",
+        "Cryptography"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Software Engineering",
+        "Software Engineering"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Scholar Imh0w3AAAAAJ verified via search results."
+  },
+  "adam-p-willard-chemistry": {
+    "l": "Willard Group",
+    "s": "The Willard Group is a theoretical/computational physical chemistry lab studying how nanoscale disorder controls emergent behavior in liquids, biological interfaces, and energy materials. Active topics include electron dynamics in conjugated/organic semiconductors, water structure around proteins and electrodes, and electrochemistry at disordered interfaces. The group's methods are molecular dynamics simulation, statistical mechanics, coarse-grained modeling, and machine-learning analysis of simulation trajectories.",
+    "k": {
+      "w": "https://willardgroup.mit.edu/",
+      "p": "https://willardgroup.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Quantum Chemistry",
+        "Quantum Chemistry"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Surface Chemistry",
+        "Surface Chemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Electrochemistry",
+        "Electrochemistry"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Thermochemistry",
+        "Thermochemistry"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Scholar 12AWB6UAAAAJ verified via search results."
+  },
+  "adam-schlosser-eaps": {
+    "l": "MIT Center for Sustainability Science and Strategy (CS3)",
+    "s": "Schlosser is Deputy Director of CS3 (formerly the MIT Joint Program on Global Change), where he leads research on hydro-climate, water resources, and the risk of weather extremes under climate change. The group couples global Earth-system models with socioeconomic and energy-system models to produce probabilistic projections of droughts, floods, and renewable-energy variability. Methodologically the work is built around large Monte Carlo ensembles of coupled climate–economy simulations and statistical downscaling against observational data.",
+    "k": {
+      "w": "https://cs3.mit.edu/",
+      "p": "https://globalchange.mit.edu/publications"
+    },
+    "t": [
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ],
+      [
+        "ESS",
+        "Hydrology",
+        "Water Quality",
+        "Water Quality"
+      ],
+      [
+        "Chem",
+        "Environmental Chemistry",
+        "Atmospheric Chemistry",
+        "Atmospheric Chemistry"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Scholar e2eMfdoAAAAJ verified via search results. Lab name updated from 'Joint Program' to current CS3 name."
+  },
+  "ahmed-f-ghoniem-meche": {
+    "l": "Reacting Gas Dynamics Laboratory (RGD)",
+    "s": "Ghoniem's RGD lab develops the science and engineering of low-carbon energy conversion: clean combustion, CO2 capture, oxy-fuel and chemical-looping systems, hydrogen production, and hybridization of fossil fuels with concentrated solar thermal energy. The group works on multiscale and multiphase reacting flows, building both reduced thermochemical models and high-resolution turbulence simulations. Methods span computational fluid dynamics, large-eddy simulation, detailed kinetic modeling, and bench-scale combustion experiments.",
+    "k": {
+      "w": "https://rgd.mit.edu/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Thermochemistry",
+        "Thermochemistry"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Chemical Kinetics",
+        "Chemical Kinetics"
+      ],
+      [
+        "Chem",
+        "Environmental Chemistry",
+        "Atmospheric Chemistry",
+        "Atmospheric Chemistry"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "akintunde-i-akinwande-eecs": {
+    "l": "Akinwande Group (Microsystems Technology Laboratories)",
+    "s": "Akinwande's group at MIT's Microsystems Technology Laboratories designs and fabricates micro- and nano-scale electronic devices, with emphasis on vacuum nanoelectronics (cold-cathode field emitters), MEMS sensors and actuators, and electronics on flexible substrates. Recent work covers field-emission electron sources, ion sources for portable mass spectrometry, and thin-film transistor backplanes for displays. The group's methods are semiconductor cleanroom processing, device physics modeling, and electrical characterization of nanoscale structures.",
+    "t": [
+      [
+        "Phys",
+        "Condensed Matter",
+        "Semiconductor Physics",
+        "Semiconductor Physics"
+      ],
+      [
+        "Phys",
+        "Electricity & Magnetism",
+        "Maxwell's Equations",
+        "Maxwell's Equations"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "CPU/GPU Architecture",
+        "CPU/GPU Architecture"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "alan-d-grossman-biology": {
+    "l": "Grossman Lab",
+    "s": "The Grossman lab studies the molecular biology of bacteria, using Bacillus subtilis as the main model. Two major lines of work are the lifecycle and regulation of integrative and conjugative elements (ICEs) — mobile DNA elements that are a major route for horizontal spread of antibiotic-resistance genes — and the control of chromosomal DNA replication initiation by the conserved replication initiator/transcription factor DnaA. Methods include bacterial genetics, biochemistry of DNA-binding proteins, fluorescence microscopy of single cells, and high-throughput sequencing.",
+    "k": {
+      "w": "https://grossman.mit.edu/",
+      "p": "https://grossman.mit.edu/key-publications/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Transcription",
+        "Transcription"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "alan-edelman-math": {
+    "l": "JuliaLab (CSAIL)",
+    "s": "Edelman is co-creator of the Julia programming language and runs the JuliaLab in CSAIL, which builds the language's compiler, scientific-computing libraries, and tools for differentiable and scientific machine learning. Research interests include numerical linear algebra, random matrix theory (eigenvalue distributions, condition numbers), and high-performance parallel computing. Methodologically the group combines pure-math analysis (Lie theory, geometry of matrix manifolds) with compiler engineering and large-scale numerical experimentation.",
+    "k": {
+      "w": "https://julia.mit.edu/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Programming Languages",
+        "Programming Languages"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Probability & Statistics",
+        "Probability & Statistics"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Parallel Computing",
+        "Parallel Computing"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "alan-jasanoff-bioe": {
+    "l": "Jasanoff Lab",
+    "s": "The Jasanoff lab develops 'molecular fMRI' — a new generation of magnetic-resonance imaging tools that read out brain activity at the level of specific neurochemicals rather than just blood flow. The group engineers MRI contrast agents and protein/nanoparticle sensors that respond to neurotransmitters (dopamine, calcium, serotonin) and uses them to image neural circuits in living rodent brains. Methods span protein engineering, nanoparticle chemistry, in vivo MRI, optogenetics, and quantitative behavioral neuroscience.",
+    "k": {
+      "w": "https://jasanofflab.mit.edu/",
+      "p": "https://jasanofflab.mit.edu/publications.html"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Anatomy & Physiology",
+        "Nervous System"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Coordination Compounds",
+        "Coordination Compounds"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "alex-k-shalek-chemistry": {
+    "l": "Shalek Lab",
+    "s": "The Shalek lab builds and applies single-cell genomic technologies to dissect how individual immune, epithelial, and tumor cells behave inside complex tissues. They are best known for inventing Seq-Well, a portable low-cost platform for single-cell RNA sequencing that can be deployed in low-resource clinical settings around the world. Methods include droplet- and well-based scRNA-seq, multimodal omics (CITE-seq, spatial transcriptomics), microfluidics, and large-scale computational analysis of cell-state landscapes.",
+    "k": {
+      "w": "https://shaleklab.com/",
+      "p": "https://shaleklab.com/publications/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "alexander-h-slocum-meche": {
+    "l": "Precision Engineering Research Group (PERG)",
+    "s": "PERG develops mechanical systems whose performance is set by deterministic design — exact-constraint kinematics, precision bearings, flexures, and metrology — rather than by trial-and-error tuning. The group's projects span machine tools, semiconductor lithography stages, medical devices, and renewable-energy hardware (wave, wind, and ocean-thermal systems). Methods are first-principles mechanics, error-budget analysis, finite-element modeling, and extensive prototyping in MIT's machine shops.",
+    "k": {
+      "w": "http://pergatory.mit.edu/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Corrosion",
+        "Corrosion"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Duplicate of alex-slocum-meche; same enrichment applied to both. See data/duplicates.txt."
+  },
+  "alex-slocum-meche": {
+    "l": "Precision Engineering Research Group (PERG)",
+    "s": "PERG develops mechanical systems whose performance is set by deterministic design — exact-constraint kinematics, precision bearings, flexures, and metrology — rather than by trial-and-error tuning. The group's projects span machine tools, semiconductor lithography stages, medical devices, and renewable-energy hardware (wave, wind, and ocean-thermal systems). Methods are first-principles mechanics, error-budget analysis, finite-element modeling, and extensive prototyping in MIT's machine shops.",
+    "k": {
+      "w": "http://pergatory.mit.edu/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Corrosion",
+        "Corrosion"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Duplicate of alexander-h-slocum-meche; same enrichment applied to both. See data/duplicates.txt."
+  },
+  "alexander-logunov-math": {
+    "s": "Logunov is a pure mathematician working in harmonic analysis, potential theory, and the geometry of nodal sets — the zero sets of solutions of elliptic partial differential equations such as Laplace eigenfunctions on manifolds. His Clay-Award-winning work (with Eugenia Malinnikova) introduced new geometric-combinatorial methods that resolved long-standing conjectures of Yau and Nadirashvili on the size of nodal sets. The work is theoretical: PDE estimates, complex analysis, and combinatorial/geometric arguments rather than computation or experiment.",
+    "t": [
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Schrödinger Equation",
+        "Schrödinger Equation"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Wave-Particle Duality",
+        "Wave-Particle Duality"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Pure math (harmonic analysis / nodal geometry); no group website. Tags are loose connections (eigenfunctions of Schrödinger-like operators)."
+  },
+  "alexander-m-klibanov-chemistry": {
+    "l": "Klibanov Lab",
+    "s": "Klibanov's lab pioneered non-aqueous enzymology — the discovery that enzymes can be made to function as efficient catalysts in nearly anhydrous organic solvents, with dramatically altered thermostability and stereoselectivity compared to the same enzymes in water. Current work uses these solvent-engineered biocatalysts for asymmetric organic synthesis, develops antimicrobial polymeric coatings, and studies the stabilization and delivery of protein pharmaceuticals. The group's methods combine enzymology, organic chemistry, polymer chemistry, and physical biochemistry.",
+    "t": [
+      [
+        "Bio",
+        "Biochemistry",
+        "Enzyme Kinetics",
+        "Enzyme Kinetics"
+      ],
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Stereochemistry",
+        "Stereochemistry"
+      ],
+      [
+        "Chem",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Polymer Chemistry",
+        "Polymer Chemistry"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "alexei-borodin-math": {
+    "l": "Integrable Probability Working Group",
+    "s": "Borodin works at the interface of probability, representation theory, combinatorics, and statistical physics — an area he helped found and is now called 'integrable probability'. He studies exactly-solvable models of random growth and interacting particle systems (KPZ universality, six-vertex models, Macdonald processes, last-passage percolation) where symmetry and algebra produce closed-form limiting distributions. The work is theoretical: representation-theoretic identities, asymptotic analysis, and random matrix theory rather than simulation.",
+    "k": {
+      "w": "https://math.mit.edu/intprob/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Probability & Statistics",
+        "Probability & Statistics"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Many-Body Physics",
+        "Many-Body Physics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "ali-jadbabaie-cee": {
+    "l": "Jadbabaie Group (LIDS / IDSS)",
+    "s": "Jadbabaie's group studies collective behavior and decision-making in large interconnected systems — opinion dynamics in social networks, distributed control of multi-agent systems, learning over networks, and the structure of complex urban and infrastructure systems. The toolbox is mathematical: control theory, network science, dynamical systems, convex optimization, graph theory, and statistical learning. Recent work combines these with machine learning for forecasting epidemics, traffic, and social-media dynamics.",
+    "k": {
+      "w": "https://jadbabaie.mit.edu/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "alison-e-ringel-biology": {
+    "l": "Ringel Lab",
+    "s": "The Ringel lab is a T-cell immunology group studying how immune cells survive and adapt to hostile environments such as the inside of a tumor. Work focuses on the metabolic programs of CD8+ T cells under nutrient deprivation, oxidative stress, and immunosuppressive cytokines, looking for vulnerabilities that could be exploited therapeutically. Methods include in vivo mouse tumor models, primary T-cell culture, single-cell RNA-seq, metabolomics, and CRISPR screens.",
+    "k": {
+      "w": "https://www.ringel-lab.org/",
+      "p": "https://www.ringel-lab.org/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Metabolism",
+        "Metabolism"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Editing",
+        "Gene Editing"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "alison-e-wendlandt-chemistry": {
+    "l": "Wendlandt Group",
+    "s": "The Wendlandt group develops new selective catalytic reactions for organic synthesis, especially methods that can isomerize alkenes or epimerize sugars site-selectively to access otherwise hard-to-make stereoisomers. The hallmark approach uses dual catalysis — pairing a photoredox catalyst with a hydrogen-atom-transfer or transition-metal catalyst — to break and re-form bonds at remote positions on a molecule. Work spans organometallic synthesis, physical organic chemistry, mechanism studies, and total synthesis of carbohydrates and natural products.",
+    "k": {
+      "w": "https://wendlandtlab.com/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Stereochemistry",
+        "Stereochemistry"
+      ],
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Cross-Coupling Reactions",
+        "Cross-Coupling Reactions"
+      ],
+      [
+        "Chem",
+        "Inorganic Chemistry",
+        "Transition Metal Catalysis",
+        "Transition Metal Catalysis"
+      ],
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Carbohydrate Chemistry",
+        "Carbohydrate Chemistry"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "amy-e-keating-biology": {
+    "l": "Keating Lab",
+    "s": "The Keating lab studies how proteins recognize and bind one another with sequence-encoded specificity, focusing on α-helical coiled coils and the Bcl-2 family of apoptosis regulators. They combine bioinformatics, structural modeling, and computational design with high-throughput experimental measurement of binding affinities, then engineer synthetic peptides that selectively disrupt disease-relevant protein–protein interactions. Methods include deep mutational scanning, yeast surface display, X-ray crystallography, molecular dynamics, and machine-learning-based protein design.",
+    "k": {
+      "w": "https://www.keatinglab.mit.edu/",
+      "p": "https://www.keatinglab.mit.edu/publications"
+    },
+    "t": [
+      [
+        "Bio",
+        "Biochemistry",
+        "Protein Structure",
+        "Protein Structure"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Apoptosis",
+        "Apoptosis"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Transfer Learning",
+        "Transfer Learning"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Bioinformatics",
+        "Bioinformatics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "anders-s-hansen-bioe": {
+    "l": "Hansen Lab",
+    "s": "The Hansen lab studies how the three-dimensional folding of the genome controls gene expression, focusing on chromatin loops and enhancer–promoter contacts. They develop new super-resolution and single-molecule imaging tools that track individual proteins, DNA loops, and nascent transcripts inside living human cells with millisecond-and-nanometer resolution. Methods include live-cell single-particle tracking, lattice-light-sheet microscopy, Micro-C and Hi-C, and biophysical modeling of polymer dynamics.",
+    "k": {
+      "w": "https://www.ashansenlab.com/",
+      "p": "https://www.ashansenlab.com/publications.html"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Transcription",
+        "Transcription"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Gene Regulation",
+        "Gene Regulation"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "Epigenetics",
+        "Epigenetics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "andrew-j-whittle-cee": {
+    "l": "Whittle Research Group (Geotechnical Engineering & Underground Infrastructure)",
+    "s": "Whittle's group works on geotechnical engineering — predicting how soils and underground structures deform and fail. The lab develops constitutive models of clays and sands within elasto-plasticity, simulates coupled thermo-hydro-mechanical soil behavior, and applies these models to deepwater oil-platform foundations and major urban tunneling projects (Boston's Big Dig, Tren Urbano in San Juan). Methods are continuum mechanics, finite-element modeling, large-scale lab and field experiments on soils, and instrumentation of real construction sites.",
+    "k": {
+      "w": "https://ajw-group.mit.edu/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Geology",
+        "Erosion & Weathering",
+        "Erosion & Weathering"
+      ],
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ],
+      [
+        "ESS",
+        "Hydrology",
+        "Groundwater Flow",
+        "Groundwater Flow"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "andrew-r-babbin-eaps": {
+    "l": "Babbin Lab (Bablab)",
+    "s": "The Babbin lab is a marine biogeochemistry group studying how microbes in low-oxygen ocean zones control the global nitrogen cycle and the production of greenhouse gases like nitrous oxide. They combine seagoing oceanographic cruises with high-precision isotope-tracer incubation experiments to measure microbial denitrification, anammox, and nitrification rates in situ. Lab work integrates stable-isotope mass spectrometry, gene-based microbial community analysis, and numerical biogeochemical models that connect microscale microbial activity to global climate.",
+    "k": {
+      "w": "https://babbinlab.mit.edu/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Oceanography",
+        "Marine Ecology",
+        "Marine Ecology"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Bacterial Genetics",
+        "Bacterial Genetics"
+      ],
+      [
+        "Chem",
+        "Environmental Chemistry",
+        "Atmospheric Chemistry",
+        "Atmospheric Chemistry"
+      ],
+      [
+        "Bio",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology",
+        "Microbiome & Microbial Ecology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "andrew-v-sutherland-math": {
+    "s": "Sutherland is a senior research scientist in the MIT math department who works on the computational side of number theory and arithmetic geometry. He is one of the principal builders of the L-functions and Modular Forms Database (LMFDB) and has led large computations including the Polymath bounded-gaps-between-primes project and the resolution of Mordell's question on writing 3 as a sum of three cubes. Methods are explicit algorithmic number theory, large-scale distributed computing on elliptic curves and modular forms, and classification of Sato–Tate distributions.",
+    "k": {
+      "w": "https://math.mit.edu/~drew/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Cryptography",
+        "Cryptography"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Parallel Computing",
+        "Parallel Computing"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Pure / computational number theory; cryptography tag is the loose touchpoint (elliptic curves used in crypto)."
+  },
+  "andrew-w-lo-eecs": {
+    "l": "MIT Laboratory for Financial Engineering (LFE)",
+    "s": "Lo runs the MIT Laboratory for Financial Engineering (out of Sloan, but cross-appointed in EECS/CSAIL), which studies financial markets through the lens of statistics, evolutionary biology, and engineering. Recent work covers the Adaptive Markets Hypothesis, financial engineering of biomedical-research funding (mega-funds for cancer drug development), and machine-learning models of investor behavior and systemic risk. Methods are time-series econometrics, computational finance, behavioral experiments, and ML on large financial datasets.",
+    "k": {
+      "w": "https://alo.mit.edu/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Listed under EECS in labs.json but he's primarily a Sloan finance professor; cross-appointed in CSAIL/EECS."
+  },
+  "anette-hosoi-math": {
+    "l": "Hatsopoulos Microfluids Laboratory (HML)",
+    "s": "Peko Hosoi directs the Hatsopoulos Microfluids Laboratory, which works at the intersection of fluid mechanics, biomechanics, and bio-inspired design. Past projects include 'RoboSnails' that mimic gastropod locomotion on shear-thinning mucus, the mechanics of swimming microorganisms, sports analytics, and the design of soft robots. Methods are low-Reynolds-number fluid dynamics, asymptotic analysis, numerical PDE simulation, and tabletop experiments with non-Newtonian fluids.",
+    "k": {
+      "w": "https://web.mit.edu/hml/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Classical Mechanics",
+        "Nonlinear Dynamics",
+        "Nonlinear Dynamics"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Numerical Methods",
+        "Numerical Methods"
+      ],
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Musculoskeletal System",
+        "Musculoskeletal System"
+      ],
+      [
+        "Phys",
+        "Waves & Optics",
+        "Nonlinear Optics",
+        "Nonlinear Optics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "angela-m-belcher-bioe": {
+    "l": "Biomolecular Materials Group (Belcher Lab)",
+    "s": "The Belcher lab uses directed evolution of viruses (especially the M13 bacteriophage) to template inorganic nanomaterials for energy and medical applications. They have engineered viruses that bind and pattern metal and semiconductor surfaces, and used them to assemble lithium-ion battery electrodes, photocatalysts for water splitting, and nanoprobes that detect ovarian tumors smaller than a millimeter. Methods combine phage display, materials chemistry, electrochemistry, fluorescence imaging, and in vivo cancer models.",
+    "k": {
+      "w": "https://belcherlab.mit.edu/",
+      "p": "https://belcherlab.mit.edu/publications/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry",
+        "Biomaterials & Bioorganic Chemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Nanomaterials",
+        "Nanomaterials"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Electrochemistry",
+        "Electrochemistry"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Viral Replication",
+        "Viral Replication"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "angela-n-koehler-bioe": {
+    "l": "Koehler Lab",
+    "s": "The Koehler lab is a chemical-biology group that builds small-molecule probes against historically 'undruggable' targets — transcription factors, RNA-binding proteins, and chromatin-modifying enzymes — mostly in a cancer context. Their signature platform is small-molecule microarray screening, where thousands of compounds are immobilized and scanned for binders against a labeled protein of interest. Methods span synthetic and combinatorial chemistry, biochemical and cellular assays, proteomics, and translation of hits into imaging agents and therapeutic leads.",
+    "k": {
+      "w": "http://koehlerlab.org/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Transcription",
+        "Transcription"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Pharmacology",
+        "Pharmacology"
+      ],
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Organic Chemistry",
+        "Organic Chemistry"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Immunotherapy",
+        "Immunotherapy"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "ankur-jain-biology": {
+    "l": "Jain Lab (Whitehead Institute)",
+    "s": "The Jain lab studies how biomolecules self-organize into membraneless compartments inside cells, especially RNA-protein granules formed by liquid–liquid phase separation. They discovered that certain repeat-expansion RNAs (the same ones that cause ALS, Huntington's, and other neurodegenerative diseases) can clump into gel-like aggregates, and the lab now searches for cellular safeguards that prevent this and for drugs that can dissolve the aggregates. Methods include single-molecule fluorescence imaging, in vitro reconstitution of phase-separated droplets, RNA biochemistry, and small-molecule screens.",
+    "k": {
+      "w": "https://www.ajainlab.org/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology",
+        "Cell/Molecular Biology"
+      ],
+      [
+        "Bio",
+        "Genetics",
+        "RNA Interference",
+        "RNA Interference"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Protein Degradation",
+        "Protein Degradation"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "ankur-moitra-eecs": {
+    "l": "Moitra Group (CSAIL Theory of Computation)",
+    "s": "Moitra is a theoretical computer scientist whose group designs machine-learning algorithms with provable guarantees, even on hard problems like learning Gaussian mixture models, robust statistics under adversarial corruptions, sparse coding, tensor decomposition, topic models, and quantum learning. The work bridges classical theory of computation (LP/SDP relaxations, the method of moments, information theory) with modern statistical learning. Output is mostly theorems and algorithms rather than experiments.",
+    "k": {
+      "w": "https://people.csail.mit.edu/moitra/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Programming Languages",
+        "Programming Languages"
+      ],
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Bayesian Inference",
+        "Bayesian Inference"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "ann-m-graybiel-bcs": {
+    "l": "Graybiel Laboratory",
+    "s": "The Graybiel lab studies the basal ganglia — the deep forebrain circuits that go wrong in Parkinson's, Huntington's, OCD, addiction, and depression, but also drive normal habit learning and motivation. They map striatal striosome and matrix circuits, follow how dopamine and serotonin signals shape decision-making, and test therapeutic strategies including chronic drug-delivery implants. Methods include in vivo electrophysiology, two-photon and fiber-photometry imaging, optogenetics, mouse genetics, and behavioral neuroscience.",
+    "k": {
+      "w": "http://www.graybiel-lab.com/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Anatomy & Physiology",
+        "Nervous System"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Cell Signaling",
+        "Cell Signaling"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Microscopy",
+        "Microscopy"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Pharmacology",
+        "Pharmacology"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "anna-frebel-physics": {
+    "l": "Frebel Group (Stellar Archaeology)",
+    "s": "Frebel's group does 'stellar archaeology' — finding and chemically dissecting the oldest, most metal-poor stars in the Milky Way and its dwarf-galaxy satellites to reconstruct what the universe looked like in its first few hundred million years. By measuring the elemental abundances printed in these fossil stars, the group constrains the masses of the very first generation of stars, the yields of early supernovae, and the r-process events (like neutron-star mergers) that created the heaviest elements. Methods are high-resolution optical spectroscopy on large telescopes (Magellan, VLT) and detailed stellar-atmosphere modeling.",
+    "k": {
+      "w": "https://space.mit.edu/home/afrebel/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Cosmology",
+        "Astrophysics",
+        "Astrophysics"
+      ],
+      [
+        "ESS",
+        "Observational Astronomy",
+        "Survey Astronomy",
+        "Survey Astronomy"
+      ],
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Nuclear Fusion",
+        "Nuclear Fusion"
+      ],
+      [
+        "Chem",
+        "Nuclear Chemistry",
+        "Radiochemistry",
+        "Radiochemistry"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "annachristina-eilers-physics": {
+    "l": "Cosmic Dawn Group",
+    "s": "Eilers leads the Cosmic Dawn Group, an observational astrophysics lab studying the first galaxies, quasars, and supermassive black holes that formed within the first billion years after the Big Bang. The group develops new techniques to measure how long quasars have been shining (using the size of their ionized 'proximity zones') and recently used JWST to find ancient quasars sitting in surprisingly empty regions of space — challenging models of how supermassive black holes grow. Methods include rest-frame UV/optical spectroscopy with Magellan, VLT, and JWST, and statistical analysis of large quasar surveys.",
+    "k": {
+      "w": "https://space.mit.edu/people/anna-christina-eilers/"
+    },
+    "t": [
+      [
+        "ESS",
+        "Cosmology",
+        "Astrophysics",
+        "Astrophysics"
+      ],
+      [
+        "ESS",
+        "Observational Astronomy",
+        "Survey Astronomy",
+        "Survey Astronomy"
+      ],
+      [
+        "Phys",
+        "Relativity",
+        "Gravitational Waves",
+        "Gravitational Waves"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "antoine-allanore-dmse": {
+    "l": "Allanore Group",
+    "s": "The Allanore group works on sustainable extractive metallurgy — replacing the carbon-intensive smelting of metals with cleaner electrochemical processes. Their flagship technique is molten oxide electrolysis (MOE), which directly reduces iron, ferroalloys, and other metals from their oxides in a high-temperature electrolytic cell, eliminating the CO2 emissions of traditional steelmaking; the work spun out as Boston Metal. Methods are high-temperature electrochemistry, molten-salt thermodynamics, materials characterization of refractory anodes, and process engineering.",
+    "k": {
+      "w": "https://allanoregroup.mit.edu/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Electrochemistry",
+        "Electrochemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Solid-State Chemistry",
+        "Solid-State Chemistry"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Thermochemistry",
+        "Thermochemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Corrosion",
+        "Corrosion"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "aram-w-harrow-physics": {
+    "l": "Harrow Group (CTP Quantum Information)",
+    "s": "Harrow is a theorist at MIT's Center for Theoretical Physics working on quantum information and computation — particularly the question of which problems quantum computers can solve exponentially faster than classical ones. He is best known as a co-author of the HHL algorithm for solving linear systems on a quantum computer, and his group works on quantum algorithms, quantum complexity theory, entanglement theory, and the connections between quantum information and quantum gravity (holography, AdS/CFT). The work is purely theoretical: complexity-theoretic proofs and quantum-algorithmic constructions.",
+    "k": {
+      "w": "https://web.mit.edu/aram/www/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Mechanics",
+        "Quantum Mechanics"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Cryptography",
+        "Cryptography"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Quantum Field Theory",
+        "Quantum Field Theory"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "areg-danagoulian-nse": {
+    "l": "Laboratory for Nuclear Security and Policy",
+    "s": "Danagoulian's lab applies experimental nuclear physics to nuclear-security problems: verifying nuclear-warhead dismantlement, screening shipping containers for smuggled fissile material, and developing physical cryptographic protocols that confirm a treaty-relevant warhead is genuine without revealing classified design information. The signature technique is neutron resonance transmission analysis (NRTA), which uses a neutron beam to fingerprint isotopes and geometry inside a sealed object. Methods include accelerator-based neutron and gamma sources, scintillator and semiconductor detectors, Monte Carlo radiation-transport simulation, and treaty/policy analysis.",
+    "k": {
+      "w": "https://lnsp.mit.edu/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Radiation Detection",
+        "Radiation Detection"
+      ],
+      [
+        "Phys",
+        "Particle Physics",
+        "Standard Model",
+        "Standard Model"
+      ],
+      [
+        "Chem",
+        "Nuclear Chemistry",
+        "Radiochemistry",
+        "Radiochemistry"
+      ],
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Cryptography",
+        "Cryptography"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "arlene-m-fiore-eaps": {
+    "l": "TEAMPACCC (Trends in Earth's Atmospheric Makeup: Pollution-Air-Chemistry-Climate Connections)",
+    "s": "Fiore's TEAMPACCC group studies how natural and human emissions shape atmospheric composition, air quality, and climate, and how those connections feed back on each other. The group runs global chemistry-transport and chemistry-climate models that produce hundreds of terabytes of output, then compares them with surface, aircraft, and satellite observations to track ozone, methane, aerosols, and short-lived climate forcers. Their four pillars are air pollution, chemistry-climate connections, trends and variability of atmospheric constituents, and biosphere-atmosphere exchange.",
+    "k": {
+      "w": "https://www.teampaccc.mit.edu/"
+    },
+    "t": [
+      [
+        "Chem",
+        "Environmental Chemistry",
+        "Atmospheric Chemistry",
+        "Atmospheric Chemistry"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Climate Modeling",
+        "Climate Modeling"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Atmospheric Circulation",
+        "Atmospheric Circulation"
+      ],
+      [
+        "ESS",
+        "Meteorology",
+        "Remote Sensing",
+        "Remote Sensing"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "arnaud-costinot-economics": {
+    "s": "Costinot is an international-trade economist who works on the theory and quantitative empirics of comparative advantage, the gains from trade, and trade policy. His work has helped revive interest in classical Ricardian and Heckscher-Ohlin models by showing how they can be made tractable for modern data and used to estimate the welfare effects of tariffs, technology shocks, and globalization. Methods are mathematical economic theory and structural quantitative trade modeling on bilateral-trade datasets.",
+    "t": [
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Game Theory",
+        "Game Theory"
+      ],
+      [
+        "CS/AI",
+        "Mathematical Modeling",
+        "Optimization",
+        "Optimization"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Pure economist (international trade); no group lab. Tags are loose connections via game theory / optimization."
+  },
+  "arup-k-chakraborty-chemistry": {
+    "l": "Chakraborty Group (Laboratory for Computational Immunology)",
+    "s": "Chakraborty applies the tools of statistical physics and theoretical chemistry to immunology and virology — building models of how T cells, B cells, and antibody repertoires recognize pathogens, why HIV is so hard to vaccinate against, and how to design better immunogens. The group's HIV-vaccine immunogen designs are now in preclinical trials. Methods include statistical mechanics of disordered systems, molecular dynamics simulations, large-scale sequence analysis of viral and antibody repertoires, and population-level evolutionary modeling.",
+    "k": {
+      "w": "https://chakrabortygroup.mit.edu/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Anatomy & Physiology",
+        "Immune System",
+        "Immune System"
+      ],
+      [
+        "Bio",
+        "Microbiology",
+        "Viral Replication",
+        "Viral Replication"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Many-Body Physics",
+        "Many-Body Physics"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Stochastic Processes",
+        "Stochastic Processes"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "asegun-henry-meche": {
+    "l": "Atomistic Simulation & Energy (ASE) Research Group",
+    "s": "The ASE group studies how heat moves at the atomic scale (phonon transport, interface conductance, radiative transfer) and uses that physics to engineer high-temperature energy systems for deep decarbonization. Flagship projects include thermal-energy grid storage in molten metals above 1,200 °C (TEGS-MPV), liquid-metal pumps and heat exchangers, methane pyrolysis for CO2-free hydrogen, and high-energy-density flow batteries. Methods combine molecular-dynamics phonon simulation, custom heat-transfer experiments, and pilot-scale energy hardware.",
+    "k": {
+      "w": "https://ase.mit.edu/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Condensed Matter",
+        "Semiconductor Physics",
+        "Semiconductor Physics"
+      ],
+      [
+        "Chem",
+        "Physical Chemistry",
+        "Thermochemistry",
+        "Thermochemistry"
+      ],
+      [
+        "Chem",
+        "Materials Chemistry",
+        "Electrochemistry",
+        "Electrochemistry"
+      ],
+      [
+        "Phys",
+        "Quantum Mechanics",
+        "Many-Body Physics",
+        "Many-Body Physics"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "ashesh-rambachan-economics": {
+    "s": "Rambachan is an econometrician working at the intersection of machine learning, causal inference, and public policy. His research builds methods for robust inference in difference-in-differences, event studies, and other quasi-experimental designs, and studies how predictive algorithms used in hiring, lending, and criminal justice can amplify or correct discrimination. The work is mostly theoretical statistics with applied economic analysis on real administrative datasets.",
+    "k": {
+      "w": "https://asheshrambachan.github.io/"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Machine Learning",
+        "Causal Inference",
+        "Causal Inference"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Hypothesis Testing",
+        "Hypothesis Testing"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Regression",
+        "Regression"
+      ],
+      [
+        "CS/AI",
+        "Probability & Statistics",
+        "Experimental Design",
+        "Experimental Design"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "b-russell-physics": {
+    "l": "Russell Group (Neutrino Physics)",
+    "s": "Brooke Russell is an experimental neutrino physicist who joined MIT Physics in 2025 after a Pappalardo Fellowship. Her group works on the international DUNE experiment, where it aims to make high-precision measurements of how neutrinos oscillate between flavors and use those measurements to look for physics beyond the Standard Model — including the mass ordering of neutrinos and possible CP-violation in the lepton sector. Methods are large liquid-argon time projection chamber detectors, particle reconstruction algorithms, and data analysis on accelerator-neutrino beams.",
+    "k": {
+      "w": "https://physics.mit.edu/faculty/brooke-russell/"
+    },
+    "t": [
+      [
+        "Phys",
+        "Particle Physics",
+        "Neutrino Physics",
+        "Neutrino Physics"
+      ],
+      [
+        "Phys",
+        "Particle Physics",
+        "Standard Model",
+        "Standard Model"
+      ],
+      [
+        "Phys",
+        "Nuclear Physics",
+        "Radiation Detection",
+        "Radiation Detection"
+      ]
+    ],
+    "scholar_status": "ok",
+    "notes": "Original labs.json entry has only 'B. Russell' — actually Brooke Russell, joined MIT 2025.",
+    "n": "Brooke Russell"
+  },
+  "barbara-imperiali-biology": {
+    "l": "Imperiali Lab",
+    "s": "The Imperiali lab works at the interface of chemistry and biology, focusing on protein glycosylation — the attachment of sugar chains that controls how proteins fold, are trafficked, and signal. They dissect the membrane-embedded enzyme machinery (oligosaccharyltransferases and glycosyltransferases) of bacterial pathogens, design small-molecule and peptide inhibitors as chemical probes, and develop fluorescent sensors that report on glycosylation and other cellular processes in real time. Methods span synthetic organic chemistry, enzymology, X-ray crystallography, and live-cell fluorescence imaging.",
+    "k": {
+      "w": "https://imperialilab.com/"
+    },
+    "t": [
+      [
+        "Bio",
+        "Biochemistry",
+        "Enzyme Kinetics",
+        "Enzyme Kinetics"
+      ],
+      [
+        "Bio",
+        "Biochemistry",
+        "Protein Structure",
+        "Protein Structure"
+      ],
+      [
+        "Chem",
+        "Organic Chemistry",
+        "Carbohydrate Chemistry",
+        "Carbohydrate Chemistry"
+      ],
+      [
+        "Bio",
+        "Cell/Molecular Biology",
+        "Membrane Transport",
+        "Membrane Transport"
+      ]
+    ],
+    "scholar_status": "ok"
+  },
+  "barbara-liskov-eecs": {
+    "l": "Programming Methodology Group (CSAIL)",
+    "s": "Liskov is a Turing Award winner whose group at CSAIL studies programming methodology, language design, and the theory and practice of fault-tolerant distributed systems. She designed CLU (the first language to support data abstraction) and Argus (the first to support distributed programming), and her group co-developed Practical Byzantine Fault Tolerance (PBFT), a replication algorithm that lets distributed systems keep working correctly even when some machines fail or behave maliciously. Current work centers on Byzantine fault-tolerant storage and programming-language support for reliable distributed computation.",
+    "k": {
+      "w": "http://www.pmg.csail.mit.edu/",
+      "p": "http://pmg.csail.mit.edu/pubs/Barbara-Liskov.html"
+    },
+    "t": [
+      [
+        "CS/AI",
+        "Algorithms & TCS",
+        "Programming Languages",
+        "Programming Languages"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Software Engineering",
+        "Software Engineering"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Network Protocols",
+        "Network Protocols"
+      ],
+      [
+        "CS/AI",
+        "Computer Systems",
+        "Database Systems",
+        "Database Systems"
+      ]
+    ],
+    "scholar_status": "ok"
+  }
+}
