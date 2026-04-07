@@ -247,7 +247,146 @@
       color: var(--text);
       line-height: 1.3;
       margin-bottom: 0.4rem;
+      padding-right: 1.8rem; /* leave room for edit button */
     }
+    .card-edit {
+      position: absolute;
+      top: 0.55rem;
+      right: 0.55rem;
+      width: 26px;
+      height: 26px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: transparent;
+      color: var(--text-light);
+      font-size: 0.95rem;
+      border-radius: 4px;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.15s, background 0.15s, color 0.15s;
+      font-family: inherit;
+    }
+    .card:hover .card-edit { opacity: 1; }
+    .card-edit:hover {
+      background: var(--bg);
+      color: var(--mit-red);
+    }
+    .card { position: relative; }
+
+    /* ── Edit Modal ── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.5);
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      z-index: 1000;
+      padding: 2rem 1rem;
+      overflow-y: auto;
+    }
+    .modal-overlay.visible { display: flex; }
+    .modal {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      max-width: 640px;
+      width: 100%;
+      padding: 1.5rem;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+      max-height: calc(100vh - 4rem);
+      overflow-y: auto;
+    }
+    .modal h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+    .modal-sub {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .modal-field {
+      margin-bottom: 0.85rem;
+    }
+    .modal-field label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.25rem;
+    }
+    .modal-field input, .modal-field textarea {
+      width: 100%;
+      padding: 0.5rem 0.65rem;
+      font-family: inherit;
+      font-size: 0.92rem;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      background: var(--card-bg);
+      color: var(--text);
+      transition: border-color 0.15s;
+    }
+    .modal-field input:focus, .modal-field textarea:focus {
+      outline: none;
+      border-color: var(--mit-red);
+    }
+    .modal-field textarea {
+      resize: vertical;
+      min-height: 70px;
+      font-family: inherit;
+    }
+    .modal-field textarea.json {
+      font-family: 'SF Mono', Menlo, Consolas, monospace;
+      font-size: 0.82rem;
+      min-height: 90px;
+    }
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .modal-btn {
+      padding: 0.55rem 1.1rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: 6px;
+      border: 1.5px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .modal-btn:hover {
+      border-color: var(--text-muted);
+    }
+    .modal-btn.primary {
+      background: var(--mit-red);
+      border-color: var(--mit-red);
+      color: white;
+    }
+    .modal-btn.primary:hover {
+      background: #8a1929;
+      border-color: #8a1929;
+    }
+    .modal-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    .modal-error {
+      font-size: 0.82rem;
+      color: var(--mit-red);
+      margin-top: 0.5rem;
+      display: none;
+    }
+    .modal-error.visible { display: block; }
     .card-meta {
       font-size: 0.85rem;
       color: var(--text-muted);
@@ -418,6 +557,62 @@
   </div>
   <div class="load-more-container" id="loadMoreContainer" style="display:none;">
     <button class="load-more" id="loadMoreBtn">Load more</button>
+  </div>
+</div>
+
+<!-- ── Edit Modal ── -->
+<div class="modal-overlay" id="editModal" role="dialog" aria-modal="true" aria-labelledby="editModalTitle">
+  <div class="modal">
+    <h2 id="editModalTitle">Suggest an edit</h2>
+    <p class="modal-sub">Your changes will open a prefilled GitHub issue for review. Leave fields unchanged to keep them as-is.</p>
+
+    <div class="modal-field">
+      <label for="ef-pi">PI Name</label>
+      <input type="text" id="ef-pi">
+    </div>
+    <div class="modal-field">
+      <label for="ef-lab">Lab Name</label>
+      <input type="text" id="ef-lab">
+    </div>
+    <div class="modal-field">
+      <label for="ef-dept">Departments (comma-separated)</label>
+      <input type="text" id="ef-dept">
+    </div>
+    <div class="modal-field">
+      <label for="ef-summary">Research Summary</label>
+      <textarea id="ef-summary"></textarea>
+    </div>
+    <div class="modal-field">
+      <label for="ef-google">Google Scholar URL</label>
+      <input type="text" id="ef-google" placeholder="https://scholar.google.com/citations?user=...">
+    </div>
+    <div class="modal-field">
+      <label for="ef-web">Lab Website</label>
+      <input type="text" id="ef-web">
+    </div>
+    <div class="modal-field">
+      <label for="ef-pubs">Publications Page</label>
+      <input type="text" id="ef-pubs">
+    </div>
+    <div class="modal-field">
+      <label for="ef-mit">MIT Profile</label>
+      <input type="text" id="ef-mit">
+    </div>
+    <div class="modal-field">
+      <label for="ef-tags">Tags (JSON array of [category, coarse, fine, focus])</label>
+      <textarea id="ef-tags" class="json"></textarea>
+    </div>
+    <div class="modal-field">
+      <label for="ef-note">Note for maintainer (optional)</label>
+      <textarea id="ef-note" placeholder="Why this change? Sources?"></textarea>
+    </div>
+
+    <div class="modal-error" id="ef-error"></div>
+
+    <div class="modal-actions">
+      <button class="modal-btn" id="ef-cancel">Cancel</button>
+      <button class="modal-btn primary" id="ef-submit">Open GitHub Issue</button>
+    </div>
   </div>
 </div>
 
@@ -740,6 +935,19 @@
     piName.textContent = lab.pi_name;
     card.appendChild(piName);
 
+    // Edit button (top-right)
+    const editBtn = document.createElement('button');
+    editBtn.className = 'card-edit';
+    editBtn.title = 'Suggest an edit';
+    editBtn.setAttribute('aria-label', 'Suggest an edit');
+    editBtn.innerHTML = '&#9998;'; // pencil
+    editBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      openEditModal(lab);
+    });
+    card.appendChild(editBtn);
+
     // Meta: lab name + departments
     const meta = document.createElement('div');
     meta.className = 'card-meta';
@@ -909,6 +1117,145 @@
     updateSubcats();
     applyFilters();
     render();
+  });
+
+  // ── Edit modal ──
+  const GITHUB_REPO = 'borabicyclononane/mit-lab-explorer';
+
+  const editModal = document.getElementById('editModal');
+  const efPi = document.getElementById('ef-pi');
+  const efLab = document.getElementById('ef-lab');
+  const efDept = document.getElementById('ef-dept');
+  const efSummary = document.getElementById('ef-summary');
+  const efGoogle = document.getElementById('ef-google');
+  const efWeb = document.getElementById('ef-web');
+  const efPubs = document.getElementById('ef-pubs');
+  const efMit = document.getElementById('ef-mit');
+  const efTags = document.getElementById('ef-tags');
+  const efNote = document.getElementById('ef-note');
+  const efError = document.getElementById('ef-error');
+  const efCancel = document.getElementById('ef-cancel');
+  const efSubmit = document.getElementById('ef-submit');
+
+  let editingLab = null;
+
+  function openEditModal(lab) {
+    editingLab = lab;
+    efPi.value = lab.pi_name || '';
+    efLab.value = lab.lab_name || '';
+    efDept.value = (lab.departments || []).join(', ');
+    efSummary.value = lab.research_summary || '';
+    efGoogle.value = (lab.links || {}).google_scholar || '';
+    efWeb.value = (lab.links || {}).lab_website || '';
+    efPubs.value = (lab.links || {}).publications_page || '';
+    efMit.value = (lab.links || {}).mit_profile || '';
+    const tagArr = (lab.tags || []).map(t => [t.category, t.coarse, t.fine, t.focus]);
+    efTags.value = JSON.stringify(tagArr, null, 2);
+    efNote.value = '';
+    efError.classList.remove('visible');
+    editModal.classList.add('visible');
+    setTimeout(() => efPi.focus(), 50);
+  }
+
+  function closeEditModal() {
+    editModal.classList.remove('visible');
+    editingLab = null;
+  }
+
+  function diffField(label, oldVal, newVal) {
+    const o = (oldVal || '').toString().trim();
+    const n = (newVal || '').toString().trim();
+    if (o === n) return null;
+    return { label, old: o, new: n };
+  }
+
+  function buildIssueBody(lab, diffs, note) {
+    const lines = [];
+    lines.push(`**Lab:** ${lab.pi_name}`);
+    if (lab.id) lines.push(`**ID:** \`${lab.id}\``);
+    if (lab.openalex_id) lines.push(`**OpenAlex:** \`${lab.openalex_id}\``);
+    lines.push('');
+    lines.push('### Proposed changes');
+    lines.push('');
+    for (const d of diffs) {
+      lines.push(`**${d.label}**`);
+      lines.push('```');
+      lines.push(`- ${d.old || '(empty)'}`);
+      lines.push(`+ ${d.new || '(empty)'}`);
+      lines.push('```');
+      lines.push('');
+    }
+    if (note) {
+      lines.push('### Note from submitter');
+      lines.push('');
+      lines.push(note);
+      lines.push('');
+    }
+    lines.push('---');
+    lines.push('_Submitted via the in-page edit form._');
+    return lines.join('\n');
+  }
+
+  efSubmit.addEventListener('click', () => {
+    if (!editingLab) return;
+    efError.classList.remove('visible');
+
+    // Validate tags JSON
+    let parsedTags = null;
+    const tagsRaw = efTags.value.trim();
+    if (tagsRaw) {
+      try {
+        parsedTags = JSON.parse(tagsRaw);
+        if (!Array.isArray(parsedTags)) throw new Error('Tags must be a JSON array');
+        for (const t of parsedTags) {
+          if (!Array.isArray(t) || t.length < 3) {
+            throw new Error('Each tag must be an array of [category, coarse, fine, focus?]');
+          }
+        }
+      } catch (e) {
+        efError.textContent = 'Invalid tags JSON: ' + e.message;
+        efError.classList.add('visible');
+        return;
+      }
+    }
+
+    const oldDept = (editingLab.departments || []).join(', ');
+    const oldTags = JSON.stringify((editingLab.tags || []).map(t => [t.category, t.coarse, t.fine, t.focus]), null, 2);
+    const newTags = parsedTags ? JSON.stringify(parsedTags, null, 2) : oldTags;
+
+    const diffs = [
+      diffField('PI Name', editingLab.pi_name, efPi.value),
+      diffField('Lab Name', editingLab.lab_name, efLab.value),
+      diffField('Departments', oldDept, efDept.value),
+      diffField('Research Summary', editingLab.research_summary, efSummary.value),
+      diffField('Google Scholar', (editingLab.links || {}).google_scholar, efGoogle.value),
+      diffField('Lab Website', (editingLab.links || {}).lab_website, efWeb.value),
+      diffField('Publications Page', (editingLab.links || {}).publications_page, efPubs.value),
+      diffField('MIT Profile', (editingLab.links || {}).mit_profile, efMit.value),
+      diffField('Tags', oldTags, newTags),
+    ].filter(Boolean);
+
+    if (diffs.length === 0) {
+      efError.textContent = 'No changes to submit.';
+      efError.classList.add('visible');
+      return;
+    }
+
+    const title = `Edit: ${editingLab.pi_name}`;
+    const body = buildIssueBody(editingLab, diffs, efNote.value.trim());
+    const url = `https://github.com/${GITHUB_REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=lab-edit`;
+    window.open(url, '_blank', 'noopener');
+    closeEditModal();
+  });
+
+  efCancel.addEventListener('click', closeEditModal);
+  editModal.addEventListener('click', (e) => {
+    if (e.target === editModal) closeEditModal();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && editModal.classList.contains('visible')) {
+      closeEditModal();
+    }
   });
 
   // ── Boot ──
