@@ -344,6 +344,69 @@
       font-size: 0.82rem;
       min-height: 90px;
     }
+    /* ── Tag editor ── */
+    .tag-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .tag-row {
+      display: grid;
+      grid-template-columns: 80px 1fr 1fr 1fr 28px;
+      gap: 0.35rem;
+      align-items: center;
+    }
+    .tag-row select, .tag-row input {
+      padding: 0.4rem 0.5rem;
+      font-family: inherit;
+      font-size: 0.85rem;
+      border: 1.5px solid var(--border);
+      border-radius: 5px;
+      background: var(--card-bg);
+      color: var(--text);
+      min-width: 0;
+    }
+    .tag-row select:focus, .tag-row input:focus {
+      outline: none;
+      border-color: var(--mit-red);
+    }
+    .tag-row-del {
+      width: 28px;
+      height: 28px;
+      border: none;
+      background: transparent;
+      color: var(--text-light);
+      font-size: 1.1rem;
+      cursor: pointer;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    .tag-row-del:hover {
+      background: var(--bg);
+      color: var(--mit-red);
+    }
+    .tag-add-btn {
+      margin-top: 0.5rem;
+      padding: 0.35rem 0.75rem;
+      font-family: inherit;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg);
+      border: 1.5px dashed var(--border);
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .tag-add-btn:hover {
+      color: var(--mit-red);
+      border-color: var(--mit-red);
+    }
+    @media (max-width: 540px) {
+      .tag-row {
+        grid-template-columns: 1fr 1fr 28px;
+        grid-template-areas: "cat cat del" "coarse coarse coarse" "fine focus focus";
+      }
+    }
     .modal-actions {
       display: flex;
       justify-content: flex-end;
@@ -599,8 +662,12 @@
       <input type="text" id="ef-mit">
     </div>
     <div class="modal-field">
-      <label for="ef-tags">Tags (JSON array of [category, coarse, fine, focus])</label>
-      <textarea id="ef-tags" class="json"></textarea>
+      <label>Tags</label>
+      <div class="tag-rows" id="ef-tag-rows"></div>
+      <button type="button" class="tag-add-btn" id="ef-tag-add">+ Add tag</button>
+      <datalist id="dl-coarse"></datalist>
+      <datalist id="dl-fine"></datalist>
+      <datalist id="dl-focus"></datalist>
     </div>
     <div class="modal-field">
       <label for="ef-note">Note for maintainer (optional)</label>
@@ -1131,13 +1198,103 @@
   const efWeb = document.getElementById('ef-web');
   const efPubs = document.getElementById('ef-pubs');
   const efMit = document.getElementById('ef-mit');
-  const efTags = document.getElementById('ef-tags');
+  const efTagRows = document.getElementById('ef-tag-rows');
+  const efTagAdd = document.getElementById('ef-tag-add');
+  const dlCoarse = document.getElementById('dl-coarse');
+  const dlFine = document.getElementById('dl-fine');
+  const dlFocus = document.getElementById('dl-focus');
   const efNote = document.getElementById('ef-note');
   const efError = document.getElementById('ef-error');
   const efCancel = document.getElementById('ef-cancel');
   const efSubmit = document.getElementById('ef-submit');
 
   let editingLab = null;
+
+  function buildTagDatalists() {
+    const coarse = new Set(), fine = new Set(), focus = new Set();
+    for (const lab of allLabs) {
+      for (const t of lab.tags || []) {
+        if (t.coarse) coarse.add(t.coarse);
+        if (t.fine) fine.add(t.fine);
+        if (t.focus) focus.add(t.focus);
+      }
+    }
+    const fill = (dl, set) => {
+      dl.innerHTML = '';
+      Array.from(set).sort().forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v;
+        dl.appendChild(opt);
+      });
+    };
+    fill(dlCoarse, coarse);
+    fill(dlFine, fine);
+    fill(dlFocus, focus);
+  }
+
+  function addTagRow(tag) {
+    const row = document.createElement('div');
+    row.className = 'tag-row';
+
+    const sel = document.createElement('select');
+    ['Bio','Chem','Phys','ESS','CS/AI'].forEach(c => {
+      const opt = document.createElement('option');
+      opt.value = c;
+      opt.textContent = c;
+      if (tag && tag.category === c) opt.selected = true;
+      sel.appendChild(opt);
+    });
+
+    const coarseInp = document.createElement('input');
+    coarseInp.type = 'text';
+    coarseInp.placeholder = 'Coarse';
+    coarseInp.setAttribute('list', 'dl-coarse');
+    coarseInp.value = (tag && tag.coarse) || '';
+
+    const fineInp = document.createElement('input');
+    fineInp.type = 'text';
+    fineInp.placeholder = 'Fine';
+    fineInp.setAttribute('list', 'dl-fine');
+    fineInp.value = (tag && tag.fine) || '';
+
+    const focusInp = document.createElement('input');
+    focusInp.type = 'text';
+    focusInp.placeholder = 'Focus (optional)';
+    focusInp.setAttribute('list', 'dl-focus');
+    focusInp.value = (tag && tag.focus) || '';
+
+    const del = document.createElement('button');
+    del.type = 'button';
+    del.className = 'tag-row-del';
+    del.title = 'Remove tag';
+    del.innerHTML = '&times;';
+    del.addEventListener('click', () => row.remove());
+
+    row.appendChild(sel);
+    row.appendChild(coarseInp);
+    row.appendChild(fineInp);
+    row.appendChild(focusInp);
+    row.appendChild(del);
+    efTagRows.appendChild(row);
+  }
+
+  function readTagRows() {
+    const tags = [];
+    for (const row of efTagRows.querySelectorAll('.tag-row')) {
+      const inputs = row.querySelectorAll('select, input');
+      const cat = inputs[0].value.trim();
+      const coarse = inputs[1].value.trim();
+      const fine = inputs[2].value.trim();
+      const focus = inputs[3].value.trim();
+      // Skip rows where all required fields are empty
+      if (!coarse && !fine) continue;
+      if (!cat || !coarse || !fine) {
+        throw new Error('Each tag needs a category, coarse, and fine value');
+      }
+      tags.push([cat, coarse, fine, focus]);
+    }
+    return tags;
+  }
 
   function openEditModal(lab) {
     editingLab = lab;
@@ -1149,8 +1306,9 @@
     efWeb.value = (lab.links || {}).lab_website || '';
     efPubs.value = (lab.links || {}).publications_page || '';
     efMit.value = (lab.links || {}).mit_profile || '';
-    const tagArr = (lab.tags || []).map(t => [t.category, t.coarse, t.fine, t.focus]);
-    efTags.value = JSON.stringify(tagArr, null, 2);
+    buildTagDatalists();
+    efTagRows.innerHTML = '';
+    (lab.tags || []).forEach(t => addTagRow(t));
     efNote.value = '';
     efError.classList.remove('visible');
     editModal.classList.add('visible');
@@ -1169,7 +1327,7 @@
     return { label, old: o, new: n };
   }
 
-  function buildIssueBody(lab, diffs, note) {
+  function buildIssueBody(lab, diffs, payload, note) {
     const lines = [];
     lines.push(`**Lab:** ${lab.pi_name}`);
     if (lab.id) lines.push(`**ID:** \`${lab.id}\``);
@@ -1191,6 +1349,12 @@
       lines.push(note);
       lines.push('');
     }
+    lines.push('### Machine-readable payload');
+    lines.push('<!-- DO NOT EDIT — used by the auto-resolver script -->');
+    lines.push('```json lab-edit');
+    lines.push(JSON.stringify(payload, null, 2));
+    lines.push('```');
+    lines.push('');
     lines.push('---');
     lines.push('_Submitted via the in-page edit form._');
     return lines.join('\n');
@@ -1200,28 +1364,19 @@
     if (!editingLab) return;
     efError.classList.remove('visible');
 
-    // Validate tags JSON
-    let parsedTags = null;
-    const tagsRaw = efTags.value.trim();
-    if (tagsRaw) {
-      try {
-        parsedTags = JSON.parse(tagsRaw);
-        if (!Array.isArray(parsedTags)) throw new Error('Tags must be a JSON array');
-        for (const t of parsedTags) {
-          if (!Array.isArray(t) || t.length < 3) {
-            throw new Error('Each tag must be an array of [category, coarse, fine, focus?]');
-          }
-        }
-      } catch (e) {
-        efError.textContent = 'Invalid tags JSON: ' + e.message;
-        efError.classList.add('visible');
-        return;
-      }
+    // Read tags from structured editor
+    let parsedTags;
+    try {
+      parsedTags = readTagRows();
+    } catch (e) {
+      efError.textContent = e.message;
+      efError.classList.add('visible');
+      return;
     }
 
     const oldDept = (editingLab.departments || []).join(', ');
-    const oldTags = JSON.stringify((editingLab.tags || []).map(t => [t.category, t.coarse, t.fine, t.focus]), null, 2);
-    const newTags = parsedTags ? JSON.stringify(parsedTags, null, 2) : oldTags;
+    const oldTags = JSON.stringify((editingLab.tags || []).map(t => [t.category, t.coarse, t.fine, t.focus]));
+    const newTags = JSON.stringify(parsedTags);
 
     const diffs = [
       diffField('PI Name', editingLab.pi_name, efPi.value),
@@ -1241,12 +1396,41 @@
       return;
     }
 
+    // Machine-readable payload uses short keys matching labs.json schema
+    const payload = {
+      id: editingLab.id || null,
+      oa: editingLab.openalex_id || null,
+      pi_name: editingLab.pi_name,
+      changes: {},
+    };
+    const fieldMap = {
+      'PI Name': 'n',
+      'Lab Name': 'l',
+      'Departments': 'd',
+      'Research Summary': 's',
+      'Google Scholar': 'k.g',
+      'Lab Website': 'k.w',
+      'Publications Page': 'k.p',
+      'MIT Profile': 'k.m',
+      'Tags': 't',
+    };
+    for (const d of diffs) {
+      const key = fieldMap[d.label];
+      if (!key) continue;
+      let val = d.new;
+      if (key === 'd') val = val ? val.split(',').map(s => s.trim()).filter(Boolean) : [];
+      else if (key === 't') val = parsedTags;
+      payload.changes[key] = val;
+    }
+
     const title = `Edit: ${editingLab.pi_name}`;
-    const body = buildIssueBody(editingLab, diffs, efNote.value.trim());
+    const body = buildIssueBody(editingLab, diffs, payload, efNote.value.trim());
     const url = `https://github.com/${GITHUB_REPO}/issues/new?title=${encodeURIComponent(title)}&body=${encodeURIComponent(body)}&labels=lab-edit`;
     window.open(url, '_blank', 'noopener');
     closeEditModal();
   });
+
+  efTagAdd.addEventListener('click', () => addTagRow(null));
 
   efCancel.addEventListener('click', closeEditModal);
   editModal.addEventListener('click', (e) => {
