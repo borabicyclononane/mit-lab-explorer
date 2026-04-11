@@ -11,6 +11,62 @@ fang-wang-bcs  ==  frank-wang-bcs  ==  fan-wang-bcs (no fan-wang-bcs id, but the
 f-zhang-bioe  ==  feng-zhang-bioe  # Same person — Feng Zhang (BioE / McGovern / Broad / CRISPR).
 g-m-innocenti-physics  ==  gian-michele-innocenti-physics  # Same person — Gian Michele Innocenti (MIT Physics / heavy-ion / CMS / EIC).
 g-fournier-eaps  ==  gregory-p-fournier-eaps  # Same person — Gregory Fournier (EAPS / geobiology / phylogenomics).
+h-f-lodish-biology  ==  harvey-lodish-biology  # Same person — Harvey F. Lodish (Whitehead / Biology / BioE / erythropoiesis).
+hal-abelson-eecs  ==  harold-abelson-eecs  # Same person — Hal (Harold) Abelson (EECS / SICP / App Inventor).
+iain-hunter-meche  ==  ian-w-hunter-meche  # Same person — Ian W. Hunter (MechE / BioInstrumentation Lab).
+j-chen-biology  ==  jianzhu-chen-biology  # Same person — Jianzhu Chen (Koch / Biology / immunology). Same enrichment applied to both.
+j-j-thaler-physics  ==  jesse-thaler-physics  # Same person — Jesse Thaler (Physics CTP / IAIFI director). Same enrichment applied to both.
+j-stubbe-chemistry  ==  joanne-stubbe-chemistry  # Same person — JoAnne Stubbe (Chemistry, RNR). Same enrichment applied to both.
+j-zhao-cee  ==  jinghua-zhao-cee  # Same person — Jinhua Zhao (CEE/DUSP, JTL Urban Mobility). Same enrichment applied to both.
+k-cahoy-eaps  ==  kerri-cahoy-eaps  # Same person — Kerri Cahoy (AeroAstro/EAPS, STAR Lab, CubeSats). Name fix applied; same enrichment to both.
+l-guarente-biology  ==  leonard-guarente-biology  # Same person — Leonard Guarente (Biology, sirtuins/aging). Name fix applied; same enrichment to both.
+li-huei-tsai-bcs  ==  lihuei-tsai-bcs  # Same person — Li-Huei Tsai (BCS/Picower, Alzheimer's, GENUS 40Hz). Same enrichment applied to both; lihuei-tsai had wrong k.g cleared.
+m-a-ivanov-physics  ==  mikhail-m-ivanov-physics  # Same person — Mikhail M. Ivanov (theoretical cosmology, EFTofLSS). Same enrichment applied.
+m-chen-physics  ==  min-chen-physics  # Same person — Min Chen (Physics / CMS / Higgs / AMS). Same enrichment applied; both had k.g cleared (common name).
+m-mcdonald-physics  ==  michael-mcdonald-physics  # Same person — Michael A. McDonald (Physics / Kavli / Phoenix Cluster). Same enrichment applied; both had k.g cleared.
+michael-j-follows-eaps  ==  mick-follows-eaps  # Same person — Mick/Michael Follows (EAPS, Darwin Project). Same enrichment applied to both.
+mohammad-alizadeh-eecs  ==  mohammad-reza-alizadeh-eecs  # Same person — Mohammad (Reza) Alizadeh (EECS/CSAIL, networks + ML for systems). Same enrichment applied; mohammad-reza had wrong k.g cleared.
+n-mavalvala-physics  ==  nergis-mavalvala-physics  # Same person — Nergis Mavalvala (Physics / LIGO / dean of science). Same enrichment applied; both k.g cleared. Name fix on n-mavalvala.
+p-a-lee-physics  ==  patrick-a-lee-physics  # Same person — Patrick A. Lee (Physics / CMT, strongly correlated electrons, cuprates). Same enrichment applied to both.
+p-a-sharp-koch-institute  # Phillip A. Sharp — single entry (no patrick-sharp or phillip-sharp dup discovered yet). Name fix applied.
+p-harris-physics  ==  philip-harris-physics  # Same person — Philip Harris (Physics / LNS / CMS / IAIFI, fast ML triggers). Same enrichment applied to both.
+r-fletcher-physics  ==  richard-fletcher-physics  # Same person — Richard Fletcher (Physics / RLE / CUA, ultracold atoms). Same enrichment applied; both k.g cleared. Name fix on r-fletcher.
+r-p-binzel-eaps  ==  richard-p-binzel-eaps  # Same person — Richard P. Binzel (EAPS, asteroids, Pluto/OSIRIS-REx). Same enrichment applied; both k.g cleared. Name fix on r-p-binzel.
+r-langer-bioe  # Robert Langer (Koch / ChemE / BioE). Likely dup of future robert-langer-bioe if it appears; name fix applied.
+r-e-summons-eaps  # Roger E. Summons. Likely dup of future roger-summons-eaps if it appears; name fix applied.
+r-kemp-nse  # R. Scott Kemp (NSE / LNSP). Likely dup of future scott-kemp or r-scott-kemp if it appears; name fix applied.
+r-l-jaffe-physics  # Robert L. Jaffe (Physics / CTP). Likely dup of future robert-jaffe-physics if it appears; name fix applied.
+r-van-der-hilst-eaps  # Robert D. van der Hilst (EAPS). Likely dup of future robert-van-der-hilst if it appears; name fix applied.
+r-van-der-hilst-eaps  ==  rob-van-der-hilst-eaps  ==  robert-d-van-der-hilst-eaps  # Same person — Robert D. van der Hilst (EAPS / seismology). Three entries for same person. Same enrichment applied; all three cleared.
+r-langer-bioe  ==  robert-langer-bioe  ==  róbert-langer-bioe  # Same person — Robert Langer (Koch / BioE / ChemE / MechE). Three entries (initials, proper, accented). Same enrichment applied.
+r-e-summons-eaps  ==  roger-e-summons-eaps  # Same person — Roger E. Summons (EAPS / geobiology). Same enrichment applied.
+ruben-juanes-cee  ==  rubén-juanes-cee  # Same person — Ruben Juanes (CEE / porous-media flow). Accent vs no-accent entries. Same enrichment applied.
+thomas-love-peacock-meche  ==  thomas-peacock-meche  # Same person — Thomas Peacock (MechE / ENDLab). Full-name vs short-name entries. Same enrichment applied.
+y-j-lee-physics  ==  yen-jie-lee-physics  # Same person — Yen-Jie Lee (Physics / LNS / CMS / QGP). Same enrichment applied; name fix on y-j-lee.
+yunha-hwang-biology  ==  yunchan-hwang-biology  # Same person — Yunha Hwang (Biology / EECS). yunchan-hwang had wrong name 'Yun‐Chan Hwang'; name fix applied. Same enrichment.
+zach-hartwig-nse  ==  zachary-hartwig-nse  # Same person — Zachary Hartwig (NSE / PSFC). Short vs full name. Same enrichment applied.
+
+# Scholar links cleared as wrong/unverified (prior auto-tagger grabbed student/collaborator profiles):
+m-a-kastner-physics  # labs.json had k.g=PHK_EmkAAAAJ but Marc Kastner's real scholar ID is U9hsGSIAAAAJ. Cleared. Name fix: Marc A. Kastner.
+m-chen-physics  # k.g=6xFvyJwAAAAJ could not be verified as the correct Min Chen (common name). Cleared. Name fix: Min Chen.
+
+# More likely-junk / not-found entries:
+jun-li-nse   # labs.json has 'Jun Li' but no MIT NSE faculty by that name found; the NSE prof is Ju Li. Enrichment written under the 'jun-li-nse' id with n: "Ju Li" (name fix), but user may want to rename the id or dedupe if a ju-li entry appears later.
+meng-li-nse  # labs.json has 'Meng Li' but MIT NSE has no Meng Li — the NSE prof is Mingda Li. Name fix applied (n: "Mingda Li"), existing k.g cleared as probably different Meng Li. Recommend rename id or dedupe if a mingda-li entry appears later.
+matthew-c-jones-biology  # labs.json has 'Matthew C. Jones' but MIT Bio/Koch prof is Matthew G. Jones (new asst. prof, tumor evolution / ecDNA). Name fix applied.
+junghwan-kim-meche   # No MIT MechE faculty by this name. Possibly a postdoc in Jeehwan Kim's lab mis-listed as a faculty lab. Not enriched (scholar_status: not_found). Recommend delete or reassign.
+minghao-guo-meche    # Not MIT MechE faculty — Minghao Guo is a PhD candidate (polymer informatics / ML). Likely mislabeled. Not enriched. Recommend delete.
+mingyu-li-nse        # Not MIT NSE faculty. Actual MIT NSE Li is Mingda Li (see meng-li-nse). Likely mislabeled student entry. Not enriched. Recommend delete.
+n-catherine-hogan-meche # Not MIT MechE faculty — "chogan@mit.edu" is admin/staff. The real Hogan in MechE is Neville Hogan (Newman Lab). Not enriched (scholar_status: not_found). Recommend delete.
+sungjae-kim-meche    # No MIT MechE faculty named Sungjae Kim. MechE has Sangbae Kim (Biomimetic Robotics) and Sang-Gook Kim (MEMS), neither matching. Likely mislabeled student/postdoc. Not enriched (scholar_status: not_found). Recommend delete.
+xun-zhao-meche       # No MIT MechE/CEE faculty named 'Xun Zhao'. Probably a misnaming of Xuanhe Zhao. Not enriched. Recommend delete.
+xiaoyi-wang-chemistry # Xiaoyi Wang is a postdoc in the Strano Group, not MIT chemistry faculty. Probably confused with Xiao Wang (xiao-wang-chemistry). Not enriched. Recommend delete.
+yibei-chen-biology   # Yibei Chen is a postdoctoral associate in BCS/McGovern (communication neuroscience), not MIT Biology faculty. Not enriched. Recommend delete.
+yiling-chen-biology  # No MIT Biology faculty named 'Yiling Chen'. The Yiling Chen in search results is at Harvard SEAS. Not enriched. Recommend delete.
+y-lee-physics        # Y. Lee = Young S. Lee (condensed matter / quantum spin liquids). Left MIT for Stanford/SLAC in 2014. No longer MIT faculty. Not enriched. Recommend delete.
+yoon-ho-kim-eecs     # No MIT EECS faculty named 'Yoon-Ho Kim'. Possibly a misnaming of Yoon Kim (y-kim-eecs). Not enriched. Recommend delete.
+yulin-chen-biology   # No MIT Biology faculty named 'Yulin Chen'. The known Yulin Chen is at Oxford (ARPES/topological). Not enriched. Recommend delete.
+yunjae-lee-physics   # No MIT Physics faculty named 'Yunjae Lee'. Possibly misnaming of Yen-Jie Lee (already enriched). Not enriched. Recommend delete.
 
 # Likely-junk entries (not actually MIT faculty or stale placeholders):
 b-k-berger-math   # Beverly K. Berger is a relativist at Oakland Univ / former NSF — no MIT Math affiliation found. Recommend delete.

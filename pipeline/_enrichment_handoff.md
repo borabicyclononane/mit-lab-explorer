@@ -174,14 +174,15 @@ If you need to fix the PI name, add `"n": "Real Name"`. If scholar is wrong, omi
 
 ## Last checkpoint
 
-- **Date**: 2026-04-07
-- **Done**: 163 / 515 enrichment.json entries (≈155 distinct labs after dupes)
-- **Resume from**: next alphabetical after "Gregory Fournier" — likely "Guoping", "Hadley", "Hari", "Heather", etc. Run the listing snippet in step 3.
-- **Last merge**: `merge_enrichment.py` was run after batch 13; labs.json contains all current enrichments.
+- **Date**: 2026-04-10
+- **Done**: 515 / 515 enrichment.json entries — ALL COMPLETE
+- **Status**: All labs enriched. Ready for user review of junk/dup decisions. Run the listing snippet in step 3. Skip junk ids: b-k-berger-math, e-cary-brown-bcs, junghwan-kim-meche, minghao-guo-meche, mingyu-li-nse, n-catherine-hogan-meche.
+- **Last merge**: `merge_enrichment.py` was run after batch 32; labs.json contains all current enrichments.
+- **NEW feedback rule (batch 21 onward)**: existing `k.g` scholar URLs are often WRONG (collaborators, not PI). Verify aggressively via web search; when in doubt, clear. See `feedback_lab_enrichment_scholar.md`.
 - **Anomalies surfaced** (all in duplicates.txt):
-  - Dups: alex-slocum / alexander-h-slocum; three c-paus / christoph-paus / christoph-m-e-paus entries; d-m-anderson / daniel-g-anderson; ed-boyden-bioe / edward-s-boyden-bioe; edward-miller-bcs / earl-k-miller-bcs.
+  - Dups: alex-slocum / alexander-h-slocum; three c-paus / christoph-paus / christoph-m-e-paus entries; d-m-anderson / daniel-g-anderson; ed-boyden-bioe / edward-s-boyden-bioe; edward-miller-bcs / earl-k-miller-bcs; f-zhang-bioe / feng-zhang-bioe; fang-wang-bcs / frank-wang-bcs (both = Fan Wang); g-m-innocenti-physics / gian-michele-innocenti-physics; g-fournier-eaps / gregory-p-fournier-eaps; h-f-lodish-biology / harvey-lodish-biology; hal-abelson-eecs / harold-abelson-eecs; iain-hunter-meche / ian-w-hunter-meche; j-chen-biology / jianzhu-chen-biology; j-j-thaler-physics / jesse-thaler-physics.
   - Junk: b-k-berger-math, e-cary-brown-bcs (Economics, deceased 2007, mistagged BCS).
-  - Name fixes (`n` set): brooke-russell, christoph-paus (×3), curtis-smith, daniel-g-anderson (×2), eluned-smith, earl-k-miller (on edward-miller-bcs), ed-boyden (on edward-s-boyden-bioe).
+  - Name fixes (`n` set): brooke-russell, christoph-paus (×3), curtis-smith, daniel-g-anderson (×2), eluned-smith, earl-k-miller (on edward-miller-bcs), ed-boyden (on edward-s-boyden-bioe), feng-zhang (on f-zhang-bioe), fan-wang (on fang-wang-bcs and frank-wang-bcs), gregory-fournier (on g-fournier-eaps), george-lusztig (on g-lusztig-math), gian-michele-innocenti (on g-m-innocenti-physics), harvey-lodish (on h-f-lodish-biology), hal-abelson (on harold-abelson-eecs), ian-w-hunter (on iain-hunter-meche), joseph-formaggio (on j-a-formaggio-physics), jianzhu-chen (on j-chen-biology), joseph-checkelsky (on j-g-checkelsky-physics), jesse-thaler (on j-j-thaler-physics), janet-conrad (on j-m-conrad-physics), jessica-stark (on j-m-stark-bioe), jacqueline-hewitt (on j-n-hewitt-physics), joanne-stubbe (on j-stubbe-chemistry), john-w-belcher (on j-w-belcher-physics), jinhua-zhao (on j-zhao-cee).
 - **Pending decisions for user**: whether to delete junk entries and dedupe pairs — none have been removed from labs.json.
 
 When you finish all 515, delete this file.
