@@ -79,17 +79,10 @@
     .search-box input::placeholder {
       color: var(--text-light);
     }
-    .search-model-status {
-      position: absolute;
-      right: 0.9rem;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      pointer-events: none;
-      transition: opacity 0.3s;
+    .search-box input:disabled {
+      background: var(--bg);
+      cursor: wait;
     }
-    .search-model-status.hidden { opacity: 0; }
     .search-icon {
       position: absolute;
       left: 0.9rem;
@@ -475,35 +468,30 @@
     }
     .card-tags {
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.3rem;
+      flex-direction: column;
+      gap: 0.2rem;
+      align-items: stretch;
     }
     .tag {
-      display: inline-flex;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 2.8em 11em 1fr;
+      align-items: baseline;
       font-size: 0.73rem;
       padding: 0.2rem 0.5rem;
       border-radius: 4px;
       border-left: 3px solid;
       line-height: 1.4;
-      max-width: 100%;
+      column-gap: 0.3em;
     }
     .tag-cat {
       font-weight: 400;
       opacity: 0.65;
-      margin-right: 0.15rem;
-      font-size: 0.68rem;
     }
     .tag-coarse {
       font-weight: 400;
-      margin-right: 0.1rem;
     }
     .tag-fine {
       font-weight: 700;
-    }
-    .tag-focus {
-      font-weight: 300;
-      opacity: 0.75;
     }
 
     .tags-expander {
@@ -600,8 +588,7 @@
 <div class="search-container">
   <div class="search-box">
     <span class="search-icon">&#128269;</span>
-    <input type="text" id="searchInput" placeholder="Search by meaning — try 'magnesium in dolomite' or 'causation vs correlation'..." autocomplete="off">
-    <span class="search-model-status hidden" id="modelStatus"></span>
+    <input type="text" id="searchInput" placeholder="Search model loading..." autocomplete="off" disabled>
     <span class="search-hint">/ to focus &middot; Esc to clear</span>
   </div>
 </div>
@@ -730,7 +717,6 @@
   const resultsInfo = document.getElementById('resultsInfo');
   const loadMoreContainer = document.getElementById('loadMoreContainer');
   const loadMoreBtn = document.getElementById('loadMoreBtn');
-  const modelStatus = document.getElementById('modelStatus');
 
   // ── Category display names ──
   const CAT_DISPLAY = {
@@ -847,8 +833,8 @@
     await applyFilters();
     render();
 
-    // Auto-focus search
-    searchInput.focus();
+    // Start loading the embedding model immediately (non-blocking)
+    getEmbedder().catch(() => {});
   }
 
   // ── Update tab counts ──
@@ -923,23 +909,13 @@
 
   // ── Semantic search helpers ──
 
-  function showModelStatus(msg) {
-    modelStatus.textContent = msg;
-    modelStatus.classList.remove('hidden');
-  }
-  function hideModelStatus() {
-    modelStatus.classList.add('hidden');
-  }
-
   async function getEmbedder() {
     if (embedder) return embedder;
     if (embedderLoading) {
-      // Wait for in-flight load
       while (embedderLoading) await new Promise(r => setTimeout(r, 100));
       return embedder;
     }
     embedderLoading = true;
-    showModelStatus('Loading search model\u2026');
     try {
       const { pipeline: transformersPipeline } = await import(
         'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3'
@@ -949,11 +925,13 @@
         'Xenova/bge-base-en-v1.5',
         { dtype: 'q8' }
       );
-      hideModelStatus();
+      searchInput.disabled = false;
+      searchInput.placeholder = "Search by keyword or meaning \u2014 try 'correlation vs causation experiment design'";
+      searchInput.focus();
       return embedder;
     } catch (e) {
       console.error('Failed to load embedding model:', e);
-      showModelStatus('Model failed to load');
+      searchInput.placeholder = 'Search model failed to load';
       throw e;
     } finally {
       embedderLoading = false;
@@ -1175,12 +1153,9 @@
     pill.style.borderColor = colors.border;
 
     const abbrev = CAT_DISPLAY[tag.category] || tag.category;
-    let html = `<span class="tag-cat">${escHtml(abbrev)}</span> `;
-    html += `<span class="tag-coarse">${escHtml(tag.coarse)}</span> `;
+    let html = `<span class="tag-cat">${escHtml(abbrev)}</span>`;
+    html += `<span class="tag-coarse">${escHtml(tag.coarse)}</span>`;
     html += `<span class="tag-fine">${escHtml(tag.fine)}</span>`;
-    if (tag.focus) {
-      html += `<span class="tag-focus"> ${escHtml(tag.focus)}</span>`;
-    }
     pill.innerHTML = html;
     return pill;
   }
