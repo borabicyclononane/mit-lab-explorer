@@ -1,0 +1,6 @@
+{
+  "model": "BAAI/bge-base-en-v1.5",
+  "dim": 768,
+  "count": 460,
+  "vectors_per_lab": 2
+}

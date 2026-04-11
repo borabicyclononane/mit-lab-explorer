@@ -79,6 +79,17 @@
     .search-box input::placeholder {
       color: var(--text-light);
     }
+    .search-model-status {
+      position: absolute;
+      right: 0.9rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    .search-model-status.hidden { opacity: 0; }
     .search-icon {
       position: absolute;
       left: 0.9rem;
@@ -589,7 +600,8 @@
 <div class="search-container">
   <div class="search-box">
     <span class="search-icon">&#128269;</span>
-    <input type="text" id="searchInput" placeholder="Search labs, topics, researchers..." autocomplete="off">
+    <input type="text" id="searchInput" placeholder="Search by meaning — try 'magnesium in dolomite' or 'causation vs correlation'..." autocomplete="off">
+    <span class="search-model-status hidden" id="modelStatus"></span>
     <span class="search-hint">/ to focus &middot; Esc to clear</span>
   </div>
 </div>
@@ -701,6 +713,14 @@
   let displayedCount = 0;
   const PAGE_SIZE = 36;
 
+  // ── Semantic search state ──
+  const EMBEDDING_DIM = 768;
+  let descEmbeddings = null;    // Float32Array, N * 768 (lab description vectors)
+  let concEmbeddings = null;    // Float32Array, N * 768 (concept expansion vectors)
+  let embedder = null;          // transformers.js pipeline instance
+  let embedderLoading = false;  // true while model is downloading
+  let lastSemanticScores = null; // Float32Array of max(desc_sim, conc_sim) per lab
+
   // ── DOM refs ──
   const searchInput = document.getElementById('searchInput');
   const categoryTabs = document.getElementById('categoryTabs');
@@ -710,6 +730,7 @@
   const resultsInfo = document.getElementById('resultsInfo');
   const loadMoreContainer = document.getElementById('loadMoreContainer');
   const loadMoreBtn = document.getElementById('loadMoreBtn');
+  const modelStatus = document.getElementById('modelStatus');
 
   // ── Category display names ──
   const CAT_DISPLAY = {
@@ -786,10 +807,27 @@
   // ── Load data ──
   async function loadData() {
     try {
-      const resp = await fetch('data/labs.json');
-      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
-      const raw = await resp.json();
+      const [labResp, embResp] = await Promise.all([
+        fetch('data/labs.json'),
+        fetch('data/lab_embeddings.bin'),
+      ]);
+      if (!labResp.ok) throw new Error(`Labs HTTP ${labResp.status}`);
+      const raw = await labResp.json();
       allLabs = raw.map(expandLab);
+
+      if (embResp.ok) {
+        const buf = await embResp.arrayBuffer();
+        const all = new Float32Array(buf);
+        // Layout: [desc_0..desc_N, conc_0..conc_N] (two contiguous blocks)
+        const n = all.length / (2 * EMBEDDING_DIM);
+        const half = n * EMBEDDING_DIM;
+        descEmbeddings = all.subarray(0, half);
+        concEmbeddings = all.subarray(half, half * 2);
+        console.log(`Loaded ${n} lab embeddings (desc + concepts)`);
+      } else {
+        console.warn('No lab embeddings found — semantic search disabled');
+      }
+
       init();
     } catch(e) {
       labGrid.innerHTML = `
@@ -802,11 +840,11 @@
   }
 
   // ── Initialize ──
-  function init() {
+  async function init() {
     updateCounts();
     readHash();
     updateSubcats();
-    applyFilters();
+    await applyFilters();
     render();
 
     // Auto-focus search
@@ -867,14 +905,14 @@
         chip.style.color = colors.border;
       }
 
-      chip.addEventListener('click', () => {
+      chip.addEventListener('click', async () => {
         if (currentCoarse.has(coarse)) {
           currentCoarse.delete(coarse);
         } else {
           currentCoarse.add(coarse);
         }
         updateSubcats();
-        applyFilters();
+        await applyFilters();
         render();
         updateHash();
       });
@@ -883,47 +921,102 @@
     subcatsBar.classList.add('visible');
   }
 
-  // ── Search scoring ──
-  function searchScore(lab, terms) {
-    if (terms.length === 0) return 1;
-    let score = 0;
+  // ── Semantic search helpers ──
 
-    // Build searchable text fields
-    const fields = {
-      pi_name: (lab.pi_name || '').toLowerCase(),
-      lab_name: (lab.lab_name || '').toLowerCase(),
-      departments: (lab.departments || []).join(' ').toLowerCase(),
-      summary: (lab.research_summary || '').toLowerCase(),
-      tags: (lab.tags || []).map(t =>
-        `${t.category} ${t.coarse} ${t.fine} ${t.focus}`
-      ).join(' ').toLowerCase(),
-    };
+  function showModelStatus(msg) {
+    modelStatus.textContent = msg;
+    modelStatus.classList.remove('hidden');
+  }
+  function hideModelStatus() {
+    modelStatus.classList.add('hidden');
+  }
 
-    const weights = { pi_name: 3, lab_name: 3, tags: 2, departments: 1, summary: 1 };
-
-    for (const term of terms) {
-      let termScore = 0;
-      for (const [field, text] of Object.entries(fields)) {
-        if (text.includes(term)) {
-          termScore += weights[field] || 1;
-        }
-      }
-      if (termScore === 0) return 0; // all terms must match
-      score += termScore;
+  async function getEmbedder() {
+    if (embedder) return embedder;
+    if (embedderLoading) {
+      // Wait for in-flight load
+      while (embedderLoading) await new Promise(r => setTimeout(r, 100));
+      return embedder;
     }
-    return score;
+    embedderLoading = true;
+    showModelStatus('Loading search model\u2026');
+    try {
+      const { pipeline: transformersPipeline } = await import(
+        'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3'
+      );
+      embedder = await transformersPipeline(
+        'feature-extraction',
+        'Xenova/bge-base-en-v1.5',
+        { dtype: 'q8' }
+      );
+      hideModelStatus();
+      return embedder;
+    } catch (e) {
+      console.error('Failed to load embedding model:', e);
+      showModelStatus('Model failed to load');
+      throw e;
+    } finally {
+      embedderLoading = false;
+    }
+  }
+
+  async function embedQuery(text) {
+    const pipe = await getEmbedder();
+    const output = await pipe(text, { pooling: 'mean', normalize: true });
+    return output.data; // Float32Array of length 384
+  }
+
+  function cosineSimilarities(queryVec) {
+    // Both embedding sets are pre-normalized; queryVec is normalized.
+    // Return max(desc_sim, concept_sim) per lab.
+    const n = allLabs.length;
+    const scores = new Float32Array(n);
+    for (let i = 0; i < n; i++) {
+      let dotDesc = 0, dotConc = 0;
+      const offset = i * EMBEDDING_DIM;
+      for (let j = 0; j < EMBEDDING_DIM; j++) {
+        dotDesc += queryVec[j] * descEmbeddings[offset + j];
+        dotConc += queryVec[j] * concEmbeddings[offset + j];
+      }
+      scores[i] = Math.max(dotDesc, dotConc);
+    }
+    return scores;
+  }
+
+  // ── Search scoring (semantic) ──
+  // Returns a score > 0 for matching labs. Called after embedQuery().
+  function searchScore(lab, labIndex) {
+    if (!lastSemanticScores) return 1; // no query → show all
+    return lastSemanticScores[labIndex];
   }
 
   // ── Apply filters ──
-  function applyFilters() {
-    const terms = currentQuery.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  const SEMANTIC_THRESHOLD = 0.15;
+
+  async function applyFilters() {
+    const query = currentQuery.trim();
+    const hasQuery = query.length > 0;
+
+    // Compute semantic scores if searching
+    if (hasQuery && descEmbeddings) {
+      try {
+        const qVec = await embedQuery(query);
+        const scores = cosineSimilarities(qVec);
+        lastSemanticScores = scores;
+      } catch (e) {
+        // If model fails, fall back to showing nothing for the search
+        console.error('Embedding failed:', e);
+        lastSemanticScores = null;
+      }
+    } else {
+      lastSemanticScores = null;
+    }
 
     filteredLabs = allLabs
-      .map(lab => ({ lab, score: searchScore(lab, terms) }))
-      .filter(({ score }) => score > 0)
+      .map((lab, i) => ({ lab, idx: i, score: hasQuery ? searchScore(lab, i) : 1 }))
+      .filter(({ score }) => !hasQuery || score > SEMANTIC_THRESHOLD)
       .filter(({ lab }) => {
         if (currentCoarse.size > 0) {
-          // Union: show lab if any of its tags match any selected coarse
           if (currentCategory === 'all') {
             return lab.tags.some(t => currentCoarse.has(t.coarse));
           }
@@ -933,8 +1026,7 @@
         return lab.tags.some(t => t.category === currentCategory);
       })
       .sort((a, b) => {
-        // If searching, sort by relevance; otherwise alphabetical by last name
-        if (terms.length > 0) return b.score - a.score;
+        if (hasQuery) return b.score - a.score;
         const aName = (a.lab.pi_name || '').split(' ').pop().toLowerCase();
         const bName = (b.lab.pi_name || '').split(' ').pop().toLowerCase();
         return aName.localeCompare(bName);
@@ -1101,20 +1193,20 @@
 
   // ── Event handlers ──
 
-  // Search input (debounced)
+  // Search input (debounced — longer delay for semantic embedding)
   let searchTimeout;
   searchInput.addEventListener('input', () => {
     clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(() => {
+    searchTimeout = setTimeout(async () => {
       currentQuery = searchInput.value;
-      applyFilters();
+      await applyFilters();
       render();
       updateHash();
-    }, 200);
+    }, 400);
   });
 
   // Category tabs
-  categoryTabs.addEventListener('click', (e) => {
+  categoryTabs.addEventListener('click', async (e) => {
     const tab = e.target.closest('.tab');
     if (!tab) return;
 
@@ -1124,7 +1216,7 @@
     currentCategory = tab.dataset.category;
     currentCoarse = new Set();
     updateSubcats();
-    applyFilters();
+    await applyFilters();
     render();
     updateHash();
 
@@ -1147,8 +1239,7 @@
       searchInput.value = '';
       currentQuery = '';
       searchInput.blur();
-      applyFilters();
-      render();
+      applyFilters().then(render);
       updateHash();
     }
   });
@@ -1183,10 +1274,10 @@
     }
   }
 
-  window.addEventListener('hashchange', () => {
+  window.addEventListener('hashchange', async () => {
     readHash();
     updateSubcats();
-    applyFilters();
+    await applyFilters();
     render();
   });
 
